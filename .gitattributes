@@ -1,0 +1,8 @@
+# 줄바꿈을 LF로 통일 (Prettier endOfLine: lf와 일치)
+* text=auto eol=lf
+
+# 바이너리 파일
+*.ico binary
+*.png binary
+*.jpg binary
+*.docx binary

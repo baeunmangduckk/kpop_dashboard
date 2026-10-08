@@ -229,26 +229,30 @@
 
 ## 🗄️ 데이터 모델
 
-> 모든 데이터는 `public/data/*.json` 정적 산출물이며 Zod 스키마로 검증한다.
+> 모든 데이터는 `public/data/*.json` 정적 산출물이며 Zod 스키마(`src/lib/schemas/`)로 검증한다.
 
 ### Metric (지표)
 
 | 필드       | 설명                      | 타입/관계                           |
 | ---------- | ------------------------- | ----------------------------------- |
 | id         | 고유 식별자               | string                              |
-| value      | 값과 단위                 | number + string                     |
+| label      | 지표명                    | string                              |
+| value      | 값 (결측은 null)          | number \| null                      |
+| unit       | 단위                      | string                              |
 | delta      | 전기 대비 증감            | number \| null                      |
 | confidence | 신뢰도 라벨               | verified \| estimated \| unverified |
 | sourceIds  | 출처 목록 (1개 이상 필수) | → Source.id[]                       |
+| asOf       | 기준일 (선택)             | date                                |
+| method     | 추정 산출 방식 (선택)     | string                              |
 
 ### Narrative (서사)
 
-| 필드     | 설명                  | 타입/관계     |
-| -------- | --------------------- | ------------- |
-| id       | 서사 번호(①~③)        | string        |
-| title    | 제목                  | string        |
-| message  | 핵심 메시지           | string        |
-| sections | 문단 + 근거 지표 묶음 | → Metric.id[] |
+| 필드     | 설명                  | 타입/관계                               |
+| -------- | --------------------- | --------------------------------------- |
+| id       | 서사 slug(①~③)        | slowdown \| polarization \| realignment |
+| title    | 제목                  | string                                  |
+| message  | 핵심 메시지           | string                                  |
+| sections | 문단 + 근거 지표 묶음 | → Metric.id[]                           |
 
 ### Insight (인사이트)
 
@@ -262,23 +266,25 @@
 
 ### Source (출처)
 
-| 필드      | 설명        | 타입/관계 |
-| --------- | ----------- | --------- |
-| id        | 고유 식별자 | string    |
-| publisher | 발행처      | string    |
-| title     | 제목        | string    |
-| year      | 연도        | number    |
-| pages     | 사용 페이지 | string[]  |
+| 필드      | 설명             | 타입/관계 |
+| --------- | ---------------- | --------- |
+| id        | 고유 식별자      | string    |
+| publisher | 발행처           | string    |
+| title     | 제목             | string    |
+| year      | 연도             | number    |
+| url       | 원문 링크 (선택) | string    |
+| pages     | 사용 페이지      | string[]  |
 
 ### CompanyFinancial (기획사 재무)
 
-| 필드            | 설명           | 타입/관계     |
-| --------------- | -------------- | ------------- |
-| company         | 회사명         | string        |
-| year            | 회계연도       | number        |
-| revenue         | 매출액(억원)   | number        |
-| operatingProfit | 영업이익(억원) | number        |
-| sourceIds       | 출처           | → Source.id[] |
+| 필드            | 설명            | 타입/관계                           |
+| --------------- | --------------- | ----------------------------------- |
+| company         | 회사명          | string                              |
+| year            | 회계연도        | number                              |
+| revenue         | 매출액(억원)    | number \| null                      |
+| operatingProfit | 영업이익(억원)  | number \| null                      |
+| confidence      | 신뢰도 라벨     | verified \| estimated \| unverified |
+| sourceIds       | 출처 (1개 이상) | → Source.id[]                       |
 
 ### AlbumSales (앨범 판매)
 
@@ -292,12 +298,12 @@
 
 ### ChannelSnapshot (채널 스냅샷)
 
-| 필드        | 설명      | 타입/관계 |
-| ----------- | --------- | --------- |
-| artist      | 아티스트  | string    |
-| subscribers | 구독자 수 | number    |
-| views       | 조회수    | number    |
-| capturedAt  | 수집일    | date      |
+| 필드        | 설명                    | 타입/관계      |
+| ----------- | ----------------------- | -------------- |
+| artist      | 아티스트                | string         |
+| subscribers | 구독자 수               | number         |
+| views       | 조회수 (미수집 시 null) | number \| null |
+| capturedAt  | 수집일                  | date           |
 
 ### TrendSeries (트렌드 시계열)
 
@@ -310,12 +316,25 @@
 
 ### Discrepancy (알려진 불일치)
 
-| 필드        | 설명           | 타입/관계   |
-| ----------- | -------------- | ----------- |
-| metricId    | 대상 지표      | → Metric.id |
-| adopted     | 채택 값과 출처 | → Source.id |
-| alternative | 대체 값과 출처 | → Source.id |
-| note        | 설명           | string      |
+| 필드        | 설명           | 타입/관계                       |
+| ----------- | -------------- | ------------------------------- |
+| metricId    | 대상 지표      | → Metric.id                     |
+| adopted     | 채택 값과 출처 | { value, sourceId → Source.id } |
+| alternative | 대체 값과 출처 | { value, sourceId → Source.id } |
+| note        | 설명           | string                          |
+
+### 데이터 파일 구성
+
+| 파일                                             | 내용                                                                                                         |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| `metrics.json`                                   | 전체 Metric 레지스트리 + 홈 KPI 6종 순서(`homeKpiIds`)                                                       |
+| `insights.json`, `narratives.json`               | Insight[], Narrative[]                                                                                       |
+| `market.json` ~ `ai-virtual.json` (7종)          | 페이지별 묶음: 핵심 지표 `metricIds` + 차트·표 블록. 블록마다 `confidence`·`sourceIds`(1개 이상)를 함께 보관 |
+| `trends.json`, `global.json`의 `countryInterest` | Google Trends 연동(Task 014) 전까지 `isDummy: true` 더미 데이터                                              |
+
+- 스키마: `src/lib/schemas/` (모델), `src/lib/schemas/datasets/` (파일 단위)
+- 로더: `src/lib/data/` — 서버에서 읽고 Zod 검증, 실패 시 파일명·필드 경로가 담긴 `DataLoadError`
+- 캐시: 정적 페이지는 빌드 시 1회 읽으므로 JSON 갱신 후 재빌드 필요 (개발 서버는 요청마다 반영)
 
 ## 🛠️ 기술 스택 (최신 버전)
 

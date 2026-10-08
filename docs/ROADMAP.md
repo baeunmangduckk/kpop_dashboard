@@ -2,8 +2,8 @@
 
 숫자의 출처와 신뢰도를 먼저 보여주고, 그 숫자들이 만드는 K-pop 산업의 이야기를 읽을 수 있는 대시보드
 
-**📅 최종 업데이트**: 2026-10-07
-**📊 진행 상황**: Phase 1 진행 중 (2/15 Tasks 완료)
+**📅 최종 업데이트**: 2026-10-08
+**📊 진행 상황**: Phase 2 진행 중 (4/15 Tasks 완료)
 
 ## 개요
 
@@ -58,21 +58,22 @@ K-POP 산업 인사이트 대시보드는 산업 분석가·기획사/투자 관
   - ✅ 공통 페이지 레이아웃(Header·Footer·Container) 적용
   - ✅ Playwright MCP: 데스크톱 드롭다운·360px 모바일 메뉴 이동, 정의 외 서사 경로 404 확인
 
-- **Task 003: 데이터 타입 및 Zod 스키마 정의** - 우선순위
-  - PRD 데이터 모델 스키마: Metric, Narrative, Insight, Source, CompanyFinancial, AlbumSales, ChannelSnapshot, TrendSeries, Discrepancy
-  - 신뢰도 라벨 enum(`verified` / `estimated` / `unverified`) 정의
-  - Metric `sourceIds` 1개 이상 필수, 결측값은 `null` 허용 규칙
-  - `z.infer` 기반 TypeScript 타입 export (`any` 금지)
+- **Task 003: 데이터 타입 및 Zod 스키마 정의** ✅ - 완료
+  - ✅ PRD 데이터 모델 스키마: Metric, Narrative, Insight, Source, CompanyFinancial, AlbumSales, ChannelSnapshot, TrendSeries, Discrepancy (`src/lib/schemas/`)
+  - ✅ 신뢰도 라벨 enum(`verified` / `estimated` / `unverified`) 정의
+  - ✅ Metric `sourceIds` 1개 이상 필수, 결측값은 `null` 허용 규칙
+  - ✅ `z.infer` 기반 TypeScript 타입 export (`any` 금지)
+  - ✅ 화면용 보완 필드(label·unit·asOf·method·url, 재무 confidence) PRD 반영, 스키마 통과/거부 케이스 검사
 
 ### Phase 2: 데이터·신뢰도 기반 및 공통 UI (더미 데이터)
 
-- **Task 004: 정적 JSON 로더와 더미 데이터 구성**
-  - 서버 컴포넌트용 JSON 로더(`public/data/*.json` 읽기 + Zod 파싱, 실패 시 명확한 에러)
-  - 캐시 정책 점검(빌드 시 정적 읽기, 데이터 갱신 시 반영 여부 확인)
-  - 보고서 수치 기반 더미 JSON: metrics, insights, narratives, market, concentration, finance, fans, global, trends, ai-virtual
-  - Playwright MCP: 잘못된 JSON 주입 시 에러 표시 확인
+- **Task 004: 정적 JSON 로더와 더미 데이터 구성** ✅ - 완료
+  - ✅ 서버 컴포넌트용 JSON 로더(`src/lib/data/`, `public/data/*.json` 읽기 + Zod 파싱, 실패 시 파일명·필드 경로 포함 에러)
+  - ✅ 캐시 정책 점검(빌드 시 정적 읽기 → 갱신 시 재빌드 필요, 개발 서버는 요청마다 반영)
+  - ✅ 보고서 수치 기반 더미 JSON: metrics, insights, narratives, market, concentration, finance, fans, global, trends, ai-virtual (페이지 데이터셋 스키마 `src/lib/schemas/datasets/` 추가)
+  - ✅ Playwright MCP: 잘못된 신뢰도 라벨·JSON 문법 오류 주입 시 에러 화면(`app/error.tsx`) 표시, 복구 후 정상 표시 확인
 
-- **Task 005: 출처 레지스트리 데이터와 스키마 검증 스크립트**
+- **Task 005: 출처 레지스트리 데이터와 스키마 검증 스크립트** - 우선순위
   - `sources.json` 작성 (발행처·제목·연도·URL·사용 페이지)
   - 알려진 불일치 데이터 작성 (하이브 2025 영업이익 DART 493.2억 vs 보도 499억)
   - 검증 스크립트: 전체 JSON 스키마 검사, 신뢰도 라벨 부착률 100%, 출처 연결률 100%, 존재하지 않는 sourceId 탐지

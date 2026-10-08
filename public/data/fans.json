@@ -1,0 +1,124 @@
+{
+  "video": {
+    "confidence": "verified",
+    "sourceIds": ["youtube-data-api"],
+    "title": "What K-pop Is Really Selling",
+    "views": 1648729,
+    "likes": 57646,
+    "comments": 6006,
+    "collectedAt": "2026-09-28"
+  },
+  "sentiment": {
+    "confidence": "estimated",
+    "sourceIds": ["youtube-data-api"],
+    "note": "등록 영상 1개의 댓글 표본으로, 산업 전체 여론을 대표하지 않음",
+    "sampleSize": 500,
+    "collectedAt": "2026-09-28",
+    "positive": 82,
+    "neutral": 387,
+    "negative": 31
+  },
+  "channels": {
+    "confidence": "unverified",
+    "sourceIds": ["dkblog-youtube"],
+    "note": "2026-01 기준 구독자 순위, 조회수는 YouTube Data API 연동(Task 013) 후 수집",
+    "snapshots": [
+      {
+        "artist": "BLACKPINK",
+        "subscribers": 99700000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "BTS",
+        "subscribers": 82100000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "Stray Kids",
+        "subscribers": 22900000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "TWICE",
+        "subscribers": 19000000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "BIGBANG",
+        "subscribers": 16700000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "SEVENTEEN",
+        "subscribers": 16500000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "TXT",
+        "subscribers": 13200000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "ENHYPEN",
+        "subscribers": 13200000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "BABYMONSTER",
+        "subscribers": 11100000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      },
+      {
+        "artist": "EXO",
+        "subscribers": 9850000,
+        "views": null,
+        "capturedAt": "2026-01-01"
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "id": "social-followers",
+      "title": "소셜 팔로워 합산 Top 8",
+      "unit": "백만 명",
+      "confidence": "unverified",
+      "sourceIds": ["ibtimes-fandom"],
+      "rows": [
+        { "artist": "BTS", "value": 352 },
+        { "artist": "BLACKPINK", "value": 269 },
+        { "artist": "TWICE", "value": 105 },
+        { "artist": "Stray Kids", "value": 86 },
+        { "artist": "TXT", "value": 75 },
+        { "artist": "EXO", "value": 61 },
+        { "artist": "ENHYPEN", "value": 60 },
+        { "artist": "SEVENTEEN", "value": 59 }
+      ]
+    },
+    {
+      "id": "spotify-monthly-listeners",
+      "title": "Spotify 월간 청취자 Top 7",
+      "unit": "백만 명",
+      "confidence": "unverified",
+      "sourceIds": ["soundcharts-spotify"],
+      "note": "2026-09 기준",
+      "rows": [
+        { "artist": "JENNIE", "value": 49 },
+        { "artist": "BTS", "value": 34 },
+        { "artist": "ROSÉ", "value": 26 },
+        { "artist": "ILLIT", "value": 21 },
+        { "artist": "LE SSERAFIM", "value": 20 },
+        { "artist": "BLACKPINK", "value": 20 },
+        { "artist": "Jung Kook", "value": 15 }
+      ]
+    }
+  ]
+}

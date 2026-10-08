@@ -1,0 +1,42 @@
+{
+  "metricIds": [
+    "latam-weverse-user-growth-2025",
+    "latam-weverse-retail-growth-2025",
+    "north-america-export-change",
+    "china-export-change"
+  ],
+  "regionExports": {
+    "confidence": "unverified",
+    "sourceIds": ["kosis-region-export"],
+    "isProxy": true,
+    "unit": "백만 달러",
+    "fromYear": 2014,
+    "toYear": 2023,
+    "note": "KOSIS 방송콘텐츠 수출 통계를 음악 수출의 프록시로 사용",
+    "rows": [
+      { "region": "북미", "from": 40.0, "to": 171.53 },
+      { "region": "중화권", "from": 109.63, "to": 26.22 }
+    ]
+  },
+  "promisingRegions": {
+    "confidence": "unverified",
+    "sourceIds": ["kofice-hallyu-2025"],
+    "regions": ["동남아시아", "중동/아프리카", "중남미"],
+    "description": "2025 해외한류실태조사(2024년 기준)에서 한류심리지수가 가장 높게 나타난 권역. 정량적 지역별 수출액은 KOFICE 원자료 확보 후 갱신 필요."
+  },
+  "countryInterest": {
+    "confidence": "unverified",
+    "sourceIds": ["google-trends"],
+    "keyword": "K-pop",
+    "isDummy": true,
+    "note": "화면 구성용 더미 데이터 — Task 014에서 Google Trends 실데이터로 교체",
+    "rows": [
+      { "country": "필리핀", "interest": 100 },
+      { "country": "인도네시아", "interest": 82 },
+      { "country": "브라질", "interest": 61 },
+      { "country": "멕시코", "interest": 57 },
+      { "country": "미국", "interest": 34 },
+      { "country": "일본", "interest": 22 }
+    ]
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "homeKpiIds": [
+    "global-music-revenue-2025",
+    "latam-weverse-retail-growth-2025",
+    "virtual-idol-market-2025",
+    "sales-gini-2025",
+    "big4-revenue-2025",
+    "big4-operating-profit-2025"
+  ],
+  "items": [
+    {
+      "id": "global-music-revenue-2025",
+      "label": "글로벌 음반산업 매출",
+      "value": 317.0,
+      "unit": "억 달러",
+      "delta": 19.1,
+      "confidence": "unverified",
+      "sourceIds": ["ifpi-gmr-2026"],
+      "note": "2025년, 전년 대비 +6.4%, 11년 연속 성장·사상 최고치"
+    },
+    {
+      "id": "latam-weverse-retail-growth-2025",
+      "label": "중남미 Weverse 디지털 리테일 판매 성장률",
+      "value": 715.0,
+      "unit": "%",
+      "delta": 715.0,
+      "confidence": "unverified",
+      "sourceIds": ["outlook-weverse-latam"],
+      "note": "2025년 YoY"
+    },
+    {
+      "id": "latam-weverse-user-growth-2025",
+      "label": "중남미 Weverse 이용자 수 성장률",
+      "value": 22.0,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["outlook-weverse-latam"],
+      "note": "2025년 YoY, Weverse 전체 지역 중 최고"
+    },
+    {
+      "id": "virtual-idol-market-2025",
+      "label": "버추얼 아이돌 시장 규모",
+      "value": 22.7,
+      "unit": "억 달러",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["snsinsider-virtual"],
+      "note": "글로벌 버추얼 아이돌·버튜버 시장 (2025)"
+    },
+    {
+      "id": "virtual-idol-market-2035",
+      "label": "버추얼 아이돌 시장 규모 전망 (2035)",
+      "value": 107.5,
+      "unit": "억 달러",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["snsinsider-virtual"],
+      "note": "CAGR 16.82%"
+    },
+    {
+      "id": "ai-group-revenue-share-2026",
+      "label": "K-pop 산업 내 AI 그룹 매출 비중",
+      "value": 1.1,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kculture-ai-share"],
+      "note": "2026년, 태동 단계"
+    },
+    {
+      "id": "sales-gini-2025",
+      "label": "판매량 집중도(Gini)",
+      "value": 0.4007,
+      "unit": "",
+      "delta": -0.0073,
+      "confidence": "unverified",
+      "sourceIds": ["circle-chart-top100"],
+      "note": "0=균등, 1=쏠림. 판매 집중도 화면 표기는 -0.0076으로 산출 기준 차이 확인 필요"
+    },
+    {
+      "id": "top10-share-2025",
+      "label": "Top 10 앨범 판매 점유율",
+      "value": 29.77,
+      "unit": "%",
+      "delta": -1.58,
+      "confidence": "unverified",
+      "sourceIds": ["circle-chart-top100"],
+      "note": "전년 대비 %p, 낮을수록 분산"
+    },
+    {
+      "id": "top100-total-sales-2025",
+      "label": "Top100 총 판매량",
+      "value": 64615322,
+      "unit": "장",
+      "delta": -6582805,
+      "confidence": "unverified",
+      "sourceIds": ["circle-chart-top100"],
+      "note": "큐레이션 계열 기준. circlechart.kr 원자료 직접 집계(약 3,530만 장)와 차이 원인 미확인"
+    },
+    {
+      "id": "physical-album-sales-2025",
+      "label": "실물 음반 판매량",
+      "value": 9890,
+      "unit": "만 장",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["asiae-album-bubble"],
+      "note": "전년 대비 -17.7%, 9년 만에 첫 역성장"
+    },
+    {
+      "id": "big4-revenue-2025",
+      "label": "상장 4사 합산 매출액",
+      "value": 51920.6,
+      "unit": "억원",
+      "delta": 9799.5,
+      "confidence": "verified",
+      "sourceIds": ["opendart"],
+      "note": "하이브·SM·YG·JYP 연결 기준 (2025)"
+    },
+    {
+      "id": "big4-operating-profit-2025",
+      "label": "상장 4사 합산 영업이익",
+      "value": 4589.4,
+      "unit": "억원",
+      "delta": 798.9,
+      "confidence": "verified",
+      "sourceIds": ["opendart"],
+      "note": "하이브·SM·YG·JYP 연결 기준 (2025)"
+    },
+    {
+      "id": "big4-operating-margin-2025",
+      "label": "상장 4사 합산 영업이익률",
+      "value": 8.8,
+      "unit": "%",
+      "delta": -0.2,
+      "confidence": "verified",
+      "sourceIds": ["opendart"],
+      "note": "전년 대비 %p"
+    },
+    {
+      "id": "hybe-operating-margin-2025",
+      "label": "하이브 영업이익률",
+      "value": 1.86,
+      "unit": "%",
+      "delta": -6.3,
+      "confidence": "verified",
+      "sourceIds": ["opendart"],
+      "note": "2024년 8.16% → 2025년 1.86%"
+    },
+    {
+      "id": "major-mid-q1-revenue-gap",
+      "label": "대형·중소 1분기 매출 격차",
+      "value": 83,
+      "unit": "배",
+      "delta": null,
+      "confidence": "estimated",
+      "sourceIds": ["outlook-q1-2026-revenue"],
+      "method": "2026년 1분기 추정 매출 하이브(6,983억원) ÷ TN엔터(84억원)"
+    },
+    {
+      "id": "korea-music-market-rank",
+      "label": "한국 글로벌 음악시장 순위",
+      "value": 7,
+      "unit": "위",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["ifpi-gmr-2026"]
+    },
+    {
+      "id": "korea-export-power-rank",
+      "label": "한국 음악 수출력(Export Power Score) 순위",
+      "value": 4,
+      "unit": "위",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["luminate-2025"],
+      "note": "미·영·캐나다 다음"
+    },
+    {
+      "id": "korea-streaming-volume-rank",
+      "label": "한국 온디맨드 스트리밍 볼륨 순위",
+      "value": 4,
+      "unit": "위",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["luminate-2025"],
+      "note": "미·영·캐나다 다음"
+    },
+    {
+      "id": "content-export-total-2025",
+      "label": "콘텐츠산업 총 수출액",
+      "value": 149.6,
+      "unit": "억 달러",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kocca-2025-annual"]
+    },
+    {
+      "id": "music-export-share-2025",
+      "label": "음악산업 수출 비중(콘텐츠 대비)",
+      "value": 16.0,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kocca-2025-annual"]
+    },
+    {
+      "id": "domestic-content-revenue-2025",
+      "label": "국내 콘텐츠산업 매출",
+      "value": 161.48,
+      "unit": "조원",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kocca-2025-annual"],
+      "note": "전년 대비 +2.6%"
+    },
+    {
+      "id": "domestic-music-revenue-growth-2025",
+      "label": "국내 음악산업 매출 성장률",
+      "value": 15.8,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kocca-2025-annual"],
+      "note": "콘텐츠 세부업종 중 최고 성장률"
+    },
+    {
+      "id": "album-export-growth-2023",
+      "label": "K팝 음반·DVD 수출 증가율",
+      "value": 1.6,
+      "unit": "%",
+      "delta": -3.2,
+      "confidence": "unverified",
+      "sourceIds": ["kita-album-export"],
+      "note": "2020년 +82.6% → 2023년 +1.6%"
+    },
+    {
+      "id": "production-cost-gap-2023",
+      "label": "대기업·중소기업 연평균 음악 제작비 격차",
+      "value": 29.0,
+      "unit": "배",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["newsen-production-gap"],
+      "note": "대기업 431.1억원 vs 중소기업 14.9억원 (2023)"
+    },
+    {
+      "id": "group-10y-survival",
+      "label": "그룹 데뷔 10년 생존율",
+      "value": 17.9,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["outlook-group-survival"],
+      "note": "1996~2025년 데뷔 1,182개 그룹 기준"
+    },
+    {
+      "id": "avg-activity-years",
+      "label": "그룹 평균 활동 기간",
+      "value": 4.12,
+      "unit": "년",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["outlook-group-survival"],
+      "note": "보이그룹 5.11년 vs 걸그룹 3.13년"
+    },
+    {
+      "id": "china-export-change",
+      "label": "중화권 방송콘텐츠 수출 변화율",
+      "value": -76.1,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kosis-region-export"],
+      "note": "2014년 대비 2023년, 음악 수출 프록시"
+    },
+    {
+      "id": "north-america-export-change",
+      "label": "북미 방송콘텐츠 수출 변화율",
+      "value": 328.8,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["kosis-region-export"],
+      "note": "2014년 대비 2023년, 음악 수출 프록시"
+    },
+    {
+      "id": "japan-album-export-change",
+      "label": "일본향 K팝 음반·DVD 수출 변화율",
+      "value": -61,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["hankyung-japan-export"],
+      "note": "최근 3년"
+    },
+    {
+      "id": "weverse-mau-2025",
+      "label": "Weverse 월간활성이용자(MAU)",
+      "value": 12.0,
+      "unit": "백만 명",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["mbw-weverse-mau"],
+      "note": "성장 단계"
+    },
+    {
+      "id": "weverse-goods-growth-2025",
+      "label": "Weverse 상품(굿즈) 매출 성장률",
+      "value": 70.0,
+      "unit": "%",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["mbw-weverse-mau"],
+      "note": "성장 단계"
+    },
+    {
+      "id": "bubble-q3-revenue-2025",
+      "label": "DearU Bubble 분기 매출",
+      "value": 17.4,
+      "unit": "백만 달러",
+      "delta": null,
+      "confidence": "unverified",
+      "sourceIds": ["outlook-platform-q3"],
+      "note": "2025 Q3, 성숙 단계"
+    }
+  ]
+}

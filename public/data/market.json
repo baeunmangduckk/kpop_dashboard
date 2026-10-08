@@ -1,0 +1,61 @@
+{
+  "metricIds": [
+    "global-music-revenue-2025",
+    "korea-music-market-rank",
+    "korea-export-power-rank",
+    "korea-streaming-volume-rank",
+    "content-export-total-2025",
+    "music-export-share-2025",
+    "domestic-content-revenue-2025",
+    "domestic-music-revenue-growth-2025"
+  ],
+  "albumExports": {
+    "confidence": "unverified",
+    "sourceIds": ["kita-album-export"],
+    "unit": "백만 달러",
+    "note": "2024년 수출액은 원자료에 없어 결측으로 표시",
+    "points": [
+      { "year": 2019, "value": 74.59 },
+      { "year": 2020, "value": 136.2 },
+      { "year": 2021, "value": 220.85 },
+      { "year": 2022, "value": 231.38 },
+      { "year": 2023, "value": 235.0 },
+      { "year": 2024, "value": null },
+      { "year": 2025, "value": 226.0 }
+    ]
+  },
+  "eventForecasts": {
+    "confidence": "unverified",
+    "sourceIds": ["amr-kpop-event", "mrfr-kpop-event", "mmr-kpop-event"],
+    "unit": "억 달러",
+    "rows": [
+      {
+        "institution": "Allied Market Research",
+        "baseYear": 2024,
+        "baseValue": 142.8,
+        "targetYear": 2030,
+        "targetValue": 229.1,
+        "cagr": 8.2,
+        "sourceId": "amr-kpop-event"
+      },
+      {
+        "institution": "Market Research Future",
+        "baseYear": 2025,
+        "baseValue": 142.7,
+        "targetYear": 2032,
+        "targetValue": 236.8,
+        "cagr": 7.5,
+        "sourceId": "mrfr-kpop-event"
+      },
+      {
+        "institution": "Maximize Market Research",
+        "baseYear": 2025,
+        "baseValue": 83.61,
+        "targetYear": 2035,
+        "targetValue": 174.4,
+        "cagr": 7.63,
+        "sourceId": "mmr-kpop-event"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "slowdown",
+    "title": "사상 최고 실적 속 수익성·성장 둔화 신호",
+    "message": "톱라인 성장과 수익성·물량 지표가 괴리되기 시작했다.",
+    "sections": [
+      {
+        "heading": "매출 지표는 모두 역대 최고",
+        "body": "글로벌 음반산업 매출은 317억 달러(+6.4%), 상장 4사 합산 매출은 5조 1,921억원(+23.3%)으로 매출 지표는 모두 역대 최고치를 기록했다.",
+        "metricIds": ["global-music-revenue-2025", "big4-revenue-2025"]
+      },
+      {
+        "heading": "수익성과 물량은 반대로 움직인다",
+        "body": "하이브 영업이익률은 8.2%에서 1.9%로 급락했고, 음반 수출 증가율은 82.6%에서 1.6%로 둔화됐으며, 실물앨범 판매량은 9년 만에 첫 역성장(-17.7%)을 기록했다.",
+        "metricIds": [
+          "hybe-operating-margin-2025",
+          "album-export-growth-2023",
+          "physical-album-sales-2025"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "polarization",
+    "title": "판매량 분산과 자본 집중의 이중 구조",
+    "message": "판매 성과는 여러 그룹에 나뉘고 있지만, 그 성과를 낼 자본력은 소수 대형 기획사에 집중돼 있다.",
+    "sections": [
+      {
+        "heading": "판매량은 분산되는 추세",
+        "body": "Top10 점유율 29.8%와 Gini 0.401 모두 2011년 이후 최저치로, 판매량 자체는 분산되고 있다. 다만 Top100 총 판매량은 3년 연속 감소해 나눠 갖는 파이가 줄고 있다.",
+        "metricIds": [
+          "top10-share-2025",
+          "sales-gini-2025",
+          "top100-total-sales-2025"
+        ]
+      },
+      {
+        "heading": "자본·인프라 격차는 극단적",
+        "body": "대기업·중소기업 제작비 격차 29배, 해외 투어 격차 21배, 1분기 매출 격차(하이브 vs TN엔터) 83배로 격차는 오히려 커졌다. 그룹 10년 생존율은 17.9%, 손익분기점 도달은 3.55%에 불과하다.",
+        "metricIds": [
+          "production-cost-gap-2023",
+          "major-mid-q1-revenue-gap",
+          "group-10y-survival"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "realignment",
+    "title": "지역 축의 재편과 AI·버추얼 아이돌의 초기 단계",
+    "message": "지리적으로도, 기술적으로도 K-pop 산업의 다음 성장축이 기존과는 다른 곳에서 형성되고 있다.",
+    "sections": [
+      {
+        "heading": "기존 핵심 시장의 축소와 신흥시장의 부상",
+        "body": "중화권 수출은 2014년 대비 -76.1%, 일본향 수출은 최근 3년간 -61%로 빠르게 축소됐다. 반면 북미 수출은 +328.8%, 중남미 Weverse 리테일 판매는 +715% 성장했다.",
+        "metricIds": [
+          "china-export-change",
+          "japan-album-export-change",
+          "north-america-export-change",
+          "latam-weverse-retail-growth-2025"
+        ]
+      },
+      {
+        "heading": "AI·버추얼 아이돌은 초기 신호 단계",
+        "body": "AI 그룹의 매출 비중은 1.1%로 미미하지만, 버추얼 아이돌 시장은 연 16.82% 성장이 전망되고 PLAVE의 Billboard Global 200 진입 같은 상징적 성과가 나타나고 있다.",
+        "metricIds": [
+          "ai-group-revenue-share-2026",
+          "virtual-idol-market-2025",
+          "virtual-idol-market-2035"
+        ]
+      }
+    ]
+  }
+]

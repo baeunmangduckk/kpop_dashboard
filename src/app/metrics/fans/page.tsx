@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { PageHeader } from '@/components/layout/page-header'
 import { PagePlaceholder } from '@/components/layout/page-placeholder'
+import { getFansData } from '@/lib/data'
 import { getMetricPage } from '@/lib/navigation'
 
 const page = getMetricPage('/metrics/fans')
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
   description: page.description,
 }
 
-export default function FansPage() {
+export default async function FansPage() {
+  const data = await getFansData()
+
   return (
     <>
       <PageHeader
@@ -18,7 +21,9 @@ export default function FansPage() {
         title={page.title}
         description={page.description}
       />
-      <PagePlaceholder />
+      <PagePlaceholder
+        detail={`채널 ${data.channels.snapshots.length}개 · 순위 ${data.rankings.length}종 · 댓글 표본 ${data.sentiment.sampleSize}개 로드됨`}
+      />
     </>
   )
 }

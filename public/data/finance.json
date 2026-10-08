@@ -1,0 +1,131 @@
+{
+  "metricIds": [
+    "big4-revenue-2025",
+    "big4-operating-profit-2025",
+    "big4-operating-margin-2025",
+    "major-mid-q1-revenue-gap"
+  ],
+  "companies": [
+    { "name": "하이브", "tier": "major" },
+    { "name": "SM엔터테인먼트", "tier": "major" },
+    { "name": "YG엔터테인먼트", "tier": "major" },
+    { "name": "JYP엔터테인먼트", "tier": "major" },
+    { "name": "FNC엔터테인먼트", "tier": "mid" },
+    { "name": "큐브엔터테인먼트", "tier": "mid" },
+    { "name": "RBW", "tier": "mid" },
+    { "name": "TN엔터테인먼트", "tier": "mid" }
+  ],
+  "financials": [
+    {
+      "company": "하이브",
+      "year": 2023,
+      "revenue": 21780.88,
+      "operatingProfit": 2956.43,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "하이브",
+      "year": 2024,
+      "revenue": 22556.49,
+      "operatingProfit": 1840.45,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "하이브",
+      "year": 2025,
+      "revenue": 26498.7,
+      "operatingProfit": 493.18,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "SM엔터테인먼트",
+      "year": 2023,
+      "revenue": 9610.7,
+      "operatingProfit": 1134.63,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "SM엔터테인먼트",
+      "year": 2024,
+      "revenue": 9897.25,
+      "operatingProfit": 872.97,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "SM엔터테인먼트",
+      "year": 2025,
+      "revenue": 11749.35,
+      "operatingProfit": 1830.34,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "YG엔터테인먼트",
+      "year": 2023,
+      "revenue": 5691.95,
+      "operatingProfit": 869.32,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "YG엔터테인먼트",
+      "year": 2024,
+      "revenue": 3649.49,
+      "operatingProfit": -205.58,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "YG엔터테인먼트",
+      "year": 2025,
+      "revenue": 5454.04,
+      "operatingProfit": 713.42,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "JYP엔터테인먼트",
+      "year": 2023,
+      "revenue": 5665.01,
+      "operatingProfit": 1694.44,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "JYP엔터테인먼트",
+      "year": 2024,
+      "revenue": 6017.88,
+      "operatingProfit": 1282.62,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "JYP엔터테인먼트",
+      "year": 2025,
+      "revenue": 8218.55,
+      "operatingProfit": 1552.46,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    }
+  ],
+  "quarterlyRevenue": {
+    "confidence": "estimated",
+    "sourceIds": ["outlook-q1-2026-revenue"],
+    "period": "2026 Q1",
+    "unit": "억원",
+    "note": "중소 상장사 연결 재무는 Task 013 OpenDART 연동 시 추가",
+    "rows": [
+      { "company": "하이브", "revenue": 6983 },
+      { "company": "YG엔터테인먼트", "revenue": 1471 },
+      { "company": "FNC엔터테인먼트", "revenue": 272 },
+      { "company": "큐브엔터테인먼트", "revenue": 151 },
+      { "company": "RBW", "revenue": 96 },
+      { "company": "TN엔터테인먼트", "revenue": 84 }
+    ]
+  }
+}

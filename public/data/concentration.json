@@ -1,0 +1,139 @@
+{
+  "metricIds": [
+    "top10-share-2025",
+    "sales-gini-2025",
+    "top100-total-sales-2025",
+    "avg-activity-years"
+  ],
+  "shareTrend": {
+    "confidence": "unverified",
+    "sourceIds": ["circle-chart-top100"],
+    "note": "Circle Chart 연간 앨범 판매량 Top100 집계, 단위 %",
+    "points": [
+      { "year": 2011, "top10": 38.43, "top20": 53.58, "bottom50": 21.48 },
+      { "year": 2017, "top10": 45.56, "top20": 62.65, "bottom50": 16.64 },
+      { "year": 2018, "top10": 47.24, "top20": 62.66, "bottom50": 15.75 },
+      { "year": 2023, "top10": 36.62, "top20": 54.56, "bottom50": 16.82 },
+      { "year": 2024, "top10": 31.35, "top20": 48.08, "bottom50": 22.35 },
+      { "year": 2025, "top10": 29.77, "top20": 46.9, "bottom50": 22.57 }
+    ]
+  },
+  "giniTrend": {
+    "confidence": "unverified",
+    "sourceIds": ["circle-chart-top100"],
+    "points": [
+      { "year": 2011, "gini": 0.45 },
+      { "year": 2013, "gini": 0.5 },
+      { "year": 2018, "gini": 0.56 },
+      { "year": 2019, "gini": 0.51 },
+      { "year": 2023, "gini": 0.49 },
+      { "year": 2024, "gini": 0.41 },
+      { "year": 2025, "gini": 0.4 }
+    ]
+  },
+  "topVsBottom": {
+    "confidence": "unverified",
+    "sourceIds": ["circle-chart-top100"],
+    "note": "1위·100위 앨범 판매량, 단위 장",
+    "points": [
+      { "year": 2011, "first": 385348, "hundredth": 15747 },
+      { "year": 2020, "first": 4376975, "hundredth": 82760 },
+      { "year": 2023, "first": 5546930, "hundredth": 215324 },
+      { "year": 2024, "first": 3180338, "hundredth": 210075 },
+      { "year": 2025, "first": 3397810, "hundredth": 193399 }
+    ]
+  },
+  "totalSales": {
+    "confidence": "unverified",
+    "sourceIds": ["circle-chart-top100"],
+    "note": "Top100 총 판매량, 단위 장",
+    "points": [
+      { "year": 2011, "total": 5082514 },
+      { "year": 2017, "total": 14483828 },
+      { "year": 2020, "total": 34913554 },
+      { "year": 2022, "total": 60476914 },
+      { "year": 2023, "total": 94167827 },
+      { "year": 2024, "total": 71198127 },
+      { "year": 2025, "total": 64615322 }
+    ]
+  },
+  "capitalGap": {
+    "confidence": "unverified",
+    "sourceIds": ["newsen-production-gap"],
+    "baseYear": 2023,
+    "rows": [
+      {
+        "label": "연평균 음악 제작비",
+        "unit": "억원",
+        "large": 431.1,
+        "small": 14.9
+      },
+      {
+        "label": "연평균 해외 공연 횟수",
+        "unit": "회/년",
+        "large": 83.4,
+        "small": 4.0
+      }
+    ]
+  },
+  "survival": {
+    "confidence": "unverified",
+    "sourceIds": ["outlook-group-survival"],
+    "sampleSize": 1182,
+    "note": "1996~2025년 데뷔 그룹, 손익분기점 30만 장 기준",
+    "rates": [
+      { "label": "3년 생존율", "value": 55.03, "unit": "%" },
+      { "label": "5년 생존율", "value": 36.6, "unit": "%" },
+      { "label": "10년 생존율", "value": 17.9, "unit": "%" }
+    ],
+    "tiers": [
+      { "label": "판매 30만 장 이상", "value": 3.55, "unit": "%" },
+      { "label": "판매 100만 장 이상", "value": 1.61, "unit": "%" },
+      { "label": "판매 1,000만 장 이상", "value": 0.68, "unit": "%" }
+    ]
+  },
+  "signals": [
+    {
+      "tone": "warning",
+      "title": "중화권 수출액 감소",
+      "detail": "2014년 대비 2023년 1.10억 → 0.26억 달러(-76.1%). 한한령 이후 편중 리스크 지속.",
+      "confidence": "unverified",
+      "sourceIds": ["kosis-region-export"]
+    },
+    {
+      "tone": "warning",
+      "title": "실물앨범 판매량 첫 역성장",
+      "detail": "2025년 9,890만 장, 9년 만에 첫 역성장 — '1억 장 시대' 종료.",
+      "confidence": "unverified",
+      "sourceIds": ["asiae-album-bubble"]
+    },
+    {
+      "tone": "warning",
+      "title": "실물앨범 시장 증감률 -17.7%",
+      "detail": "멀티버전·포토카드 판촉 의존형 성장의 한계 신호.",
+      "confidence": "unverified",
+      "sourceIds": ["asiae-album-bubble"]
+    },
+    {
+      "tone": "positive",
+      "title": "수익 구조 다변화",
+      "detail": "음반 판매 중심에서 스트리밍·투어·브랜드 파트너십 중심으로 다변화 진행 중.",
+      "confidence": "unverified",
+      "sourceIds": ["keia-sustainability"]
+    },
+    {
+      "tone": "positive",
+      "title": "북미향 방송콘텐츠 수출 최대",
+      "detail": "2023년 지역별 최대(1억 7,153만 달러) — 신흥시장 다변화 진행.",
+      "confidence": "unverified",
+      "sourceIds": ["kosis-region-export"]
+    },
+    {
+      "tone": "warning",
+      "title": "일본향 음반·DVD 수출 감소",
+      "detail": "최근 3년간 61% 감소 — 특정 국가 편중 리스크.",
+      "confidence": "unverified",
+      "sourceIds": ["hankyung-japan-export"]
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 // 내비게이션·라우트 단일 소스 - 헤더 메뉴, 모바일 메뉴, 페이지 메타데이터가 함께 사용
 
+import type { NarrativeSlug } from '@/lib/schemas'
+
 export interface NavLink {
   title: string
   href: string
@@ -14,7 +16,7 @@ export interface NavGroup {
 export type NavEntry = NavLink | NavGroup
 
 export interface Narrative {
-  slug: string
+  slug: NarrativeSlug
   order: number
   title: string
   description: string

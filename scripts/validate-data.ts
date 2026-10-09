@@ -184,7 +184,61 @@ async function main(): Promise<void> {
     }
   }
 
-  // 출처 레지스트리의 사용 페이지가 실제 라우트인지, 사용되지 않는 출처가 있는지
+  // 모든 지표는 지표 페이지 하나 이상에 속해야 한다 (KPI 카드·근거 지표 링크 대상)
+  const pageFiles = new Map(
+    metricPages.map(page => [
+      `${page.href.replace('/metrics/', '')}.json`,
+      page.href,
+    ])
+  )
+  const isPageMetricRef = (ref: Reference) =>
+    pageFiles.has(ref.location.split('.json')[0] + '.json') &&
+    /\.(metricIds|platformMetricIds)$/.test(ref.location)
+  const attached = new Set(metricRefs.filter(isPageMetricRef).map(r => r.id))
+  for (const id of metricIds) {
+    if (!attached.has(id))
+      errors.push(`지표 페이지에 연결되지 않은 지표: ${id}`)
+  }
+
+  // 출처별 실제 사용 페이지 계산: 페이지 데이터의 직접 인용 + 페이지가 참조하는 지표의 출처
+  const metricSources = new Map(
+    metrics?.items.map(item => [item.id, item.sourceIds])
+  )
+  const actualPages = new Map<string, Set<string>>()
+  const markUsed = (sourceId: string, route: string) => {
+    const pages = actualPages.get(sourceId) ?? new Set<string>()
+    pages.add(route)
+    actualPages.set(sourceId, pages)
+  }
+  const markMetricsUsed = (ids: string[], route: string) => {
+    for (const id of ids) {
+      for (const sourceId of metricSources.get(id) ?? [])
+        markUsed(sourceId, route)
+    }
+  }
+  const fileOf = (location: string) => location.split('.json')[0] + '.json'
+  for (const item of items) {
+    const route = pageFiles.get(fileOf(item.location))
+    if (route) item.sourceIds.forEach(id => markUsed(id, route))
+    if (fileOf(item.location) === DATA_FILES.discrepancies.file) {
+      item.sourceIds.forEach(id => markUsed(id, sourcesLink.href))
+    }
+  }
+  for (const ref of metricRefs) {
+    const route = pageFiles.get(fileOf(ref.location))
+    if (route) markMetricsUsed([ref.id], route)
+  }
+  markMetricsUsed(metrics?.homeKpiIds ?? [], homeLink.href)
+  for (const insight of insights ?? []) {
+    markMetricsUsed(insight.metricIds, homeLink.href)
+  }
+  for (const narrative of narratives ?? []) {
+    for (const section of narrative.sections) {
+      markMetricsUsed(section.metricIds, getNarrativeHref(narrative.id))
+    }
+  }
+
+  // 출처 레지스트리의 사용 페이지가 실제 라우트·실제 사용과 일치하는지
   const routes = new Set([
     homeLink.href,
     ...narrativePages.map(page => getNarrativeHref(page.slug)),
@@ -201,6 +255,13 @@ async function main(): Promise<void> {
     }
     if (!usedSourceIds.has(source.id) && source.pages.length > 0) {
       warnings.push(`데이터에서 참조되지 않는 출처: ${source.id}`)
+    }
+    const expected = [...(actualPages.get(source.id) ?? [])].sort()
+    const declared = [...source.pages].sort()
+    if (expected.join() !== declared.join()) {
+      errors.push(
+        `sources.json '${source.id}' pages 불일치 — 실제 사용: [${expected.join(', ')}]`
+      )
     }
   }
 

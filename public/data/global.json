@@ -3,7 +3,8 @@
     "latam-weverse-user-growth-2025",
     "latam-weverse-retail-growth-2025",
     "north-america-export-change",
-    "china-export-change"
+    "china-export-change",
+    "japan-album-export-change"
   ],
   "regionExports": {
     "confidence": "unverified",
@@ -14,8 +15,16 @@
     "toYear": 2023,
     "note": "KOSIS 방송콘텐츠 수출 통계를 음악 수출의 프록시로 사용",
     "rows": [
-      { "region": "북미", "from": 40.0, "to": 171.53 },
-      { "region": "중화권", "from": 109.63, "to": 26.22 }
+      {
+        "region": "북미",
+        "from": 40.0,
+        "to": 171.53
+      },
+      {
+        "region": "중화권",
+        "from": 109.63,
+        "to": 26.22
+      }
     ]
   },
   "promisingRegions": {
@@ -31,12 +40,30 @@
     "isDummy": true,
     "note": "화면 구성용 더미 데이터 — Task 014에서 Google Trends 실데이터로 교체",
     "rows": [
-      { "country": "필리핀", "interest": 100 },
-      { "country": "인도네시아", "interest": 82 },
-      { "country": "브라질", "interest": 61 },
-      { "country": "멕시코", "interest": 57 },
-      { "country": "미국", "interest": 34 },
-      { "country": "일본", "interest": 22 }
+      {
+        "country": "필리핀",
+        "interest": 100
+      },
+      {
+        "country": "인도네시아",
+        "interest": 82
+      },
+      {
+        "country": "브라질",
+        "interest": 61
+      },
+      {
+        "country": "멕시코",
+        "interest": 57
+      },
+      {
+        "country": "미국",
+        "interest": 34
+      },
+      {
+        "country": "일본",
+        "interest": 22
+      }
     ]
   }
 }

@@ -198,7 +198,11 @@
     "publisher": "한국경제",
     "title": "일본향 음반·DVD 수출 61% 감소 기사",
     "year": 2026,
-    "pages": ["/metrics/concentration", "/narratives/realignment"]
+    "pages": [
+      "/metrics/concentration",
+      "/metrics/global",
+      "/narratives/realignment"
+    ]
   },
   {
     "id": "circle-chart-top100",

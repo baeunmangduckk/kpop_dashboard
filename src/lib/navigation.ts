@@ -51,6 +51,13 @@ export function getNarrative(slug: string): Narrative | undefined {
   return narratives.find(narrative => narrative.slug === slug)
 }
 
+// 서사 순서 표기 (①②③)
+const ORDER_MARKS = ['①', '②', '③']
+
+export function getNarrativeMark(order: number): string {
+  return ORDER_MARKS[order - 1] ?? String(order)
+}
+
 export function getNarrativeHref(slug: string): string {
   return `/narratives/${slug}`
 }

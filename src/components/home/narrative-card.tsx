@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { CONFIDENCE_META } from '@/lib/confidence'
+import { getNarrativeMark } from '@/lib/navigation'
 import type { Confidence } from '@/lib/schemas'
 
 interface NarrativeCardProps {
@@ -13,8 +14,6 @@ interface NarrativeCardProps {
   // 근거 지표의 신뢰도 라벨별 개수
   confidenceCounts: Record<Confidence, number>
 }
-
-const ORDER_MARK = ['①', '②', '③']
 
 // 홈의 서사 요약 카드 - 카드 전체가 서사 상세로 이동
 export function NarrativeCard({
@@ -34,7 +33,7 @@ export function NarrativeCard({
     <Card className="hover:border-ring/60 relative gap-3 py-5 transition-colors">
       <CardHeader className="gap-2 px-5">
         <p className="text-primary text-sm font-medium">
-          서사 {ORDER_MARK[order - 1] ?? order}
+          서사 {getNarrativeMark(order)}
         </p>
         <h3 className="text-lg leading-snug font-semibold break-keep">
           <Link

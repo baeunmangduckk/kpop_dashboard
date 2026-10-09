@@ -329,11 +329,13 @@
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | `metrics.json`                                   | 전체 Metric 레지스트리 + 홈 KPI 6종 순서(`homeKpiIds`)                                                       |
 | `insights.json`, `narratives.json`               | Insight[], Narrative[]                                                                                       |
+| `sources.json`, `discrepancies.json`             | Source[] (출처 레지스트리), Discrepancy[] (알려진 불일치)                                                    |
 | `market.json` ~ `ai-virtual.json` (7종)          | 페이지별 묶음: 핵심 지표 `metricIds` + 차트·표 블록. 블록마다 `confidence`·`sourceIds`(1개 이상)를 함께 보관 |
 | `trends.json`, `global.json`의 `countryInterest` | Google Trends 연동(Task 014) 전까지 `isDummy: true` 더미 데이터                                              |
 
 - 스키마: `src/lib/schemas/` (모델), `src/lib/schemas/datasets/` (파일 단위)
 - 로더: `src/lib/data/` — 서버에서 읽고 Zod 검증, 실패 시 파일명·필드 경로가 담긴 `DataLoadError`
+- 무결성 검증: `npm run validate:data` (`scripts/validate-data.ts`, `check-all`에 포함) — 라벨 부착률·출처 연결률 100%, 미정의 참조·라우트·중복 id 탐지
 - 캐시: 정적 페이지는 빌드 시 1회 읽으므로 JSON 갱신 후 재빌드 필요 (개발 서버는 요청마다 반영)
 
 ## 🛠️ 기술 스택 (최신 버전)

@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import {
+  confidenceSchema,
   idSchema,
   isoDateSchema,
   sourceIdsSchema,
@@ -13,6 +14,7 @@ export const virtualCaseSchema = z.object({
   agency: z.string().min(1),
   debutDate: isoDateSchema,
   summary: z.string().min(1),
+  confidence: confidenceSchema,
   sourceIds: sourceIdsSchema,
 })
 

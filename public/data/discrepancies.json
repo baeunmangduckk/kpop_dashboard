@@ -1,0 +1,38 @@
+[
+  {
+    "metricId": "hybe-operating-profit-2025",
+    "adopted": {
+      "value": 493.18,
+      "sourceId": "opendart"
+    },
+    "alternative": {
+      "value": 499,
+      "sourceId": "straightnews-hybe"
+    },
+    "note": "DART 연결 손익계산서 직접 집계(493.2억원, YoY -73.2%)와 보도·최초 기획 문서(499억원, YoY -72.9%)가 다르다. 산출 기준 차이는 확인되지 않았으며 DART 원자료를 1차 출처로 채택했다."
+  },
+  {
+    "metricId": "sales-gini-2025",
+    "adopted": {
+      "value": -0.0073,
+      "sourceId": "circle-chart-top100"
+    },
+    "alternative": {
+      "value": -0.0076,
+      "sourceId": "circle-chart-top100"
+    },
+    "note": "판매량 집중도(Gini) 전년 대비 증감이 홈 KPI(-0.0073)와 판매 집중도 화면(-0.0076)에서 다르게 집계됐다. 반올림·산출 시점 차이로 추정되나 원인은 미확인이다."
+  },
+  {
+    "metricId": "top100-total-sales-2025",
+    "adopted": {
+      "value": 64615322,
+      "sourceId": "circle-chart-top100"
+    },
+    "alternative": {
+      "value": 35300000,
+      "sourceId": "circle-chart-top100"
+    },
+    "note": "큐레이션 계열 값(6,462만 장)과 circlechart.kr 원자료를 직접 집계한 값(약 3,530만 장)이 크게 다르다. 원인은 미확인이며 큐레이션 계열을 채택했다."
+  }
+]

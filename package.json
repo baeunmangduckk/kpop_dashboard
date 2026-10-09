@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
-    "check-all": "npm run typecheck && npm run lint && npm run format:check",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "check-all": "npm run validate:data && npm run typecheck && npm run lint && npm run format:check",
     "prepare": "husky"
   },
   "dependencies": {
@@ -56,6 +57,7 @@
     "prettier-plugin-tailwindcss": "^0.6.14",
     "shadcn": "^3.3.1",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5"
   },

@@ -139,6 +139,16 @@
       "note": "전년 대비 %p"
     },
     {
+      "id": "hybe-operating-profit-2025",
+      "label": "하이브 영업이익",
+      "value": 493.18,
+      "unit": "억원",
+      "delta": -1347.27,
+      "confidence": "verified",
+      "sourceIds": ["opendart"],
+      "note": "2025년 연결 기준, YoY -73.2%. 보도 기준 499억원과 차이 (출처·신뢰도 불일치 목록 참고)"
+    },
+    {
       "id": "hybe-operating-margin-2025",
       "label": "하이브 영업이익률",
       "value": 1.86,

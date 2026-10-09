@@ -2,18 +2,43 @@
   "metricIds": [
     "big4-revenue-2025",
     "big4-operating-profit-2025",
+    "hybe-operating-profit-2025",
     "big4-operating-margin-2025",
     "major-mid-q1-revenue-gap"
   ],
   "companies": [
-    { "name": "하이브", "tier": "major" },
-    { "name": "SM엔터테인먼트", "tier": "major" },
-    { "name": "YG엔터테인먼트", "tier": "major" },
-    { "name": "JYP엔터테인먼트", "tier": "major" },
-    { "name": "FNC엔터테인먼트", "tier": "mid" },
-    { "name": "큐브엔터테인먼트", "tier": "mid" },
-    { "name": "RBW", "tier": "mid" },
-    { "name": "TN엔터테인먼트", "tier": "mid" }
+    {
+      "name": "하이브",
+      "tier": "major"
+    },
+    {
+      "name": "SM엔터테인먼트",
+      "tier": "major"
+    },
+    {
+      "name": "YG엔터테인먼트",
+      "tier": "major"
+    },
+    {
+      "name": "JYP엔터테인먼트",
+      "tier": "major"
+    },
+    {
+      "name": "FNC엔터테인먼트",
+      "tier": "mid"
+    },
+    {
+      "name": "큐브엔터테인먼트",
+      "tier": "mid"
+    },
+    {
+      "name": "RBW",
+      "tier": "mid"
+    },
+    {
+      "name": "TN엔터테인먼트",
+      "tier": "mid"
+    }
   ],
   "financials": [
     {
@@ -120,12 +145,30 @@
     "unit": "억원",
     "note": "중소 상장사 연결 재무는 Task 013 OpenDART 연동 시 추가",
     "rows": [
-      { "company": "하이브", "revenue": 6983 },
-      { "company": "YG엔터테인먼트", "revenue": 1471 },
-      { "company": "FNC엔터테인먼트", "revenue": 272 },
-      { "company": "큐브엔터테인먼트", "revenue": 151 },
-      { "company": "RBW", "revenue": 96 },
-      { "company": "TN엔터테인먼트", "revenue": 84 }
+      {
+        "company": "하이브",
+        "revenue": 6983
+      },
+      {
+        "company": "YG엔터테인먼트",
+        "revenue": 1471
+      },
+      {
+        "company": "FNC엔터테인먼트",
+        "revenue": 272
+      },
+      {
+        "company": "큐브엔터테인먼트",
+        "revenue": 151
+      },
+      {
+        "company": "RBW",
+        "revenue": 96
+      },
+      {
+        "company": "TN엔터테인먼트",
+        "revenue": 84
+      }
     ]
   }
 }

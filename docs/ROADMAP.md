@@ -3,7 +3,7 @@
 숫자의 출처와 신뢰도를 먼저 보여주고, 그 숫자들이 만드는 K-pop 산업의 이야기를 읽을 수 있는 대시보드
 
 **📅 최종 업데이트**: 2026-10-08
-**📊 진행 상황**: Phase 2 진행 중 (4/15 Tasks 완료)
+**📊 진행 상황**: Phase 2 진행 중 (5/15 Tasks 완료)
 
 ## 개요
 
@@ -73,13 +73,14 @@ K-POP 산업 인사이트 대시보드는 산업 분석가·기획사/투자 관
   - ✅ 보고서 수치 기반 더미 JSON: metrics, insights, narratives, market, concentration, finance, fans, global, trends, ai-virtual (페이지 데이터셋 스키마 `src/lib/schemas/datasets/` 추가)
   - ✅ Playwright MCP: 잘못된 신뢰도 라벨·JSON 문법 오류 주입 시 에러 화면(`app/error.tsx`) 표시, 복구 후 정상 표시 확인
 
-- **Task 005: 출처 레지스트리 데이터와 스키마 검증 스크립트** - 우선순위
-  - `sources.json` 작성 (발행처·제목·연도·URL·사용 페이지)
-  - 알려진 불일치 데이터 작성 (하이브 2025 영업이익 DART 493.2억 vs 보도 499억)
-  - 검증 스크립트: 전체 JSON 스키마 검사, 신뢰도 라벨 부착률 100%, 출처 연결률 100%, 존재하지 않는 sourceId 탐지
-  - `package.json`에 검증 스크립트 등록 후 `check-all`에 포함
+- **Task 005: 출처 레지스트리 데이터와 스키마 검증 스크립트** ✅ - 완료
+  - ✅ `sources.json` 작성 (출처 37개: 지표 사용 31개 + 참고용 6개, 사용 페이지는 실제 라우트. 보고서에 원문 URL이 없어 URL은 미기재)
+  - ✅ 알려진 불일치 3건 (하이브 2025 영업이익 DART 493.2억 vs 보도 499억, Gini 증감 -0.0073 vs -0.0076, Top100 총판매량 큐레이션 vs 원자료 집계)
+  - ✅ 검증 스크립트(`scripts/validate-data.ts`): 전체 JSON 스키마 검사, 신뢰도 라벨 부착률·출처 연결률 100%, 미정의 sourceId·metricId·라우트, 중복 id 탐지
+  - ✅ `package.json`에 `validate:data` 등록 후 `check-all`에 포함 (`tsx` 개발 의존성 추가)
+  - ✅ 로더 `getSources`·`getDiscrepancies`와 출처·신뢰도 페이지 연결, 잘못된 참조 주입 시 검증 실패·Playwright 표시 확인
 
-- **Task 006: 신뢰도·출처 공통 컴포넌트 구현**
+- **Task 006: 신뢰도·출처 공통 컴포넌트 구현** - 우선순위
   - `ConfidenceBadge`: verified 초록 / estimated 노랑(산출 방식 툴팁) / unverified 회색 '미검증'
   - `SourceCitation`: 출처·기준일 표시, 클릭 시 출처·신뢰도 페이지 이동
   - `NarrativeSection`: 서사 문단 + 인라인 차트 + 근거 지표 링크 묶음

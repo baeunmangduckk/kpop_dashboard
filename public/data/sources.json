@@ -1,0 +1,271 @@
+[
+  {
+    "id": "opendart",
+    "publisher": "금융감독원 OpenDART",
+    "title": "상장 엔터사 사업보고서 주요계정",
+    "year": 2026,
+    "pages": ["/", "/metrics/finance", "/narratives/slowdown", "/sources"]
+  },
+  {
+    "id": "youtube-data-api",
+    "publisher": "YouTube Data API v3",
+    "title": "videos.list / commentThreads.list",
+    "year": 2026,
+    "pages": ["/metrics/fans"]
+  },
+  {
+    "id": "planning-team-report",
+    "publisher": "K-POP 대시보드 기획팀",
+    "title": "K-POP 대시보드 핵심 인사이트 보고서",
+    "year": 2026,
+    "pages": []
+  },
+  {
+    "id": "ifpi-gmr-2026",
+    "publisher": "IFPI",
+    "title": "Global Music Report 2026",
+    "year": 2026,
+    "pages": ["/", "/metrics/market", "/narratives/slowdown"]
+  },
+  {
+    "id": "luminate-2025",
+    "publisher": "Luminate",
+    "title": "2025 Year-End Music Report",
+    "year": 2026,
+    "pages": ["/metrics/market"]
+  },
+  {
+    "id": "kocca-2025-annual",
+    "publisher": "한국콘텐츠진흥원(KOCCA)",
+    "title": "2025년 4분기·연간 콘텐츠산업 동향분석보고서",
+    "year": 2026,
+    "pages": ["/metrics/market"]
+  },
+  {
+    "id": "kita-album-export",
+    "publisher": "한국무역협회/관세청(KITA)",
+    "title": "K팝 음반 수출 통계",
+    "year": 2024,
+    "pages": ["/metrics/market", "/narratives/slowdown"]
+  },
+  {
+    "id": "kosis-region-export",
+    "publisher": "KOSIS",
+    "title": "콘텐츠산업 지역별 수출액 현황",
+    "year": 2025,
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/metrics/global",
+      "/narratives/realignment"
+    ]
+  },
+  {
+    "id": "amr-kpop-event",
+    "publisher": "Allied Market Research",
+    "title": "K-pop 이벤트 시장 전망",
+    "year": 2025,
+    "pages": ["/metrics/market"]
+  },
+  {
+    "id": "mrfr-kpop-event",
+    "publisher": "Market Research Future",
+    "title": "K-pop 이벤트 시장 전망",
+    "year": 2026,
+    "pages": ["/metrics/market"]
+  },
+  {
+    "id": "mmr-kpop-event",
+    "publisher": "Maximize Market Research",
+    "title": "K-pop 이벤트 시장 전망",
+    "year": 2026,
+    "pages": ["/metrics/market"]
+  },
+  {
+    "id": "kpopmap-luminate",
+    "publisher": "Kpopmap",
+    "title": "Luminate 2025 보고서 관련 기사",
+    "year": 2026,
+    "pages": []
+  },
+  {
+    "id": "straightnews-hybe",
+    "publisher": "스트레이트뉴스",
+    "title": "하이브 2025 실적 기사",
+    "year": 2026,
+    "pages": ["/sources"]
+  },
+  {
+    "id": "ceonews-big4",
+    "publisher": "CEONEWS",
+    "title": "4대 기획사 비교분석(시총·매출)",
+    "year": 2025,
+    "pages": []
+  },
+  {
+    "id": "outlook-q1-2026-revenue",
+    "publisher": "Outlook Respawn",
+    "title": "2026 Q1 상장 기획사 매출 비교",
+    "year": 2026,
+    "pages": ["/metrics/finance", "/narratives/polarization"]
+  },
+  {
+    "id": "outlook-group-survival",
+    "publisher": "Outlook Respawn",
+    "title": "그룹 해체율 연구 (김정섭 성신여대)",
+    "year": 2025,
+    "pages": ["/", "/metrics/concentration", "/narratives/polarization"]
+  },
+  {
+    "id": "outlook-weverse-latam",
+    "publisher": "Outlook Respawn",
+    "title": "Weverse 중남미 성장 (+22% MAU / +715% 리테일)",
+    "year": 2025,
+    "pages": ["/", "/metrics/global", "/narratives/realignment"]
+  },
+  {
+    "id": "outlook-platform-q3",
+    "publisher": "Outlook Respawn",
+    "title": "Weverse vs DearU Bubble 2025 Q3 매출 비교",
+    "year": 2026,
+    "pages": ["/metrics/ai-virtual"]
+  },
+  {
+    "id": "fnnews-kakao-sm",
+    "publisher": "파이낸셜신문",
+    "title": "카카오(SM) 엔터 매출 1위 기사",
+    "year": 2025,
+    "pages": []
+  },
+  {
+    "id": "efnews-big4",
+    "publisher": "efnews",
+    "title": "4대 기획사 개별 재무제표 매출 비교",
+    "year": 2026,
+    "pages": []
+  },
+  {
+    "id": "newsen-production-gap",
+    "publisher": "뉴스엔",
+    "title": "제작비 격차 29배 기사",
+    "year": 2026,
+    "pages": ["/", "/metrics/concentration", "/narratives/polarization"]
+  },
+  {
+    "id": "thefact-polarization",
+    "publisher": "더팩트",
+    "title": "K팝 양극화 ② 기획기사",
+    "year": 2026,
+    "pages": []
+  },
+  {
+    "id": "ibtimes-fandom",
+    "publisher": "IBTimes",
+    "title": "Top 10 K-Pop 팬덤 규모 (Soundcharts 인용)",
+    "year": 2026,
+    "pages": ["/metrics/fans"]
+  },
+  {
+    "id": "soundcharts-spotify",
+    "publisher": "Soundcharts",
+    "title": "Spotify 월간 청취자 순위",
+    "year": 2026,
+    "pages": ["/metrics/fans"]
+  },
+  {
+    "id": "dkblog-youtube",
+    "publisher": "DK Blog",
+    "title": "유튜브 구독자 순위",
+    "year": 2026,
+    "pages": ["/metrics/fans"]
+  },
+  {
+    "id": "asiae-album-bubble",
+    "publisher": "Asia Business Daily",
+    "title": "실물앨범 1억 장 버블 붕괴 기사",
+    "year": 2026,
+    "pages": ["/", "/metrics/concentration", "/narratives/slowdown"]
+  },
+  {
+    "id": "keia-sustainability",
+    "publisher": "KEIA",
+    "title": "산업 지속가능성 구조적 한계 리포트",
+    "year": 2025,
+    "pages": ["/metrics/concentration"]
+  },
+  {
+    "id": "hankyung-japan-export",
+    "publisher": "한국경제",
+    "title": "일본향 음반·DVD 수출 61% 감소 기사",
+    "year": 2026,
+    "pages": ["/metrics/concentration", "/narratives/realignment"]
+  },
+  {
+    "id": "circle-chart-top100",
+    "publisher": "Circle Chart",
+    "title": "연간 앨범 판매량 Top100 (2011~2025)",
+    "year": 2026,
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/narratives/polarization",
+      "/sources"
+    ]
+  },
+  {
+    "id": "mbw-weverse-mau",
+    "publisher": "MBW (Music Business Worldwide)",
+    "title": "Weverse 12M MAU 기사",
+    "year": 2026,
+    "pages": ["/metrics/ai-virtual"]
+  },
+  {
+    "id": "kofice-hallyu-2025",
+    "publisher": "KOFICE",
+    "title": "2025 해외한류실태조사",
+    "year": 2025,
+    "pages": ["/metrics/global"]
+  },
+  {
+    "id": "snsinsider-virtual",
+    "publisher": "SNS Insider",
+    "title": "글로벌 버추얼 아이돌 시장 전망",
+    "year": 2026,
+    "pages": ["/", "/metrics/ai-virtual", "/narratives/realignment"]
+  },
+  {
+    "id": "kculture-ai-share",
+    "publisher": "K Culture Guide",
+    "title": "AI 그룹 매출 비중 1.1% 기사",
+    "year": 2026,
+    "pages": ["/metrics/ai-virtual", "/narratives/realignment"]
+  },
+  {
+    "id": "wiki-plave",
+    "publisher": "Wikipedia",
+    "title": "Plave",
+    "year": 2026,
+    "pages": ["/metrics/ai-virtual"]
+  },
+  {
+    "id": "wiki-mave",
+    "publisher": "Wikipedia",
+    "title": "Mave:",
+    "year": 2026,
+    "pages": ["/metrics/ai-virtual"]
+  },
+  {
+    "id": "wiki-naevis",
+    "publisher": "Wikipedia",
+    "title": "Naevis",
+    "year": 2026,
+    "pages": ["/metrics/ai-virtual"]
+  },
+  {
+    "id": "google-trends",
+    "publisher": "Google Trends",
+    "title": "K-pop 키워드 검색 관심도 (Task 014 연동 전 더미)",
+    "year": 2026,
+    "pages": ["/metrics/global", "/metrics/trends"]
+  }
+]

@@ -1,46 +1,23 @@
 import { cache } from 'react'
-import {
-  aiVirtualDataSchema,
-  concentrationDataSchema,
-  fansDataSchema,
-  financeDataSchema,
-  globalDataSchema,
-  insightsSchema,
-  marketDataSchema,
-  metricRegistrySchema,
-  narrativesSchema,
-  trendsDataSchema,
-} from '@/lib/schemas'
+import type { z } from 'zod'
+import { DATA_FILES } from './files'
 import { loadJson } from './loader'
 
 export { DataLoadError } from './loader'
 
 // 한 번의 렌더링 안에서 같은 파일을 여러 컴포넌트가 요청해도 1회만 읽는다
-export const getMetricRegistry = cache(() =>
-  loadJson('metrics.json', metricRegistrySchema)
-)
-export const getInsights = cache(() =>
-  loadJson('insights.json', insightsSchema)
-)
-export const getNarratives = cache(() =>
-  loadJson('narratives.json', narrativesSchema)
-)
-export const getMarketData = cache(() =>
-  loadJson('market.json', marketDataSchema)
-)
-export const getConcentrationData = cache(() =>
-  loadJson('concentration.json', concentrationDataSchema)
-)
-export const getFinanceData = cache(() =>
-  loadJson('finance.json', financeDataSchema)
-)
-export const getFansData = cache(() => loadJson('fans.json', fansDataSchema))
-export const getGlobalData = cache(() =>
-  loadJson('global.json', globalDataSchema)
-)
-export const getTrendsData = cache(() =>
-  loadJson('trends.json', trendsDataSchema)
-)
-export const getAiVirtualData = cache(() =>
-  loadJson('ai-virtual.json', aiVirtualDataSchema)
-)
+const load = <T extends z.ZodType>(entry: { file: string; schema: T }) =>
+  cache(() => loadJson(entry.file, entry.schema))
+
+export const getMetricRegistry = load(DATA_FILES.metrics)
+export const getInsights = load(DATA_FILES.insights)
+export const getNarratives = load(DATA_FILES.narratives)
+export const getSources = load(DATA_FILES.sources)
+export const getDiscrepancies = load(DATA_FILES.discrepancies)
+export const getMarketData = load(DATA_FILES.market)
+export const getConcentrationData = load(DATA_FILES.concentration)
+export const getFinanceData = load(DATA_FILES.finance)
+export const getFansData = load(DATA_FILES.fans)
+export const getGlobalData = load(DATA_FILES.global)
+export const getTrendsData = load(DATA_FILES.trends)
+export const getAiVirtualData = load(DATA_FILES.aiVirtual)

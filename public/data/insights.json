@@ -39,7 +39,7 @@
     "kind": "manual",
     "tone": "warning",
     "text": "하이브는 2025년 역대 최고 매출(2조 6,499억원, YoY +17.5%)을 기록했지만 영업이익은 급감해 매출 최고치 속 수익성 악화 신호가 나타나고 있다. 영업이익은 DART 원자료 기준 493.2억원이며, 보도 기준 499억원과 차이가 있다.",
-    "metricIds": ["hybe-operating-margin-2025"]
+    "metricIds": ["hybe-operating-profit-2025", "hybe-operating-margin-2025"]
   },
   {
     "id": "manual-production-cost-gap",

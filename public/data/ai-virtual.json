@@ -16,12 +16,30 @@
     "cagr": 16.82,
     "note": "2025년 22.7억 달러에 CAGR 16.82%를 복리 적용한 추정 경로",
     "points": [
-      { "year": 2025, "value": 22.7 },
-      { "year": 2027, "value": 31.0 },
-      { "year": 2029, "value": 42.3 },
-      { "year": 2031, "value": 57.7 },
-      { "year": 2033, "value": 78.7 },
-      { "year": 2035, "value": 107.4 }
+      {
+        "year": 2025,
+        "value": 22.7
+      },
+      {
+        "year": 2027,
+        "value": 31.0
+      },
+      {
+        "year": 2029,
+        "value": 42.3
+      },
+      {
+        "year": 2031,
+        "value": 57.7
+      },
+      {
+        "year": 2033,
+        "value": 78.7
+      },
+      {
+        "year": 2035,
+        "value": 107.4
+      }
     ]
   },
   "cases": [
@@ -31,6 +49,7 @@
       "agency": "Vlast",
       "debutDate": "2023-03-12",
       "summary": "5인조 버추얼 아이돌. 2025년 'Dash'로 K/DA 이후 최초로 Billboard Global 200에 진입한 가상 아티스트이며, 3rd 미니앨범 'Caligo Pt.1'이 첫 주 100만 장 이상 판매됐다.",
+      "confidence": "unverified",
       "sourceIds": ["wiki-plave"]
     },
     {
@@ -39,6 +58,7 @@
       "agency": "메타버스 엔터테인먼트(넷마블)",
       "debutDate": "2023-01-25",
       "summary": "카카오엔터테인먼트가 투자·배급에 참여했고 생성형 AI를 활용한 고예산 데뷔로 화제가 됐다. 데뷔 싱글은 'Pandora's Box'.",
+      "confidence": "unverified",
       "sourceIds": ["wiki-mave"]
     },
     {
@@ -47,6 +67,7 @@
       "agency": "SM엔터테인먼트",
       "debutDate": "2024-09-10",
       "summary": "aespa 세계관 기반 버추얼 아티스트. 데뷔곡 'Done' 발매 후 활동이 뜸하고 팬 반응은 엇갈린다.",
+      "confidence": "unverified",
       "sourceIds": ["wiki-naevis"]
     }
   ]

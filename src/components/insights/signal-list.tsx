@@ -1,4 +1,5 @@
 import { ConfidenceBadge, SourceCitation } from '@/components/confidence'
+import { EmptyState } from '@/components/layout/empty-state'
 import type { Signal } from '@/lib/schemas'
 import type { Source } from '@/lib/schemas'
 import { resolveSources } from '@/lib/sources'
@@ -11,6 +12,9 @@ interface SignalListProps {
 
 // 지속가능성 리스크·기회 신호 목록 - 신호마다 신뢰도·출처 표기
 export function SignalList({ signals, sources }: SignalListProps) {
+  if (signals.length === 0)
+    return <EmptyState message="현재 기록된 신호가 없습니다." />
+
   return (
     <ul className="grid gap-3 md:grid-cols-2">
       {signals.map(signal => (

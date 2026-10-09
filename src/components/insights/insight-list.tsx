@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
+import { EmptyState } from '@/components/layout/empty-state'
 import type { Insight } from '@/lib/schemas'
 import { cn } from '@/lib/utils'
 import { ToneLabel } from './tone-label'
@@ -19,6 +20,9 @@ interface InsightListProps {
 
 // 자동(규칙 기반)·수동(큐레이션) 인사이트 목록
 export function InsightList({ insights, hrefs, className }: InsightListProps) {
+  if (insights.length === 0)
+    return <EmptyState message="표시할 인사이트가 없습니다." />
+
   return (
     <ul className={cn('divide-y', className)}>
       {insights.map(insight => {

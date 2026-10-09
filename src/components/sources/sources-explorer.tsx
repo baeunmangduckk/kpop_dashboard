@@ -98,9 +98,9 @@ export function SourcesExplorer({ rows }: SourcesExplorerProps) {
       <div className="bg-card overflow-x-auto rounded-xl border">
         <table
           aria-label="출처 레지스트리"
-          className="w-full text-left text-sm"
+          className="w-full text-left text-sm max-md:block"
         >
-          <thead>
+          <thead className="max-md:sr-only">
             <tr className="border-b">
               {[
                 '발행처·제목',
@@ -119,19 +119,27 @@ export function SourcesExplorer({ rows }: SourcesExplorerProps) {
               ))}
             </tr>
           </thead>
-          <tbody>
+          <tbody className="max-md:block">
             {filtered.map(row => (
               <tr
                 key={row.id}
                 id={`source-${row.id}`}
-                className="target:bg-muted data-hash-target:bg-muted scroll-mt-24 border-b align-top last:border-0"
+                className="target:bg-muted data-hash-target:bg-muted scroll-mt-24 border-b align-top last:border-0 max-md:block max-md:py-2"
               >
-                <td className="min-w-48 px-3 py-3">
+                <td className="px-3 py-3 max-md:block max-md:pb-1 md:min-w-48">
                   <p className="font-medium">{row.publisher}</p>
                   <p className="text-muted-foreground text-xs">{row.title}</p>
                 </td>
-                <td className="px-3 py-3 tabular-nums">{row.year}</td>
-                <td className="px-3 py-3">
+                <td
+                  data-label="연도"
+                  className="max-md:before:text-muted-foreground px-3 py-3 tabular-nums max-md:flex max-md:items-start max-md:gap-3 max-md:py-1.5 max-md:before:w-16 max-md:before:shrink-0 max-md:before:pt-0.5 max-md:before:text-[11px] max-md:before:content-[attr(data-label)]"
+                >
+                  {row.year}
+                </td>
+                <td
+                  data-label="신뢰도"
+                  className="max-md:before:text-muted-foreground px-3 py-3 max-md:flex max-md:items-start max-md:gap-3 max-md:py-1.5 max-md:before:w-16 max-md:before:shrink-0 max-md:before:pt-0.5 max-md:before:text-[11px] max-md:before:content-[attr(data-label)]"
+                >
                   {row.confidences.length > 0 ? (
                     <div className="flex flex-wrap gap-1">
                       {row.confidences.map(level => (
@@ -144,8 +152,14 @@ export function SourcesExplorer({ rows }: SourcesExplorerProps) {
                     </span>
                   )}
                 </td>
-                <td className="px-3 py-3">
+                <td
+                  data-label="사용 페이지"
+                  className="max-md:before:text-muted-foreground px-3 py-3 max-md:flex max-md:items-start max-md:gap-3 max-md:py-1.5 max-md:before:w-16 max-md:before:shrink-0 max-md:before:pt-0.5 max-md:before:text-[11px] max-md:before:content-[attr(data-label)]"
+                >
                   <ul className="space-y-1 text-xs">
+                    {row.pages.length === 0 && (
+                      <li className="text-muted-foreground">—</li>
+                    )}
                     {row.pages.map(item => (
                       <li key={item.href}>
                         <Link
@@ -158,8 +172,14 @@ export function SourcesExplorer({ rows }: SourcesExplorerProps) {
                     ))}
                   </ul>
                 </td>
-                <td className="min-w-48 px-3 py-3">
+                <td
+                  data-label="사용 지표"
+                  className="max-md:before:text-muted-foreground px-3 py-3 max-md:flex max-md:items-start max-md:gap-3 max-md:py-1.5 max-md:before:w-16 max-md:before:shrink-0 max-md:before:pt-0.5 max-md:before:text-[11px] max-md:before:content-[attr(data-label)] md:min-w-48"
+                >
                   <ul className="space-y-1 text-xs">
+                    {row.metrics.length === 0 && (
+                      <li className="text-muted-foreground">—</li>
+                    )}
                     {row.metrics.map(metric => (
                       <li key={metric.id}>
                         {metric.href ? (
@@ -178,6 +198,16 @@ export function SourcesExplorer({ rows }: SourcesExplorerProps) {
                 </td>
               </tr>
             ))}
+            {filtered.length === 0 && (
+              <tr className="max-md:block">
+                <td
+                  colSpan={5}
+                  className="text-muted-foreground px-3 py-8 text-center text-sm max-md:block"
+                >
+                  조건에 맞는 출처가 없습니다.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>

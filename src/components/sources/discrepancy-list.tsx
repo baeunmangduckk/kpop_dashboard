@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { EmptyState } from '@/components/layout/empty-state'
 import { formatMetricValue } from '@/lib/format'
 import type { Discrepancy, Metric, Source } from '@/lib/schemas'
 import { getSourceAnchorHref } from '@/lib/sources'
@@ -19,6 +20,9 @@ export function DiscrepancyList({
 }: DiscrepancyListProps) {
   const publisher = (id: string) =>
     sources.find(source => source.id === id)?.publisher ?? id
+
+  if (discrepancies.length === 0)
+    return <EmptyState message="현재 알려진 불일치가 없습니다." />
 
   return (
     <ul className="space-y-3">

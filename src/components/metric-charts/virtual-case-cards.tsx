@@ -1,4 +1,5 @@
 import { ConfidenceBadge, SourceCitation } from '@/components/confidence'
+import { EmptyState } from '@/components/layout/empty-state'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { getAiVirtualData, getSources } from '@/lib/data'
@@ -16,6 +17,9 @@ export async function VirtualCaseCards() {
     getAiVirtualData(),
     getSources(),
   ])
+
+  if (cases.length === 0)
+    return <EmptyState message="등록된 사례가 없습니다." />
 
   return (
     <div className="grid gap-4 md:grid-cols-3">

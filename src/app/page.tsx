@@ -95,12 +95,22 @@ export default async function Home() {
             description="수동은 분석가가 작성한 해석, 자동은 지표 변화로 생성한 문장입니다."
             className="lg:col-span-2"
           >
-            <div className="bg-card space-y-6 rounded-xl border p-5">
-              <InsightList insights={manual} hrefs={insightHrefs} />
-              <div className="border-t pt-5">
-                <InsightList insights={auto} hrefs={insightHrefs} />
+            {insights.length === 0 ? (
+              <InsightList insights={[]} hrefs={insightHrefs} />
+            ) : (
+              // 수동(해석) → 자동(지표 변화) 순서, 비어 있는 묶음은 생략
+              <div className="bg-card divide-y rounded-xl border px-5 [&>*]:py-5">
+                {[manual, auto]
+                  .filter(group => group.length > 0)
+                  .map(group => (
+                    <InsightList
+                      key={group[0].kind}
+                      insights={group}
+                      hrefs={insightHrefs}
+                    />
+                  ))}
               </div>
-            </div>
+            )}
           </PageSection>
           <PageSection title="신뢰도 분포" description="전체 지표의 검증 상태">
             <div className="bg-card rounded-xl border p-5">

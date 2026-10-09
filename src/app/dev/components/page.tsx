@@ -12,6 +12,7 @@ import { CONFIDENCE_LEVELS, type Metric } from '@/lib/schemas'
 import { getMetricRegistry, getNarratives, getSources } from '@/lib/data'
 import { getMetricHrefMap } from '@/lib/data/metric-pages'
 import { resolveSources } from '@/lib/sources'
+import { ChartShowcase } from './chart-showcase'
 
 export const metadata: Metadata = {
   title: '컴포넌트 쇼케이스',
@@ -117,6 +118,7 @@ export default async function ComponentShowcasePage() {
             </NarrativeSection>
           </section>
         )}
+        <ChartShowcase />
       </Container>
     </>
   )

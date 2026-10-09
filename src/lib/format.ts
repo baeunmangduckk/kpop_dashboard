@@ -24,6 +24,18 @@ export function formatMetricValue(value: number | null, unit: string): string {
   return withUnit(numberFormat.format(value), unit)
 }
 
+// 차트 축 눈금용 축약 표기 (360px 화면에서 겹치지 않도록 억·만 단위로 줄임)
+const compactFormat = new Intl.NumberFormat('ko-KR', {
+  maximumFractionDigits: 1,
+})
+
+export function formatCompact(value: number): string {
+  const abs = Math.abs(value)
+  if (abs >= 1e8) return `${compactFormat.format(value / 1e8)}억`
+  if (abs >= 1e4) return `${compactFormat.format(value / 1e4)}만`
+  return compactFormat.format(value)
+}
+
 export function formatDelta(
   delta: number | null,
   unit: string

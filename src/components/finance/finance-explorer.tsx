@@ -1,6 +1,7 @@
 'use client'
 
 import { BarChart, ChartFrame, type ChartSeries } from '@/components/charts'
+import { FilterGroup, ToggleChip } from '@/components/filters/toggle-chip'
 import { Button } from '@/components/ui/button'
 import { describeChange, operatingMargin } from '@/lib/finance'
 import { formatMetricValue } from '@/lib/format'
@@ -173,45 +174,5 @@ export function FinanceExplorer({
         }}
       />
     </div>
-  )
-}
-
-function FilterGroup({
-  label,
-  children,
-}: {
-  label: string
-  children: React.ReactNode
-}) {
-  return (
-    <div className="flex flex-wrap items-center gap-2">
-      <span className="text-muted-foreground w-8 shrink-0 text-xs font-medium">
-        {label}
-      </span>
-      {children}
-    </div>
-  )
-}
-
-function ToggleChip({
-  label,
-  pressed,
-  onClick,
-}: {
-  label: string
-  pressed: boolean
-  onClick: () => void
-}) {
-  return (
-    <Button
-      type="button"
-      size="sm"
-      variant={pressed ? 'secondary' : 'outline'}
-      aria-pressed={pressed}
-      onClick={onClick}
-      className={pressed ? 'border-ring/40 border' : 'text-muted-foreground'}
-    >
-      {label}
-    </Button>
   )
 }

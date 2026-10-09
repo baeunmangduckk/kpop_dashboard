@@ -135,6 +135,17 @@ export function getMetricPage(href: string): NavLink {
   return page
 }
 
+// 라우트 경로 → 화면 이름 (출처 레지스트리의 사용 페이지 표시용)
+export function getRouteTitle(href: string): string {
+  if (href === homeLink.href) return homeLink.title
+  if (href === sourcesLink.href) return sourcesLink.title
+  const narrative = narratives.find(
+    item => getNarrativeHref(item.slug) === href
+  )
+  if (narrative) return `서사 ${getNarrativeMark(narrative.order)}`
+  return metricPages.find(item => item.href === href)?.title ?? href
+}
+
 export function isNavGroup(entry: NavEntry): entry is NavGroup {
   return 'items' in entry
 }

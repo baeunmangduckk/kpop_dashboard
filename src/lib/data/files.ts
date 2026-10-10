@@ -11,7 +11,6 @@ import {
   metricRegistrySchema,
   narrativesSchema,
   sourcesSchema,
-  trendsDataSchema,
 } from '@/lib/schemas'
 
 // public/data 파일과 스키마의 단일 목록 - 페이지 로더와 검증 스크립트가 함께 사용
@@ -29,7 +28,6 @@ export const DATA_FILES = {
   finance: { file: 'finance.json', schema: financeDataSchema },
   fans: { file: 'fans.json', schema: fansDataSchema },
   global: { file: 'global.json', schema: globalDataSchema },
-  trends: { file: 'trends.json', schema: trendsDataSchema },
   aiVirtual: { file: 'ai-virtual.json', schema: aiVirtualDataSchema },
   albumSales: { file: 'album-sales.json', schema: albumSalesDataSchema },
 } as const

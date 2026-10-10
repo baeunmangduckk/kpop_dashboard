@@ -90,11 +90,6 @@ export const metricPages: NavLink[] = [
     description: '중화권·일본 축소와 북미·신흥시장 부상',
   },
   {
-    title: '트렌드 전망',
-    href: '/metrics/trends',
-    description: '검색 관심도 기반 선행 신호',
-  },
-  {
     title: 'AI·버추얼',
     href: '/metrics/ai-virtual',
     description: '버추얼·AI 아이돌 초기 시장 추적',

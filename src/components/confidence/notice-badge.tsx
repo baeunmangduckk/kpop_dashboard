@@ -1,15 +1,14 @@
-import { CircleDashed, FlaskConical, Gauge, Shuffle, Users } from 'lucide-react'
+import { CircleDashed, Gauge, Shuffle, Users } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
-export type NoticeKind = 'proxy' | 'missing' | 'relative' | 'sample' | 'dummy'
+export type NoticeKind = 'proxy' | 'missing' | 'relative' | 'sample'
 
 const NOTICE = {
   proxy: { label: '프록시 데이터', icon: Shuffle },
   missing: { label: '결측 포함', icon: CircleDashed },
   relative: { label: '상대지수', icon: Gauge },
   sample: { label: '표본', icon: Users },
-  dummy: { label: '더미 데이터', icon: FlaskConical },
 } satisfies Record<NoticeKind, { label: string; icon: typeof Shuffle }>
 
 interface NoticeBadgeProps {
@@ -19,7 +18,7 @@ interface NoticeBadgeProps {
   className?: string
 }
 
-// 데이터 해석 주의 안내 배지 - 프록시·결측·상대지수·표본·더미 여부를 표시
+// 데이터 해석 주의 안내 배지 - 프록시·결측·상대지수·표본 여부를 표시
 export function NoticeBadge({ kind, detail, className }: NoticeBadgeProps) {
   const { label, icon: Icon } = NOTICE[kind]
 

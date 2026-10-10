@@ -264,12 +264,5 @@
     "title": "Naevis",
     "year": 2026,
     "pages": ["/metrics/ai-virtual"]
-  },
-  {
-    "id": "google-trends",
-    "publisher": "Google Trends",
-    "title": "K-pop 키워드 검색 관심도 (Task 014 연동 전 더미)",
-    "year": 2026,
-    "pages": ["/metrics/global", "/metrics/trends"]
   }
 ]

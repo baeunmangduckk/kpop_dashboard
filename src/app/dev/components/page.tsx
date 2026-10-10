@@ -74,7 +74,6 @@ export default async function ComponentShowcasePage() {
             <NoticeBadge kind="missing" detail="2024년 원자료 없음" />
             <NoticeBadge kind="relative" detail="기간 내 최댓값 100 기준" />
             <NoticeBadge kind="sample" detail="n=500 · 2026-09-28 수집" />
-            <NoticeBadge kind="dummy" detail="Task 014에서 교체" />
           </div>
         </section>
 

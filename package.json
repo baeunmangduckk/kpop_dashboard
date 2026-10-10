@@ -16,8 +16,7 @@
     "prepare": "husky",
     "collect:dart": "tsx --env-file=.env.local scripts/collect/dart.ts",
     "collect:youtube": "tsx --env-file=.env.local scripts/collect/youtube.ts",
-    "collect:circlechart": "tsx scripts/collect/circlechart.ts",
-    "import:trends": "tsx scripts/collect/import-trends.ts"
+    "collect:circlechart": "tsx scripts/collect/circlechart.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

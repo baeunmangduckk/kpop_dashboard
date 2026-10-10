@@ -10,7 +10,6 @@ import {
   getMarketData,
   getMetricRegistry,
   getNarratives,
-  getTrendsData,
 } from '.'
 
 export interface SourceUsage {
@@ -61,7 +60,6 @@ export const getSourceUsage = cache(
       getFinanceData(),
       getFansData(),
       getGlobalData(),
-      getTrendsData(),
       getAiVirtualData(),
     ])
 

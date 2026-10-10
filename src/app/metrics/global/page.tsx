@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
-import { CountryInterestChart } from '@/components/metric-charts/country-interest-chart'
 import { MetricGrid } from '@/components/metric-charts/metric-grid'
 import { PromisingRegions } from '@/components/metric-charts/promising-regions'
 import { RegionExportsChart } from '@/components/metric-charts/region-exports-chart'
@@ -12,7 +9,6 @@ import { getGlobalData } from '@/lib/data'
 import { getMetricPage } from '@/lib/navigation'
 
 const page = getMetricPage('/metrics/global')
-const trendsPage = getMetricPage('/metrics/trends')
 
 export const metadata: Metadata = {
   title: page.title,
@@ -42,20 +38,6 @@ export default async function GlobalPage() {
             <RegionExportsChart />
             <PromisingRegions />
           </div>
-        </PageSection>
-        <PageSection
-          title="국가별 검색 관심도"
-          action={
-            <Link
-              href={trendsPage.href}
-              className="text-primary inline-flex items-center gap-1 text-sm font-medium underline-offset-4 hover:underline"
-            >
-              트렌드 전망에서 자세히
-              <ArrowRight className="size-3.5" aria-hidden />
-            </Link>
-          }
-        >
-          <CountryInterestChart />
         </PageSection>
       </Container>
     </>

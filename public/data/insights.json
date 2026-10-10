@@ -10,7 +10,7 @@
     "id": "auto-latam-weverse-retail",
     "kind": "auto",
     "tone": "positive",
-    "text": "중남미 Weverse 디지털 리테일 판매 성장률 지표가 직전 시점 대비 증가했다 (+715.0 %).",
+    "text": "중남미 Weverse 디지털 상품 판매 성장률 지표가 직전 시점 대비 증가했다 (+715.0 %).",
     "metricIds": ["latam-weverse-retail-growth-2025"]
   },
   {
@@ -59,8 +59,8 @@
     "id": "manual-physical-album-decline",
     "kind": "manual",
     "tone": "warning",
-    "text": "2025년 실물 음반 판매량은 9,890만 장으로 전년 대비 17.7% 감소해, 9년 만에 처음으로 '1억 장 시대'가 종료됐다.",
-    "metricIds": ["physical-album-sales-2025"]
+    "text": "실물 음반 판매량은 2024년 9,890만 장으로 전년 대비 17.7% 감소해 9년 만에 처음 역성장했고, 2025년에도 8,638만 장으로 더 줄어 '1억 장 시대'가 종료됐다.",
+    "metricIds": ["physical-album-sales-2024"]
   },
   {
     "id": "manual-region-realignment",

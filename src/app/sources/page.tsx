@@ -38,6 +38,7 @@ export default async function SourcesPage() {
       publisher: source.publisher,
       title: source.title,
       year: source.year,
+      url: source.url,
       pages: source.pages.map(href => ({ href, title: getRouteTitle(href) })),
       confidences: CONFIDENCE_LEVELS.filter(level =>
         used?.confidences.has(level)

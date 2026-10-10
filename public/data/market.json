@@ -12,9 +12,9 @@
   ],
   "albumExports": {
     "confidence": "unverified",
-    "sourceIds": ["kita-album-export"],
+    "sourceIds": ["kita-album-export", "customs-album-export"],
     "unit": "백만 달러",
-    "note": "2024년 수출액은 원자료에 없어 결측으로 표시",
+    "note": "2019~2022년·2025년은 관세청 통계 보도로 확인(2025년 3억 174만 달러, +3.4%). 2023년(235)은 재확인하지 못했고 2024년은 직접 확인한 값이 없어 결측으로 표시",
     "points": [
       {
         "year": 2019,
@@ -34,7 +34,7 @@
       },
       {
         "year": 2023,
-        "value": 235.0
+        "value": 235
       },
       {
         "year": 2024,
@@ -42,9 +42,10 @@
       },
       {
         "year": 2025,
-        "value": 226.0
+        "value": 301.74
       }
-    ]
+    ],
+    "asOf": "2026-10-10"
   },
   "eventForecasts": {
     "confidence": "unverified",

@@ -8,14 +8,38 @@
     "hybe-operating-margin-2025"
   ],
   "companies": [
-    { "name": "하이브", "tier": "major" },
-    { "name": "SM엔터테인먼트", "tier": "major" },
-    { "name": "YG엔터테인먼트", "tier": "major" },
-    { "name": "JYP엔터테인먼트", "tier": "major" },
-    { "name": "FNC엔터테인먼트", "tier": "mid" },
-    { "name": "큐브엔터테인먼트", "tier": "mid" },
-    { "name": "RBW", "tier": "mid" },
-    { "name": "TN엔터테인먼트", "tier": "mid" }
+    {
+      "name": "하이브",
+      "tier": "major"
+    },
+    {
+      "name": "SM엔터테인먼트",
+      "tier": "major"
+    },
+    {
+      "name": "YG엔터테인먼트",
+      "tier": "major"
+    },
+    {
+      "name": "JYP엔터테인먼트",
+      "tier": "major"
+    },
+    {
+      "name": "FNC엔터테인먼트",
+      "tier": "mid"
+    },
+    {
+      "name": "큐브엔터테인먼트",
+      "tier": "mid"
+    },
+    {
+      "name": "RBW",
+      "tier": "mid"
+    },
+    {
+      "name": "TN엔터테인먼트",
+      "tier": "mid"
+    }
   ],
   "financials": [
     {
@@ -214,16 +238,35 @@
   "quarterlyRevenue": {
     "confidence": "estimated",
     "sourceIds": ["outlook-q1-2026-revenue"],
-    "note": "2026년 1분기 추정치. 연간 확정 실적은 회사별 실적 비교(OpenDART) 참고",
+    "note": "2026년 1분기 매출(Outlook Respawn 보도로 확인). TN엔터는 엔터테인먼트 부문 매출만 집계돼 연간 공시와 직접 비교할 수 없음",
     "period": "2026 Q1",
     "unit": "억원",
     "rows": [
-      { "company": "하이브", "revenue": 6983 },
-      { "company": "YG엔터테인먼트", "revenue": 1471 },
-      { "company": "FNC엔터테인먼트", "revenue": 272 },
-      { "company": "큐브엔터테인먼트", "revenue": 151 },
-      { "company": "RBW", "revenue": 96 },
-      { "company": "TN엔터테인먼트", "revenue": 84 }
-    ]
+      {
+        "company": "하이브",
+        "revenue": 6983
+      },
+      {
+        "company": "YG엔터테인먼트",
+        "revenue": 1471
+      },
+      {
+        "company": "FNC엔터테인먼트",
+        "revenue": 272
+      },
+      {
+        "company": "큐브엔터테인먼트",
+        "revenue": 151
+      },
+      {
+        "company": "RBW",
+        "revenue": 96
+      },
+      {
+        "company": "TN엔터테인먼트",
+        "revenue": 84
+      }
+    ],
+    "asOf": "2026-10-10"
   }
 }

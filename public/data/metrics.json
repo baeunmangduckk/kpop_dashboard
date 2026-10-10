@@ -14,19 +14,21 @@
       "value": 317,
       "unit": "억 달러",
       "delta": 19.1,
-      "confidence": "unverified",
+      "confidence": "verified",
       "sourceIds": ["ifpi-gmr-2026"],
-      "note": "2025년, 전년 대비 +6.4%, 11년 연속 성장·사상 최고치"
+      "note": "2025년, 전년 대비 +6.4%, 11년 연속 성장. IFPI 보도자료 원문에서 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "latam-weverse-retail-growth-2025",
-      "label": "중남미 Weverse 디지털 리테일 판매 성장률",
+      "label": "중남미 Weverse 디지털 상품 판매 성장률",
       "value": 715,
       "unit": "%",
       "delta": 715,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["outlook-weverse-latam"],
-      "note": "2025년 YoY"
+      "note": "2025년 YoY. Weverse 2025 Fandom Trend Report를 인용한 MBW·Outlook 보도로 확인 (원 보고서는 디지털 상품 판매 기준)",
+      "asOf": "2026-10-10"
     },
     {
       "id": "latam-weverse-user-growth-2025",
@@ -34,9 +36,10 @@
       "value": 22,
       "unit": "%",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["outlook-weverse-latam"],
-      "note": "2025년 YoY, Weverse 전체 지역 중 최고"
+      "note": "2025년 YoY, Weverse 전체 지역 중 최고. Weverse 2025 Fandom Trend Report를 인용한 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "virtual-idol-market-2025",
@@ -44,9 +47,10 @@
       "value": 22.7,
       "unit": "억 달러",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["snsinsider-virtual"],
-      "note": "글로벌 버추얼 아이돌·버튜버 시장 (2025)"
+      "note": "글로벌 버추얼 아이돌·버튜버 시장 (2025). SNS Insider 보도자료에서 확인한 리서치 기관 추정치로, 기관별 편차가 큼(13억~36억 달러)",
+      "asOf": "2026-10-10"
     },
     {
       "id": "virtual-idol-market-2035",
@@ -54,9 +58,10 @@
       "value": 107.5,
       "unit": "억 달러",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["snsinsider-virtual"],
-      "note": "CAGR 16.82%"
+      "note": "CAGR 16.82% (2026~2035). SNS Insider 보도자료에서 확인한 전망치",
+      "asOf": "2026-10-10"
     },
     {
       "id": "ai-group-revenue-share-2026",
@@ -66,7 +71,8 @@
       "delta": null,
       "confidence": "unverified",
       "sourceIds": ["kculture-ai-share"],
-      "note": "2026년, 태동 단계"
+      "note": "2026년, 태동 단계. 원문을 찾지 못해 재확인하지 못함",
+      "asOf": "2026-10-10"
     },
     {
       "id": "sales-gini-2025",
@@ -104,14 +110,15 @@
       "note": "Circle Chart 연간 앨범 차트 Top100 판매량 합계, 전년 대비 증감"
     },
     {
-      "id": "physical-album-sales-2025",
-      "label": "실물 음반 판매량",
+      "id": "physical-album-sales-2024",
+      "label": "실물 음반 판매량 (2024)",
       "value": 9890,
       "unit": "만 장",
       "delta": null,
-      "confidence": "unverified",
-      "sourceIds": ["asiae-album-bubble"],
-      "note": "전년 대비 -17.7%, 9년 만에 첫 역성장"
+      "confidence": "estimated",
+      "sourceIds": ["asiae-album-bubble", "mtn-album-sales"],
+      "note": "2024년 Circle Chart 연간 Top400 합계, 전년 대비 -17.7%로 9년 만에 첫 역성장. 2025년은 8,638만 장으로 추가 감소(MTN 보도). 2024년 수치는 보도에 따라 9,328만 장으로도 집계됨",
+      "asOf": "2026-10-10"
     },
     {
       "id": "big4-revenue-2025",
@@ -171,7 +178,9 @@
       "delta": null,
       "confidence": "estimated",
       "sourceIds": ["outlook-q1-2026-revenue"],
-      "method": "2026년 1분기 추정 매출 하이브(6,983억원) ÷ TN엔터(84억원)"
+      "method": "2026년 1분기 매출 하이브(6,983억원) ÷ TN엔터 엔터테인먼트 부문(84억원)",
+      "note": "Outlook Respawn 보도로 확인. TN엔터 수치는 회사 전체가 아닌 엔터 부문 매출이라 연간 공시 매출(2025년 1,183억원)과 직접 비교할 수 없음",
+      "asOf": "2026-10-10"
     },
     {
       "id": "korea-music-market-rank",
@@ -179,8 +188,10 @@
       "value": 7,
       "unit": "위",
       "delta": null,
-      "confidence": "unverified",
-      "sourceIds": ["ifpi-gmr-2026"]
+      "confidence": "estimated",
+      "sourceIds": ["ifpi-gmr-2026"],
+      "note": "IFPI Global Music Report 2026 국가 순위. 보고서 본문은 유료라 이를 인용한 보도·자료로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "korea-export-power-rank",
@@ -188,9 +199,10 @@
       "value": 4,
       "unit": "위",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["luminate-2025"],
-      "note": "미·영·캐나다 다음"
+      "note": "미·영·캐나다 다음. Luminate 2025 연말 보고서를 인용한 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "korea-streaming-volume-rank",
@@ -198,18 +210,21 @@
       "value": 4,
       "unit": "위",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["luminate-2025"],
-      "note": "미·영·캐나다 다음"
+      "note": "미·영·캐나다 다음, 자국 밖에서 소비된 스트리밍 기준. Luminate 2025 연말 보고서를 인용한 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "content-export-total-2025",
       "label": "콘텐츠산업 총 수출액",
-      "value": 149.6,
+      "value": 149.06,
       "unit": "억 달러",
       "delta": null,
-      "confidence": "unverified",
-      "sourceIds": ["kocca-2025-annual"]
+      "confidence": "estimated",
+      "sourceIds": ["kocca-2025-annual"],
+      "note": "2025년, 전년 대비 +5.9% (149억 582만 달러). KOCCA 연간 동향분석을 인용한 보도로 확인, 기존 표기 149.6억 달러를 정정",
+      "asOf": "2026-10-10"
     },
     {
       "id": "music-export-share-2025",
@@ -218,7 +233,9 @@
       "unit": "%",
       "delta": null,
       "confidence": "unverified",
-      "sourceIds": ["kocca-2025-annual"]
+      "sourceIds": ["kocca-2025-annual"],
+      "note": "KOCCA 연간 동향분석 보도에서 비중 수치를 확인하지 못함 (음악 수출 증가율 +32.4%만 확인)",
+      "asOf": "2026-10-10"
     },
     {
       "id": "domestic-content-revenue-2025",
@@ -226,9 +243,10 @@
       "value": 161.48,
       "unit": "조원",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["kocca-2025-annual"],
-      "note": "전년 대비 +2.6%"
+      "note": "전년 대비 +2.6% (161조 4,839억원). KOCCA 연간 동향분석을 인용한 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "domestic-music-revenue-growth-2025",
@@ -236,9 +254,10 @@
       "value": 15.8,
       "unit": "%",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["kocca-2025-annual"],
-      "note": "콘텐츠 세부업종 중 최고 성장률"
+      "note": "콘텐츠 세부업종 중 최고 성장률. KOCCA 연간 동향분석을 인용한 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "album-export-growth-2023",
@@ -248,7 +267,8 @@
       "delta": -3.2,
       "confidence": "unverified",
       "sourceIds": ["kita-album-export"],
-      "note": "2020년 +82.6% → 2023년 +1.6%"
+      "note": "2020년 +82.6%는 관세청 통계 보도로 확인. 2023년 +1.6%는 재확인하지 못함 (2025년은 +3.4%, 3억 174만 달러로 확인)",
+      "asOf": "2026-10-10"
     },
     {
       "id": "production-cost-gap-2023",
@@ -256,9 +276,10 @@
       "value": 29,
       "unit": "배",
       "delta": null,
-      "confidence": "unverified",
-      "sourceIds": ["newsen-production-gap"],
-      "note": "대기업 431.1억원 vs 중소기업 14.9억원 (2023)"
+      "confidence": "estimated",
+      "sourceIds": ["newsen-production-gap", "asiae-production-gap"],
+      "note": "대기업 431.1억원 vs 중소기업 14.9억원 (2023). 아시아경제 보도로 교차 확인, 원 통계의 조사 기관은 확인하지 못함",
+      "asOf": "2026-10-10"
     },
     {
       "id": "group-10y-survival",
@@ -266,9 +287,10 @@
       "value": 17.9,
       "unit": "%",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["outlook-group-survival"],
-      "note": "1996~2025년 데뷔 1,182개 그룹 기준"
+      "note": "1996~2025년 데뷔 1,182개 그룹 기준(김정섭, 한국엔터테인먼트산업학회 논문지). 10년 생존율은 Outlook Respawn 보도에서만 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "avg-activity-years",
@@ -276,9 +298,10 @@
       "value": 4.12,
       "unit": "년",
       "delta": null,
-      "confidence": "unverified",
-      "sourceIds": ["outlook-group-survival"],
-      "note": "보이그룹 5.11년 vs 걸그룹 3.13년"
+      "confidence": "estimated",
+      "sourceIds": ["outlook-group-survival", "newsis-group-survival"],
+      "note": "보이그룹 5.11년 vs 걸그룹 3.13년. 논문을 인용한 뉴시스 등 복수 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "china-export-change",
@@ -288,7 +311,8 @@
       "delta": null,
       "confidence": "unverified",
       "sourceIds": ["kosis-region-export"],
-      "note": "2014년 대비 2023년, 음악 수출 프록시"
+      "note": "2014년 대비 2023년, 음악 수출 프록시. KOSIS 원자료를 다시 조회하지 못함",
+      "asOf": "2026-10-10"
     },
     {
       "id": "north-america-export-change",
@@ -298,7 +322,8 @@
       "delta": null,
       "confidence": "unverified",
       "sourceIds": ["kosis-region-export"],
-      "note": "2014년 대비 2023년, 음악 수출 프록시"
+      "note": "2014년 대비 2023년, 음악 수출 프록시. KOSIS 원자료를 다시 조회하지 못함",
+      "asOf": "2026-10-10"
     },
     {
       "id": "japan-album-export-change",
@@ -308,7 +333,8 @@
       "delta": null,
       "confidence": "unverified",
       "sourceIds": ["hankyung-japan-export"],
-      "note": "최근 3년"
+      "note": "최근 3년. 원문에서 수치를 찾지 못했고 관세청 통계 보도(2022년 8,575만 → 2025년 8,063만 달러, 약 -6%)와 맞지 않음 (불일치 목록 참고)",
+      "asOf": "2026-10-10"
     },
     {
       "id": "weverse-mau-2025",
@@ -316,9 +342,10 @@
       "value": 12,
       "unit": "백만 명",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["mbw-weverse-mau"],
-      "note": "성장 단계"
+      "note": "2025년 역대 최고. Weverse 2025 Fandom Trend Report를 인용한 MBW 보도로 확인",
+      "asOf": "2026-10-10"
     },
     {
       "id": "weverse-goods-growth-2025",
@@ -326,9 +353,10 @@
       "value": 70,
       "unit": "%",
       "delta": null,
-      "confidence": "unverified",
-      "sourceIds": ["mbw-weverse-mau"],
-      "note": "성장 단계"
+      "confidence": "estimated",
+      "sourceIds": ["outlook-platform-q3"],
+      "note": "2025년 3분기 YoY, 약 1,680억원. Outlook Respawn 보도로 확인했으나 Weverse 단독인지 하이브 전체 MD 매출인지 구분이 불명확",
+      "asOf": "2026-10-10"
     },
     {
       "id": "bubble-q3-revenue-2025",
@@ -336,9 +364,10 @@
       "value": 17.4,
       "unit": "백만 달러",
       "delta": null,
-      "confidence": "unverified",
+      "confidence": "estimated",
       "sourceIds": ["outlook-platform-q3"],
-      "note": "2025 Q3, 성숙 단계"
+      "note": "2025 Q3 약 223억원, 성숙 단계. Outlook Respawn 보도로 확인",
+      "asOf": "2026-10-10"
     }
   ]
 }

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { ExternalLink } from 'lucide-react'
 import { ConfidenceBadge } from '@/components/confidence'
 import { FilterGroup, ToggleChip } from '@/components/filters/toggle-chip'
 import { Input } from '@/components/ui/input'
@@ -13,6 +14,8 @@ export interface SourceRow {
   publisher: string
   title: string
   year: number
+  // 원문 링크 (확인된 출처만)
+  url?: string
   pages: { href: string; title: string }[]
   confidences: Confidence[]
   metrics: { id: string; label: string; href?: string }[]
@@ -129,6 +132,18 @@ export function SourcesExplorer({ rows }: SourcesExplorerProps) {
                 <td className="px-3 py-3 max-md:block max-md:pb-1 md:min-w-48">
                   <p className="font-medium">{row.publisher}</p>
                   <p className="text-muted-foreground text-xs">{row.title}</p>
+                  {row.url && (
+                    <a
+                      href={row.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary mt-1 inline-flex items-center gap-1 text-xs underline-offset-4 hover:underline"
+                    >
+                      원문 보기
+                      <ExternalLink className="size-3" aria-hidden />
+                      <span className="sr-only">(새 창)</span>
+                    </a>
+                  )}
                 </td>
                 <td
                   data-label="연도"

@@ -4,14 +4,16 @@
     "publisher": "금융감독원 OpenDART",
     "title": "상장 엔터사 사업보고서 주요계정",
     "year": 2026,
-    "pages": ["/", "/metrics/finance", "/narratives/slowdown", "/sources"]
+    "pages": ["/", "/metrics/finance", "/narratives/slowdown", "/sources"],
+    "url": "https://opendart.fss.or.kr"
   },
   {
     "id": "youtube-data-api",
     "publisher": "YouTube Data API v3",
     "title": "channels.list / videos.list / commentThreads.list",
     "year": 2026,
-    "pages": ["/metrics/fans"]
+    "pages": ["/metrics/fans"],
+    "url": "https://developers.google.com/youtube/v3"
   },
   {
     "id": "planning-team-report",
@@ -25,21 +27,24 @@
     "publisher": "IFPI",
     "title": "Global Music Report 2026",
     "year": 2026,
-    "pages": ["/", "/metrics/market", "/narratives/slowdown"]
+    "pages": ["/", "/metrics/market", "/narratives/slowdown"],
+    "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/"
   },
   {
     "id": "luminate-2025",
     "publisher": "Luminate",
-    "title": "2025 Year-End Music Report",
+    "title": "2025 Year-End Music Report (스포츠경향 보도로 확인)",
     "year": 2026,
-    "pages": ["/metrics/market"]
+    "pages": ["/metrics/market"],
+    "url": "https://sports.khan.co.kr/en/article/202601211750587"
   },
   {
     "id": "kocca-2025-annual",
     "publisher": "한국콘텐츠진흥원(KOCCA)",
-    "title": "2025년 4분기·연간 콘텐츠산업 동향분석보고서",
+    "title": "2025년 4분기·연간 콘텐츠산업 동향분석보고서 (아주경제 보도로 확인)",
     "year": 2026,
-    "pages": ["/metrics/market"]
+    "pages": ["/metrics/market"],
+    "url": "https://www.ajunews.com/view/20260430092423101"
   },
   {
     "id": "kita-album-export",
@@ -107,28 +112,32 @@
     "publisher": "Outlook Respawn",
     "title": "2026 Q1 상장 기획사 매출 비교",
     "year": 2026,
-    "pages": ["/metrics/finance", "/narratives/polarization"]
+    "pages": ["/metrics/finance", "/narratives/polarization"],
+    "url": "https://respawn.outlookindia.com/pop-culture/pop-culture-news/kpop-industry-earnings-gap-hybe-mid-tier-agencies-2026"
   },
   {
     "id": "outlook-group-survival",
     "publisher": "Outlook Respawn",
     "title": "그룹 해체율 연구 (김정섭 성신여대)",
     "year": 2025,
-    "pages": ["/", "/metrics/concentration", "/narratives/polarization"]
+    "pages": ["/", "/metrics/concentration", "/narratives/polarization"],
+    "url": "https://respawn.outlookindia.com/pop-culture/pop-culture-news/k-pop-groups-disband-within-3-years-study"
   },
   {
     "id": "outlook-weverse-latam",
     "publisher": "Outlook Respawn",
     "title": "Weverse 중남미 성장 (+22% MAU / +715% 리테일)",
     "year": 2025,
-    "pages": ["/", "/metrics/global", "/narratives/realignment"]
+    "pages": ["/", "/metrics/global", "/narratives/realignment"],
+    "url": "https://respawn.outlookindia.com/pop-culture/pop-culture-news/bts-return-lifts-weverses-active-users-to-12m"
   },
   {
     "id": "outlook-platform-q3",
     "publisher": "Outlook Respawn",
     "title": "Weverse vs DearU Bubble 2025 Q3 매출 비교",
     "year": 2026,
-    "pages": ["/metrics/ai-virtual"]
+    "pages": ["/metrics/ai-virtual"],
+    "url": "https://respawn.outlookindia.com/pop-culture/pop-culture-guides/weverse-vs-bubble-the-battle-for-k-pop-fans"
   },
   {
     "id": "fnnews-kakao-sm",
@@ -201,7 +210,8 @@
     "pages": [
       "/metrics/concentration",
       "/metrics/global",
-      "/narratives/realignment"
+      "/narratives/realignment",
+      "/sources"
     ]
   },
   {
@@ -214,14 +224,16 @@
       "/metrics/concentration",
       "/narratives/polarization",
       "/sources"
-    ]
+    ],
+    "url": "https://circlechart.kr/page_chart/album.circle?termGbn=year"
   },
   {
     "id": "mbw-weverse-mau",
     "publisher": "MBW (Music Business Worldwide)",
     "title": "Weverse 12M MAU 기사",
     "year": 2026,
-    "pages": ["/metrics/ai-virtual"]
+    "pages": ["/metrics/ai-virtual"],
+    "url": "https://www.musicbusinessworldwide.com/hybe-says-weverse-hit-12m-monthly-users-last-year-and-that-its-turning-casual-fans-into-superfans"
   },
   {
     "id": "kofice-hallyu-2025",
@@ -235,7 +247,8 @@
     "publisher": "SNS Insider",
     "title": "글로벌 버추얼 아이돌 시장 전망",
     "year": 2026,
-    "pages": ["/", "/metrics/ai-virtual", "/narratives/realignment"]
+    "pages": ["/", "/metrics/ai-virtual", "/narratives/realignment"],
+    "url": "https://www.snsinsider.com/press-release/global-virtual-idol-and-vtubers-market"
   },
   {
     "id": "kculture-ai-share",
@@ -249,20 +262,55 @@
     "publisher": "Wikipedia",
     "title": "Plave",
     "year": 2026,
-    "pages": ["/metrics/ai-virtual"]
+    "pages": ["/metrics/ai-virtual"],
+    "url": "https://en.wikipedia.org/wiki/Plave"
   },
   {
     "id": "wiki-mave",
     "publisher": "Wikipedia",
     "title": "Mave:",
     "year": 2026,
-    "pages": ["/metrics/ai-virtual"]
+    "pages": ["/metrics/ai-virtual"],
+    "url": "https://en.wikipedia.org/wiki/Mave:"
   },
   {
     "id": "wiki-naevis",
     "publisher": "Wikipedia",
     "title": "Naevis",
     "year": 2026,
-    "pages": ["/metrics/ai-virtual"]
+    "pages": ["/metrics/ai-virtual"],
+    "url": "https://en.wikipedia.org/wiki/Naevis"
+  },
+  {
+    "id": "customs-album-export",
+    "publisher": "관세청 (매일신문 보도)",
+    "title": "2025년 음반 수출액 3억 달러 돌파",
+    "year": 2026,
+    "url": "https://www.imaeil.com/page/view/2026011617184107588",
+    "pages": ["/metrics/market", "/sources"]
+  },
+  {
+    "id": "asiae-production-gap",
+    "publisher": "아시아경제",
+    "title": "콘텐츠 자금공백 기사 (음악 제작비 격차 29배)",
+    "year": 2026,
+    "url": "https://view.asiae.co.kr/article/2026081812490859852",
+    "pages": ["/", "/metrics/concentration", "/narratives/polarization"]
+  },
+  {
+    "id": "newsis-group-survival",
+    "publisher": "뉴시스",
+    "title": "H.O.T. 이후 30년 1182개 팀 전수분석 (김정섭 성신여대 교수)",
+    "year": 2026,
+    "url": "https://www.newsis.com/view/NISX20260804_0003735284",
+    "pages": ["/metrics/concentration"]
+  },
+  {
+    "id": "mtn-album-sales",
+    "publisher": "MTN 머니투데이방송",
+    "title": "Circle Chart 연간 Top400 음반 판매량 (2023~2025)",
+    "year": 2026,
+    "url": "https://news.mtn.co.kr/news-detail/2026031613404718358",
+    "pages": ["/", "/metrics/concentration", "/narratives/slowdown"]
   }
 ]

@@ -46,6 +46,19 @@ API 키는 `.env.local`(`DART_API_KEY`, `YOUTUBE_API_KEY`)에 두며 수집 스�
 - 응답 원본은 `data/raw/{출처}/{수집일}/`에 보존합니다.
 - 수집 후 `npm run validate:data`로 검증하고 다시 빌드해야 화면에 반영됩니다.
 
+## 배포 (GitHub Pages)
+
+서버 없이 정적 파일로 내보내 GitHub Pages에 올립니다(`next.config.ts`의 `output: 'export'`).
+
+1. 저장소 Settings → Pages → Source를 **GitHub Actions**로 설정합니다.
+2. `main`에 push하면 `.github/workflows/deploy.yml`이 검사(`check-all`) → 빌드 → 배포를 실행합니다.
+3. 주소는 `https://<계정>.github.io/<저장소>/`입니다. 경로 접두사는 워크플로가 `PAGES_BASE_PATH`로 넣습니다.
+
+- 데이터 갱신: 로컬에서 수집 → `npm run validate:data` → 커밋·push하면 자동으로 다시 배포됩니다. 배포 과정에는 API 키가 필요 없습니다.
+- 로컬에서 내보내기 확인: `npm run build` 후 `out/` 폴더.
+- 제한: GitHub Pages는 사용자 지정 응답 헤더(X-Frame-Options 등)를 지원하지 않습니다.
+- 유튜브 댓글 원본(`data/raw/youtube/*/comments/`)은 저장소에 올리지 않고 로컬에만 둡니다.
+
 ## 문서
 
 - 요구사항: [`docs/PRD.md`](docs/PRD.md)

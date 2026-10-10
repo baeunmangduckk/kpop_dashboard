@@ -49,10 +49,11 @@ export default async function NarrativePage({ params }: NarrativePageProps) {
         eyebrow={`서사 ${getNarrativeMark(narrative.order)}`}
         title={story.title}
         description={story.message}
+        narrow
       />
       <Container className="pb-16">
-        {/* 읽기 폭 제한, 왼쪽 정렬은 페이지 제목과 맞춤 */}
-        <div className="max-w-3xl space-y-12">
+        {/* 읽기 폭 제한, 넓은 화면에서는 제목과 함께 가운데 배치 */}
+        <div className="mx-auto max-w-3xl space-y-12">
           {story.sections.map((section, index) => {
             const Chart = charts[index]
             return (

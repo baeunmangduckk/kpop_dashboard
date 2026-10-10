@@ -9,7 +9,7 @@
   {
     "id": "youtube-data-api",
     "publisher": "YouTube Data API v3",
-    "title": "videos.list / commentThreads.list",
+    "title": "channels.list / videos.list / commentThreads.list",
     "year": 2026,
     "pages": ["/metrics/fans"]
   },
@@ -177,7 +177,7 @@
     "publisher": "DK Blog",
     "title": "유튜브 구독자 순위",
     "year": 2026,
-    "pages": ["/metrics/fans"]
+    "pages": []
   },
   {
     "id": "asiae-album-bubble",

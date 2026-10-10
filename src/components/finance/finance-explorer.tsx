@@ -10,6 +10,8 @@ import { useFinanceFilterStore } from '@/stores/finance-filter-store'
 
 interface FinanceExplorerProps {
   companies: string[]
+  // 처음에 숨길 회사 (사용자가 필터를 건드리기 전까지 적용)
+  defaultHidden?: string[]
   financials: CompanyFinancial[]
   sources: Source[]
 }
@@ -33,11 +35,14 @@ function measureOf(row: CompanyFinancial | undefined, key: MeasureKey) {
 // 기획사 재무 탐색 - 회사·연도 필터(Zustand)와 지표별 막대 차트·실적 요약
 export function FinanceExplorer({
   companies,
+  defaultHidden = [],
   financials,
   sources,
 }: FinanceExplorerProps) {
-  const { hiddenCompanies, hiddenYears, toggleCompany, toggleYear, reset } =
+  const { hiddenYears, toggleCompany, toggleYear, reset } =
     useFinanceFilterStore()
+  const hiddenCompanies =
+    useFinanceFilterStore(state => state.hiddenCompanies) ?? defaultHidden
 
   const allYears = [...new Set(financials.map(row => row.year))].sort()
   const visibleCompanies = companies.filter(c => !hiddenCompanies.includes(c))
@@ -84,7 +89,9 @@ export function FinanceExplorer({
               key={company}
               label={shortName(company)}
               pressed={!hiddenCompanies.includes(company)}
-              onClick={() => toggleCompany(company, companies.length)}
+              onClick={() =>
+                toggleCompany(company, companies.length, hiddenCompanies)
+              }
             />
           ))}
         </FilterGroup>

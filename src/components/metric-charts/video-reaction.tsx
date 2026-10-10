@@ -1,54 +1,51 @@
-import {
-  ConfidenceBadge,
-  NoticeBadge,
-  SourceCitation,
-} from '@/components/confidence'
+import { ChartFrame } from '@/components/charts'
+import { NoticeBadge } from '@/components/confidence'
 import { getFansData, getSources } from '@/lib/data'
-import { formatMetricValue } from '@/lib/format'
-import { resolveSources } from '@/lib/sources'
+import { formatCompact } from '@/lib/format'
+import { frameMeta } from './frame-props'
 
-// 등록 영상 반응 지표 (YouTube Data API 실측) - 조회수·좋아요·좋아요 비율·댓글 수
+const MISSING = '비공개'
+
+// 영상 반응 표본 (YouTube Data API 실측) - 영상마다 규모가 크게 달라 차트 대신 표로 제시
 export async function VideoReaction() {
-  const [{ video }, sources] = await Promise.all([getFansData(), getSources()])
-  const likeRatio =
-    video.views > 0 ? Math.round((video.likes / video.views) * 1000) / 10 : null
-  const stats = [
-    { label: '조회수', value: formatMetricValue(video.views, '회') },
-    { label: '좋아요', value: formatMetricValue(video.likes, '개') },
-    { label: '좋아요 비율', value: formatMetricValue(likeRatio, '%') },
-    { label: '전체 댓글', value: formatMetricValue(video.comments, '개') },
-  ]
+  const [{ videos }, sources] = await Promise.all([getFansData(), getSources()])
+  const rows = [...videos.items].sort((a, b) => b.views - a.views)
 
   return (
-    <figure className="bg-card min-w-0 space-y-4 rounded-xl border p-4 sm:p-5">
-      <figcaption className="space-y-1">
-        <p className="font-semibold">등록 영상 반응</p>
-        <p className="text-muted-foreground text-sm break-keep">
-          &ldquo;{video.title}&rdquo;
-        </p>
-      </figcaption>
-      <NoticeBadge
-        kind="sample"
-        detail={`영상 1개 · ${video.collectedAt} 수집`}
-      />
-      <dl className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-        {stats.map(stat => (
-          <div key={stat.label} className="space-y-1">
-            <dt className="text-muted-foreground text-xs">{stat.label}</dt>
-            <dd className="text-lg font-semibold tabular-nums">{stat.value}</dd>
-          </div>
-        ))}
-      </dl>
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 border-t pt-3">
-        <ConfidenceBadge
-          confidence={video.confidence}
-          method="좋아요 비율 = 좋아요 ÷ 조회수"
+    <ChartFrame
+      title="영상 반응"
+      description={videos.note}
+      method="좋아요 비율 = 좋아요 ÷ 조회수"
+      notices={
+        <NoticeBadge
+          kind="sample"
+          detail={`영상 ${rows.length}개 · ${videos.collectedAt} 수집`}
         />
-        <SourceCitation
-          sources={resolveSources(video.sourceIds, sources)}
-          asOf={video.collectedAt}
-        />
-      </div>
-    </figure>
+      }
+      {...frameMeta(videos, sources)}
+      asOf={videos.collectedAt}
+      table={{
+        columns: [
+          '영상',
+          '구분',
+          '게시일',
+          '조회수',
+          '좋아요',
+          '좋아요 비율',
+          '댓글',
+        ],
+        rows: rows.map(video => [
+          video.title,
+          video.artist ?? '기준 영상',
+          video.publishedAt,
+          formatCompact(video.views),
+          video.likes === null ? MISSING : formatCompact(video.likes),
+          video.likes === null || video.views === 0
+            ? MISSING
+            : `${((video.likes / video.views) * 100).toFixed(1)}%`,
+          video.comments === null ? MISSING : formatCompact(video.comments),
+        ]),
+      }}
+    />
   )
 }

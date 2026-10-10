@@ -3,7 +3,7 @@
 숫자의 출처와 신뢰도를 먼저 보여주고, 그 숫자들이 만드는 K-pop 산업의 이야기를 읽을 수 있는 대시보드
 
 **📅 최종 업데이트**: 2026-10-08
-**📊 진행 상황**: Phase 3 완료 (12/16 Tasks 완료)
+**📊 진행 상황**: Phase 4 진행 중 (13/16 Tasks 완료)
 
 ## 개요
 
@@ -131,12 +131,13 @@ K-POP 산업 인사이트 대시보드는 산업 분석가·기획사/투자 관
 
 ### Phase 4: 신규 데이터 연동
 
-- **Task 013: OpenDART·YouTube 데이터 수집 연동** - 우선순위
-  - API 키는 서버 전용 `.env.local` 보관 (`src/lib/env.ts` 스키마 추가), 수집 스크립트에서만 호출
-  - OpenDART: 상장 4사 + 중소 상장사(FNC·큐브·RBW·TN엔터) 연결 재무 → finance.json
-  - YouTube: video_id 설정 파일 기반 표본 확대, 구독자·조회수 스냅샷 누적
-  - 신규 지표 신뢰도 표기(재무·수치 verified, 감성 estimated)
-  - Playwright MCP: 갱신 데이터 화면 반영 확인
+- **Task 013: OpenDART·YouTube 데이터 수집 연동** ✅ - 완료
+  - ✅ 수집 구조: `scripts/collect`(키는 `scripts/collect/env.ts`에서만 검증) → 원본 `data/raw` → Zod 검증 → `public/data`, 대상은 `data/config`에 고정
+  - ✅ OpenDART: 상장 4사 + 중소 상장사(FNC·큐브·RBW·TN엔터) 2023~2025 연결 재무 24건 → finance.json (기존 4사 값과 전부 일치)
+  - ✅ YouTube: 채널 10개 구독자·조회수 스냅샷, 영상 11개(기준 영상 + 채널별 최신 MV) 반응, 댓글 원본 1,063개 저장
+  - ✅ 신뢰도: 재무·채널·영상 수치 verified, 감성 분포는 기존 표본 유지(estimated)
+  - ✅ 화면: 재무 필터에 중소사 칩(기본 숨김), 팬 반응 영상 표·채널 조회수 순위
+  - ✅ Playwright MCP: 재무 중소사 칩 토글, 팬 반응 6개 블록 라벨, 360px 가로 스크롤 없음, 콘솔 에러 0건
 
 - **Task 014: Circle Chart·Google Trends 데이터 적재와 트렌드 화면**
   - Circle Chart: 약관 확인 → Playwright 수동 수집(저빈도) → 원본 스냅샷 보존 → Zod 검증 → 큐레이션 값과 대조

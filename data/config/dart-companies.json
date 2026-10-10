@@ -1,0 +1,54 @@
+{
+  "years": [2023, 2024, 2025],
+  "companies": [
+    {
+      "name": "하이브",
+      "tier": "major",
+      "stockCode": "352820",
+      "corpCode": "01204056"
+    },
+    {
+      "name": "SM엔터테인먼트",
+      "tier": "major",
+      "stockCode": "041510",
+      "corpCode": "00260930"
+    },
+    {
+      "name": "YG엔터테인먼트",
+      "tier": "major",
+      "stockCode": "122870",
+      "corpCode": "00613318"
+    },
+    {
+      "name": "JYP엔터테인먼트",
+      "tier": "major",
+      "stockCode": "035900",
+      "corpCode": "00258689"
+    },
+    {
+      "name": "FNC엔터테인먼트",
+      "tier": "mid",
+      "stockCode": "173940",
+      "corpCode": "00925295"
+    },
+    {
+      "name": "큐브엔터테인먼트",
+      "tier": "mid",
+      "stockCode": "182360",
+      "corpCode": "00985686"
+    },
+    {
+      "name": "RBW",
+      "tier": "mid",
+      "stockCode": "361570",
+      "corpCode": "01303029"
+    },
+    {
+      "name": "TN엔터테인먼트",
+      "tier": "mid",
+      "nameQuery": "티엔엔터",
+      "corpCode": "00814786",
+      "stockCode": "131100"
+    }
+  ]
+}

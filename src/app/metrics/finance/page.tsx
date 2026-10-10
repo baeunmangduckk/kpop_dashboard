@@ -25,10 +25,11 @@ export default async function FinancePage() {
     getDiscrepancies(),
     getMetricContext(),
   ])
-  const majors = finance.companies
-    .filter(company => company.tier === 'major')
-    .map(company => company.name)
-  const annual = finance.financials.filter(row => majors.includes(row.company))
+  // 연간 재무가 있는 회사만 비교 대상 (중소 상장사는 규모 차이가 커 기본은 숨김)
+  const listed = finance.companies.filter(company =>
+    finance.financials.some(row => row.company === company.name)
+  )
+  const annual = finance.financials
   const pageMetricIds = new Set(finance.metricIds)
   const notices = discrepancies.filter(item => pageMetricIds.has(item.metricId))
 
@@ -59,10 +60,13 @@ export default async function FinancePage() {
         </PageSection>
         <PageSection
           title="회사별 실적 비교"
-          description="회사·연도를 눌러 비교 대상을 고르세요."
+          description="회사·연도를 눌러 비교 대상을 고르세요. 처음에는 상장 4사만 표시하며, 중소 상장사(FNC·큐브·RBW·TN)는 회사 칩을 눌러 추가합니다."
         >
           <FinanceExplorer
-            companies={majors}
+            companies={listed.map(company => company.name)}
+            defaultHidden={listed
+              .filter(company => company.tier === 'mid')
+              .map(company => company.name)}
             financials={annual}
             sources={ctx.sourcesOf([
               ...new Set(annual.flatMap(row => row.sourceIds)),

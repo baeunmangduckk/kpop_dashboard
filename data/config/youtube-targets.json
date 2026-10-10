@@ -1,0 +1,109 @@
+{
+  "channels": [
+    {
+      "artist": "BLACKPINK",
+      "handle": "@BLACKPINK",
+      "channelId": "UCOmHUn--16B90oW2L6FRR3A"
+    },
+    {
+      "artist": "BTS",
+      "handle": "@BTS",
+      "channelId": "UCLkAepWjdylmXSltofFvsYQ",
+      "mvChannelHandle": "@HYBELABELS"
+    },
+    {
+      "artist": "Stray Kids",
+      "handle": "@StrayKids",
+      "channelId": "UC9rMiEjNaCSsebs31MRDCRA",
+      "mvChannelHandle": "@JYPEntertainment"
+    },
+    {
+      "artist": "TWICE",
+      "handle": "@TWICE",
+      "channelId": "UCzgxx_DM2Dcb9Y1spb9mUJA",
+      "mvChannelHandle": "@JYPEntertainment"
+    },
+    {
+      "artist": "BIGBANG",
+      "handle": "@BIGBANG",
+      "channelId": "UCzw-C7fNfs018R1FzIKnlaA"
+    },
+    {
+      "artist": "SEVENTEEN",
+      "handle": "@pledis17",
+      "channelId": "UCfkXDY7vwkcJ8ddFGz8KusA",
+      "mvChannelHandle": "@HYBELABELS"
+    },
+    {
+      "artist": "TXT",
+      "handle": "@TXT_bighit",
+      "channelId": "UCtiObj3CsEAdNU6ZPWDsddQ",
+      "mvChannelHandle": "@HYBELABELS"
+    },
+    {
+      "artist": "ENHYPEN",
+      "handle": "@ENHYPENOFFICIAL",
+      "channelId": "UCArLZtok93cO5R9RI4_Y5Jw",
+      "mvChannelHandle": "@HYBELABELS"
+    },
+    {
+      "artist": "BABYMONSTER",
+      "handle": "@BABYMONSTER",
+      "channelId": "UCqwUnggBBct-AY2lAdI88jQ"
+    },
+    {
+      "artist": "EXO",
+      "handle": "@weareoneEXO",
+      "channelId": "UCzCedBCSSltI1TFd3bKyN6g",
+      "mvChannelHandle": "@SMTOWN"
+    }
+  ],
+  "referenceVideo": {
+    "title": "What K-pop Is Really Selling",
+    "id": "Xp7bggY8mpI"
+  },
+  "videos": [
+    {
+      "id": "2GJfWMYCWY0",
+      "artist": "BLACKPINK",
+      "title": "BLACKPINK - ‘GO’ M/V"
+    },
+    {
+      "id": "GEk4jHwfFTA",
+      "artist": "BTS",
+      "title": "BTS (방탄소년단) ‘NORMAL’ Official MV"
+    },
+    {
+      "id": "BZ4UzthYTss",
+      "artist": "Stray Kids",
+      "title": "Stray Kids \"This & That\" M/V"
+    },
+    { "id": "zqorlX_5oHQ", "artist": "TWICE", "title": "TWICE “ME+YOU” M/V" },
+    {
+      "id": "L8ZnXgbyUuc",
+      "artist": "BIGBANG",
+      "title": "BIGBANG - ‘BiiiG’ M/V"
+    },
+    {
+      "id": "haEIraiKaEM",
+      "artist": "TXT",
+      "title": "TXT (투모로우바이투게더) 'セツナハナビ (Setsuna Hanabi)' Official MV"
+    },
+    {
+      "id": "bDvtb6Pywes",
+      "artist": "ENHYPEN",
+      "title": "#ENHYPEN (#엔하이픈) 'Checkmate' Official MV"
+    },
+    {
+      "id": "xXZwZ0DolJc",
+      "artist": "BABYMONSTER",
+      "title": "BABYMONSTER - 'MOON' M/V"
+    },
+    { "id": "BWfKkqo1Mk8", "artist": "EXO", "title": "EXO 엑소 'Crown' MV" },
+    {
+      "id": "tXqBtavqC2Y",
+      "title": "SEVENTEEN (세븐틴) 'Bad Influence (Prod. by Pharrell Williams)' Official MV",
+      "artist": "SEVENTEEN"
+    }
+  ]
+}

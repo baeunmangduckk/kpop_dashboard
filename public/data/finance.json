@@ -8,38 +8,14 @@
     "hybe-operating-margin-2025"
   ],
   "companies": [
-    {
-      "name": "하이브",
-      "tier": "major"
-    },
-    {
-      "name": "SM엔터테인먼트",
-      "tier": "major"
-    },
-    {
-      "name": "YG엔터테인먼트",
-      "tier": "major"
-    },
-    {
-      "name": "JYP엔터테인먼트",
-      "tier": "major"
-    },
-    {
-      "name": "FNC엔터테인먼트",
-      "tier": "mid"
-    },
-    {
-      "name": "큐브엔터테인먼트",
-      "tier": "mid"
-    },
-    {
-      "name": "RBW",
-      "tier": "mid"
-    },
-    {
-      "name": "TN엔터테인먼트",
-      "tier": "mid"
-    }
+    { "name": "하이브", "tier": "major" },
+    { "name": "SM엔터테인먼트", "tier": "major" },
+    { "name": "YG엔터테인먼트", "tier": "major" },
+    { "name": "JYP엔터테인먼트", "tier": "major" },
+    { "name": "FNC엔터테인먼트", "tier": "mid" },
+    { "name": "큐브엔터테인먼트", "tier": "mid" },
+    { "name": "RBW", "tier": "mid" },
+    { "name": "TN엔터테인먼트", "tier": "mid" }
   ],
   "financials": [
     {
@@ -137,39 +113,117 @@
       "operatingProfit": 1552.46,
       "confidence": "verified",
       "sourceIds": ["opendart"]
+    },
+    {
+      "company": "FNC엔터테인먼트",
+      "year": 2023,
+      "revenue": 921.54,
+      "operatingProfit": -75.69,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "FNC엔터테인먼트",
+      "year": 2024,
+      "revenue": 862.24,
+      "operatingProfit": -41.82,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "FNC엔터테인먼트",
+      "year": 2025,
+      "revenue": 1023.69,
+      "operatingProfit": -6.14,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "큐브엔터테인먼트",
+      "year": 2023,
+      "revenue": 1422.72,
+      "operatingProfit": 154.24,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "큐브엔터테인먼트",
+      "year": 2024,
+      "revenue": 2182.83,
+      "operatingProfit": 165.68,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "큐브엔터테인먼트",
+      "year": 2025,
+      "revenue": 872.28,
+      "operatingProfit": -72.62,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "RBW",
+      "year": 2023,
+      "revenue": 914.34,
+      "operatingProfit": -22.48,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "RBW",
+      "year": 2024,
+      "revenue": 625.2,
+      "operatingProfit": -122.08,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "RBW",
+      "year": 2025,
+      "revenue": 464.77,
+      "operatingProfit": 1.69,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "TN엔터테인먼트",
+      "year": 2023,
+      "revenue": 1502.69,
+      "operatingProfit": 135.24,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "TN엔터테인먼트",
+      "year": 2024,
+      "revenue": 1429.31,
+      "operatingProfit": 96.98,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
+    },
+    {
+      "company": "TN엔터테인먼트",
+      "year": 2025,
+      "revenue": 1182.99,
+      "operatingProfit": 33.51,
+      "confidence": "verified",
+      "sourceIds": ["opendart"]
     }
   ],
   "quarterlyRevenue": {
     "confidence": "estimated",
     "sourceIds": ["outlook-q1-2026-revenue"],
+    "note": "2026년 1분기 추정치. 연간 확정 실적은 회사별 실적 비교(OpenDART) 참고",
     "period": "2026 Q1",
     "unit": "억원",
-    "note": "중소 상장사 연결 재무는 Task 013 OpenDART 연동 시 추가",
     "rows": [
-      {
-        "company": "하이브",
-        "revenue": 6983
-      },
-      {
-        "company": "YG엔터테인먼트",
-        "revenue": 1471
-      },
-      {
-        "company": "FNC엔터테인먼트",
-        "revenue": 272
-      },
-      {
-        "company": "큐브엔터테인먼트",
-        "revenue": 151
-      },
-      {
-        "company": "RBW",
-        "revenue": 96
-      },
-      {
-        "company": "TN엔터테인먼트",
-        "revenue": 84
-      }
+      { "company": "하이브", "revenue": 6983 },
+      { "company": "YG엔터테인먼트", "revenue": 1471 },
+      { "company": "FNC엔터테인먼트", "revenue": 272 },
+      { "company": "큐브엔터테인먼트", "revenue": 151 },
+      { "company": "RBW", "revenue": 96 },
+      { "company": "TN엔터테인먼트", "revenue": 84 }
     ]
   }
 }

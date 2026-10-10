@@ -13,7 +13,11 @@
     "typecheck": "tsc --noEmit",
     "validate:data": "tsx scripts/validate-data.ts",
     "check-all": "npm run validate:data && npm run typecheck && npm run lint && npm run format:check",
-    "prepare": "husky"
+    "prepare": "husky",
+    "collect:dart": "tsx --env-file=.env.local scripts/collect/dart.ts",
+    "collect:youtube": "tsx --env-file=.env.local scripts/collect/youtube.ts",
+    "collect:circlechart": "tsx scripts/collect/circlechart.ts",
+    "import:trends": "tsx scripts/collect/import-trends.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

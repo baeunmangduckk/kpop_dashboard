@@ -1,0 +1,398 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "LcaYnLdMXZr5494vi1XZ_TewoAo",
+  "pageInfo": {
+    "totalResults": 10,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "ICzdWLeYHQ4ehek0736ddHwIu-I",
+      "id": "UCOmHUn--16B90oW2L6FRR3A",
+      "snippet": {
+        "title": "BLACKPINK",
+        "description": "BLACKPINK Official YouTube Channel\n블랙핑크 공식 유튜브 채널입니다.\n\nJISOO, JENNIE, ROSÉ, LISA\n지수, 제니, 로제, 리사",
+        "customUrl": "@blackpink",
+        "publishedAt": "2016-06-29T03:15:23Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/U3VrCkKjzTpQ3VYv4SCPjNfDHeJV-swGNnhLYhr0nV4lZz_GVUNzK4EB-HFRfKv9S5VNh14uAg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/U3VrCkKjzTpQ3VYv4SCPjNfDHeJV-swGNnhLYhr0nV4lZz_GVUNzK4EB-HFRfKv9S5VNh14uAg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/U3VrCkKjzTpQ3VYv4SCPjNfDHeJV-swGNnhLYhr0nV4lZz_GVUNzK4EB-HFRfKv9S5VNh14uAg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "BLACKPINK",
+          "description": "BLACKPINK Official YouTube Channel\n블랙핑크 공식 유튜브 채널입니다.\n\nJISOO, JENNIE, ROSÉ, LISA\n지수, 제니, 로제, 리사"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "42985258257",
+        "subscriberCount": "101000000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "668"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "qDtIuVLR6hhsbIRgIvQhb7Pul58",
+      "id": "UC9rMiEjNaCSsebs31MRDCRA",
+      "snippet": {
+        "title": "Stray Kids",
+        "description": "Stray Kids Official YouTube",
+        "customUrl": "@straykids",
+        "publishedAt": "2017-05-12T03:28:10Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/CIofqs6QaCJq7bD8vo_C1__1udt4A7rIpbnOna8v09Q2NPlO5F-rAmAxZKciQRY0w-_40XEA2pA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/CIofqs6QaCJq7bD8vo_C1__1udt4A7rIpbnOna8v09Q2NPlO5F-rAmAxZKciQRY0w-_40XEA2pA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/CIofqs6QaCJq7bD8vo_C1__1udt4A7rIpbnOna8v09Q2NPlO5F-rAmAxZKciQRY0w-_40XEA2pA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "Stray Kids",
+          "description": "Stray Kids Official YouTube"
+        }
+      },
+      "statistics": {
+        "viewCount": "13223180864",
+        "subscriberCount": "25400000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2362"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "hSQYPfbE3sTzQ2ijhaGD-Mf2NTc",
+      "id": "UCLkAepWjdylmXSltofFvsYQ",
+      "snippet": {
+        "title": "BANGTANTV",
+        "description": "This is the official YouTube channel of BTS. 방탄소년단 공식 유튜브 채널 입니다.",
+        "customUrl": "@bts",
+        "publishedAt": "2012-12-17T03:20:38Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/NNG93LntJGDpMlGYIhavu2n4gREs7CNbNT8jjG-7dpotBa5uQDHhuOL8e_oU4ihzWhlwdCmsJw0=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/NNG93LntJGDpMlGYIhavu2n4gREs7CNbNT8jjG-7dpotBa5uQDHhuOL8e_oU4ihzWhlwdCmsJw0=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/NNG93LntJGDpMlGYIhavu2n4gREs7CNbNT8jjG-7dpotBa5uQDHhuOL8e_oU4ihzWhlwdCmsJw0=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "BANGTANTV",
+          "description": "This is the official YouTube channel of BTS. 방탄소년단 공식 유튜브 채널 입니다."
+        }
+      },
+      "statistics": {
+        "viewCount": "29486622474",
+        "subscriberCount": "86100000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "3108"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "zSvFlqmnEilwRc-RYaGyZTxkKJQ",
+      "id": "UCzw-C7fNfs018R1FzIKnlaA",
+      "snippet": {
+        "title": "BIGBANG",
+        "description": "BIGBANG Official YouTube Channel\n빅뱅 공식 유튜브 채널입니다.\n\nG-DRAGON, TAEYANG, T.O.P, DAESUNG\n지드래곤, 태양, 탑, 대성",
+        "customUrl": "@bigbang",
+        "publishedAt": "2005-10-10T05:35:01Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_n0J82ENLVh_wfaD7eOSjwfqloqGswqBxH4H-gg8PscRKw=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_n0J82ENLVh_wfaD7eOSjwfqloqGswqBxH4H-gg8PscRKw=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AIdro_n0J82ENLVh_wfaD7eOSjwfqloqGswqBxH4H-gg8PscRKw=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "BIGBANG",
+          "description": "BIGBANG Official YouTube Channel\n빅뱅 공식 유튜브 채널입니다.\n\nG-DRAGON, TAEYANG, T.O.P, DAESUNG\n지드래곤, 태양, 탑, 대성"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "10668546585",
+        "subscriberCount": "17000000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "795"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "oWk-maVQ9czaNk9CQ_t2GdaXNCY",
+      "id": "UCqwUnggBBct-AY2lAdI88jQ",
+      "snippet": {
+        "title": "BABYMONSTER",
+        "description": "BABYMONSTER Official YouTube Channel\n베이비몬스터 공식 유튜브 채널입니다.\n",
+        "customUrl": "@babymonster",
+        "publishedAt": "2022-12-28T04:00:55.466296Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/guzIoEyd9IyKWaD7Jfnlp1rD7k9SiEOV7go0ItyJ3O9V-j8ez6Jvs4Yj3LfrCu3Z7rFcdIqYLTI=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/guzIoEyd9IyKWaD7Jfnlp1rD7k9SiEOV7go0ItyJ3O9V-j8ez6Jvs4Yj3LfrCu3Z7rFcdIqYLTI=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/guzIoEyd9IyKWaD7Jfnlp1rD7k9SiEOV7go0ItyJ3O9V-j8ez6Jvs4Yj3LfrCu3Z7rFcdIqYLTI=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "BABYMONSTER",
+          "description": "BABYMONSTER Official YouTube Channel\n베이비몬스터 공식 유튜브 채널입니다.\n"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "10354140722",
+        "subscriberCount": "13300000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "1068"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "fOmr5bxQ_aAQRtsJPtzyS8wunPw",
+      "id": "UCzCedBCSSltI1TFd3bKyN6g",
+      "snippet": {
+        "title": "EXO",
+        "description": "CHANYEOL Japan 2nd Mini Album 【旅】\n\nWelcome to EXO Official YouTube Channel!\n\n",
+        "customUrl": "@weareoneexo",
+        "publishedAt": "2006-12-10T19:12:09Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ujB2n35HjiBrD1UHWY6aLdZJ4-g01agipoXe2NFQaAbuEhnIPnJHbrfi9ScdgawZWSuKZkPGhg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ujB2n35HjiBrD1UHWY6aLdZJ4-g01agipoXe2NFQaAbuEhnIPnJHbrfi9ScdgawZWSuKZkPGhg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ujB2n35HjiBrD1UHWY6aLdZJ4-g01agipoXe2NFQaAbuEhnIPnJHbrfi9ScdgawZWSuKZkPGhg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "EXO",
+          "description": "CHANYEOL Japan 2nd Mini Album 【旅】\n\nWelcome to EXO Official YouTube Channel!\n\n"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "2091317240",
+        "subscriberCount": "9920000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "966"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "1CMMtCAEMaxV9uB4VPMIe0YTZQc",
+      "id": "UCfkXDY7vwkcJ8ddFGz8KusA",
+      "snippet": {
+        "title": "SEVENTEEN",
+        "description": "#SEVENTEEN Official Youtube\n",
+        "customUrl": "@pledis17",
+        "publishedAt": "2012-11-16T08:20:35Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/PzWZFDIuiYhggpgi1pGQ0ukuX4AnPFt8MB-u0LHZjrYqQaLx15ZjRN1HMojzkafbsT5TVUcNqA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/PzWZFDIuiYhggpgi1pGQ0ukuX4AnPFt8MB-u0LHZjrYqQaLx15ZjRN1HMojzkafbsT5TVUcNqA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/PzWZFDIuiYhggpgi1pGQ0ukuX4AnPFt8MB-u0LHZjrYqQaLx15ZjRN1HMojzkafbsT5TVUcNqA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "SEVENTEEN",
+          "description": "#SEVENTEEN Official Youtube\n"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "8910059448",
+        "subscriberCount": "18000000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "3940"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "9tMTfVFinytG6Dp8Anxcuoz0FWU",
+      "id": "UCzgxx_DM2Dcb9Y1spb9mUJA",
+      "snippet": {
+        "title": "TWICE",
+        "description": "TWICE Official YouTube Channel",
+        "customUrl": "@twice",
+        "publishedAt": "2016-03-27T15:48:08Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/rj-m7CQIV8hIHx_lB8cjs0NxrDFJaUkVwZ5tCnZTNSVEr2IqXGF-2e7nr7og1IGeRXtHikce=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/rj-m7CQIV8hIHx_lB8cjs0NxrDFJaUkVwZ5tCnZTNSVEr2IqXGF-2e7nr7og1IGeRXtHikce=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/rj-m7CQIV8hIHx_lB8cjs0NxrDFJaUkVwZ5tCnZTNSVEr2IqXGF-2e7nr7og1IGeRXtHikce=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "TWICE",
+          "description": "TWICE Official YouTube Channel"
+        }
+      },
+      "statistics": {
+        "viewCount": "9577891175",
+        "subscriberCount": "19500000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2547"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "O8T6y3-q7eUAgeefpDPwuXx12Bg",
+      "id": "UCArLZtok93cO5R9RI4_Y5Jw",
+      "snippet": {
+        "title": "ENHYPEN",
+        "description": "#ENHYPEN Official Youtube\n#ENHYPEN 공식 유튜브",
+        "customUrl": "@enhypenofficial",
+        "publishedAt": "2020-08-10T12:46:00.218737Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/DZ3yFL6peM3ASY-9ndbMPaiwac3-VrCDLxhO3WigI60mCahs0GQZuv0SFIbH1TmrPUWrlwEV=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/DZ3yFL6peM3ASY-9ndbMPaiwac3-VrCDLxhO3WigI60mCahs0GQZuv0SFIbH1TmrPUWrlwEV=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/DZ3yFL6peM3ASY-9ndbMPaiwac3-VrCDLxhO3WigI60mCahs0GQZuv0SFIbH1TmrPUWrlwEV=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "ENHYPEN",
+          "description": "#ENHYPEN Official Youtube\n#ENHYPEN 공식 유튜브"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "5408997848",
+        "subscriberCount": "14600000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "2912"
+      }
+    },
+    {
+      "kind": "youtube#channel",
+      "etag": "sZvaUpjrPOlP_4AadHKI2mCozoc",
+      "id": "UCtiObj3CsEAdNU6ZPWDsddQ",
+      "snippet": {
+        "title": "TOMORROW X TOGETHER OFFICIAL",
+        "description": "#투모로우바이투게더 공식 유튜브 입니다.\nThis is the official YouTube for #TOMORROW_X_TOGETHER",
+        "customUrl": "@txt_bighit",
+        "publishedAt": "2018-12-21T01:41:52Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/iUSgAKAic2U-UyY9kzDRFnkWk-9ijApGQpZQbbLWsA9go2HNMiY8gZXxrQK4fbYl7nsT4OLOCg=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/iUSgAKAic2U-UyY9kzDRFnkWk-9ijApGQpZQbbLWsA9go2HNMiY8gZXxrQK4fbYl7nsT4OLOCg=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/iUSgAKAic2U-UyY9kzDRFnkWk-9ijApGQpZQbbLWsA9go2HNMiY8gZXxrQK4fbYl7nsT4OLOCg=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "TOMORROW X TOGETHER OFFICIAL",
+          "description": "#투모로우바이투게더 공식 유튜브 입니다.\nThis is the official YouTube for #TOMORROW_X_TOGETHER"
+        },
+        "country": "KR"
+      },
+      "statistics": {
+        "viewCount": "4614771289",
+        "subscriberCount": "13900000",
+        "hiddenSubscriberCount": false,
+        "videoCount": "3785"
+      }
+    }
+  ]
+}

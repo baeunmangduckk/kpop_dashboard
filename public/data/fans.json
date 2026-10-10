@@ -1,17 +1,126 @@
 {
-  "video": {
+  "videos": {
     "confidence": "verified",
     "sourceIds": ["youtube-data-api"],
-    "title": "What K-pop Is Really Selling",
-    "views": 1648729,
-    "likes": 57646,
-    "comments": 6006,
-    "collectedAt": "2026-09-28"
+    "note": "기준 영상 1개 + 구독자 상위 채널의 최신 뮤직비디오 (설정 파일에 고정)",
+    "collectedAt": "2026-10-10",
+    "items": [
+      {
+        "id": "Xp7bggY8mpI",
+        "title": "What K-pop Is Really Selling",
+        "artist": null,
+        "kind": "reference",
+        "publishedAt": "2026-07-04",
+        "views": 1830761,
+        "likes": 59901,
+        "comments": 6167
+      },
+      {
+        "id": "2GJfWMYCWY0",
+        "title": "BLACKPINK - ‘GO’ M/V",
+        "artist": "BLACKPINK",
+        "kind": "mv",
+        "publishedAt": "2026-02-27",
+        "views": 97343635,
+        "likes": 3843087,
+        "comments": 411217
+      },
+      {
+        "id": "GEk4jHwfFTA",
+        "title": "BTS (방탄소년단) ‘NORMAL’ Official MV",
+        "artist": "BTS",
+        "kind": "mv",
+        "publishedAt": "2026-07-19",
+        "views": 40428997,
+        "likes": 1740727,
+        "comments": 74001
+      },
+      {
+        "id": "BZ4UzthYTss",
+        "title": "Stray Kids \"This & That\" M/V",
+        "artist": "Stray Kids",
+        "kind": "mv",
+        "publishedAt": "2026-08-07",
+        "views": 110260962,
+        "likes": 1675509,
+        "comments": 145440
+      },
+      {
+        "id": "zqorlX_5oHQ",
+        "title": "TWICE “ME+YOU” M/V",
+        "artist": "TWICE",
+        "kind": "mv",
+        "publishedAt": "2025-10-10",
+        "views": 11604531,
+        "likes": 589804,
+        "comments": 33642
+      },
+      {
+        "id": "L8ZnXgbyUuc",
+        "title": "BIGBANG - ‘BiiiG’ M/V",
+        "artist": "BIGBANG",
+        "kind": "mv",
+        "publishedAt": "2026-08-19",
+        "views": 18793125,
+        "likes": 709536,
+        "comments": 47012
+      },
+      {
+        "id": "haEIraiKaEM",
+        "title": "TXT (투모로우바이투게더) 'セツナハナビ (Setsuna Hanabi)' Official MV",
+        "artist": "TXT",
+        "kind": "mv",
+        "publishedAt": "2026-08-16",
+        "views": 281359,
+        "likes": 32443,
+        "comments": 352
+      },
+      {
+        "id": "bDvtb6Pywes",
+        "title": "#ENHYPEN (#엔하이픈) 'Checkmate' Official MV",
+        "artist": "ENHYPEN",
+        "kind": "mv",
+        "publishedAt": "2026-09-11",
+        "views": 304036,
+        "likes": 32384,
+        "comments": 322
+      },
+      {
+        "id": "xXZwZ0DolJc",
+        "title": "BABYMONSTER - 'MOON' M/V",
+        "artist": "BABYMONSTER",
+        "kind": "mv",
+        "publishedAt": "2026-08-02",
+        "views": 86834292,
+        "likes": 838054,
+        "comments": 56308
+      },
+      {
+        "id": "BWfKkqo1Mk8",
+        "title": "EXO 엑소 'Crown' MV",
+        "artist": "EXO",
+        "kind": "mv",
+        "publishedAt": "2026-01-19",
+        "views": 50984520,
+        "likes": 678758,
+        "comments": 140426
+      },
+      {
+        "id": "tXqBtavqC2Y",
+        "title": "SEVENTEEN (세븐틴) 'Bad Influence (Prod. by Pharrell Williams)' Official MV",
+        "artist": "SEVENTEEN",
+        "kind": "mv",
+        "publishedAt": "2025-06-11",
+        "views": 105042,
+        "likes": 10712,
+        "comments": 70
+      }
+    ]
   },
   "sentiment": {
     "confidence": "estimated",
     "sourceIds": ["youtube-data-api"],
-    "note": "등록 영상 1개의 댓글 표본으로, 산업 전체 여론을 대표하지 않음",
+    "note": "기준 영상(What K-pop Is Really Selling) 1개의 댓글 표본으로, 산업 전체 여론을 대표하지 않음",
     "sampleSize": 500,
     "collectedAt": "2026-09-28",
     "positive": 82,
@@ -19,105 +128,150 @@
     "negative": 31
   },
   "channels": {
-    "confidence": "unverified",
-    "sourceIds": ["dkblog-youtube"],
-    "note": "2026-01 기준 구독자 순위, 조회수는 YouTube Data API 연동(Task 013) 후 수집",
+    "confidence": "verified",
+    "sourceIds": ["youtube-data-api"],
+    "note": "구독자 수는 YouTube가 유효숫자 3자리로 반올림해 제공",
     "snapshots": [
       {
         "artist": "BLACKPINK",
-        "subscribers": 99700000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 101000000,
+        "views": 42985258257,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "BTS",
-        "subscribers": 82100000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 86100000,
+        "views": 29486622474,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "Stray Kids",
-        "subscribers": 22900000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 25400000,
+        "views": 13223180864,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "TWICE",
-        "subscribers": 19000000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 19500000,
+        "views": 9577891175,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "BIGBANG",
-        "subscribers": 16700000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 17000000,
+        "views": 10668546585,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "SEVENTEEN",
-        "subscribers": 16500000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 18000000,
+        "views": 8910059448,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "TXT",
-        "subscribers": 13200000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 13900000,
+        "views": 4614771289,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "ENHYPEN",
-        "subscribers": 13200000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 14600000,
+        "views": 5408997848,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "BABYMONSTER",
-        "subscribers": 11100000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 13300000,
+        "views": 10354140722,
+        "capturedAt": "2026-10-10"
       },
       {
         "artist": "EXO",
-        "subscribers": 9850000,
-        "views": null,
-        "capturedAt": "2026-01-01"
+        "subscribers": 9920000,
+        "views": 2091317240,
+        "capturedAt": "2026-10-10"
       }
     ]
   },
   "rankings": [
     {
+      "confidence": "unverified",
+      "sourceIds": ["ibtimes-fandom"],
       "id": "social-followers",
       "title": "소셜 팔로워 합산 Top 8",
       "unit": "백만 명",
-      "confidence": "unverified",
-      "sourceIds": ["ibtimes-fandom"],
       "rows": [
-        { "artist": "BTS", "value": 352 },
-        { "artist": "BLACKPINK", "value": 269 },
-        { "artist": "TWICE", "value": 105 },
-        { "artist": "Stray Kids", "value": 86 },
-        { "artist": "TXT", "value": 75 },
-        { "artist": "EXO", "value": 61 },
-        { "artist": "ENHYPEN", "value": 60 },
-        { "artist": "SEVENTEEN", "value": 59 }
+        {
+          "artist": "BTS",
+          "value": 352
+        },
+        {
+          "artist": "BLACKPINK",
+          "value": 269
+        },
+        {
+          "artist": "TWICE",
+          "value": 105
+        },
+        {
+          "artist": "Stray Kids",
+          "value": 86
+        },
+        {
+          "artist": "TXT",
+          "value": 75
+        },
+        {
+          "artist": "EXO",
+          "value": 61
+        },
+        {
+          "artist": "ENHYPEN",
+          "value": 60
+        },
+        {
+          "artist": "SEVENTEEN",
+          "value": 59
+        }
       ]
     },
     {
-      "id": "spotify-monthly-listeners",
-      "title": "Spotify 월간 청취자 Top 7",
-      "unit": "백만 명",
       "confidence": "unverified",
       "sourceIds": ["soundcharts-spotify"],
       "note": "2026-09 기준",
+      "id": "spotify-monthly-listeners",
+      "title": "Spotify 월간 청취자 Top 7",
+      "unit": "백만 명",
       "rows": [
-        { "artist": "JENNIE", "value": 49 },
-        { "artist": "BTS", "value": 34 },
-        { "artist": "ROSÉ", "value": 26 },
-        { "artist": "ILLIT", "value": 21 },
-        { "artist": "LE SSERAFIM", "value": 20 },
-        { "artist": "BLACKPINK", "value": 20 },
-        { "artist": "Jung Kook", "value": 15 }
+        {
+          "artist": "JENNIE",
+          "value": 49
+        },
+        {
+          "artist": "BTS",
+          "value": 34
+        },
+        {
+          "artist": "ROSÉ",
+          "value": 26
+        },
+        {
+          "artist": "ILLIT",
+          "value": 21
+        },
+        {
+          "artist": "LE SSERAFIM",
+          "value": 20
+        },
+        {
+          "artist": "BLACKPINK",
+          "value": 20
+        },
+        {
+          "artist": "Jung Kook",
+          "value": 15
+        }
       ]
     }
   ]

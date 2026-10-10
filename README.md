@@ -37,11 +37,11 @@ npm run build      # 프로덕션 빌드
 
 API 키는 `.env.local`(`DART_API_KEY`, `YOUTUBE_API_KEY`)에 두며 수집 스크립트에서만 읽습니다.
 
-| 명령                          | 내용                                                                   | 갱신 파일                                                |
-| ----------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------- |
-| `npm run collect:dart`        | OpenDART 사업보고서 주요계정 (대상: `data/config/dart-companies.json`) | `finance.json`, `metrics.json`                           |
-| `npm run collect:youtube`     | 채널·영상 통계, 댓글 원본 (대상: `data/config/youtube-targets.json`)   | `fans.json`                                              |
-| `npm run collect:circlechart` | Circle Chart 연간 앨범 차트 Top100 (연도 지정 가능: `-- 2025`)         | `album-sales.json`, `concentration.json`, `metrics.json` |
+| 명령                          | 내용                                                                                 | 갱신 파일                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| `npm run collect:dart`        | OpenDART 사업보고서 주요계정 (대상: `data/config/dart-companies.json`)               | `finance.json`, `metrics.json`                           |
+| `npm run collect:youtube`     | 채널·영상 통계, 댓글 원본은 로컬에만 보관 (대상: `data/config/youtube-targets.json`) | `fans.json`                                              |
+| `npm run collect:circlechart` | Circle Chart 연간 앨범 차트 Top100 (연도 지정 가능: `-- 2025`)                       | `album-sales.json`, `concentration.json`, `metrics.json` |
 
 - 응답 원본은 `data/raw/{출처}/{수집일}/`에 보존합니다.
 - 수집 후 `npm run validate:data`로 검증하고 다시 빌드해야 화면에 반영됩니다.

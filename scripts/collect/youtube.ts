@@ -332,7 +332,7 @@ async function main() {
     videoListSchema.parse(videosRaw).items.map(item => [item.id, item])
   )
 
-  // 댓글 원본 (감성 분류기가 없어 저장만, 작성자 식별 정보는 제외)
+  // 댓글 원본 (감성 분류기가 없어 저장만, 작성자 식별 정보는 제외). 로컬에만 두고 저장소에는 올리지 않음(.gitignore)
   let commentTotal = 0
   for (const target of targets) {
     try {
@@ -420,7 +420,7 @@ async function main() {
   await writeJson(fansFile, fansDataSchema.parse(fans))
 
   console.log(
-    `\n채널 ${snapshots.length}개, 영상 ${fans.videos.items.length}개, 댓글 원본 ${commentTotal}개 수집`
+    `\n채널 ${snapshots.length}개, 영상 ${fans.videos.items.length}개, 댓글 원본 ${commentTotal}개 수집(로컬 보관)`
   )
   const missing = targets.filter(target => !videoById.has(target.id))
   if (missing.length > 0) {

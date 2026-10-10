@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Playwright MCP 테스트 산출물
 .playwright-mcp/
+
+# 유튜브 댓글 원본은 로컬에만 보관 (타인 작성 글이라 저장소에 올리지 않음)
+data/raw/youtube/*/comments/

@@ -11,7 +11,7 @@
     {
       "id": "global-music-revenue-2025",
       "label": "글로벌 음반산업 매출",
-      "value": 317.0,
+      "value": 317,
       "unit": "억 달러",
       "delta": 19.1,
       "confidence": "unverified",
@@ -21,9 +21,9 @@
     {
       "id": "latam-weverse-retail-growth-2025",
       "label": "중남미 Weverse 디지털 리테일 판매 성장률",
-      "value": 715.0,
+      "value": 715,
       "unit": "%",
-      "delta": 715.0,
+      "delta": 715,
       "confidence": "unverified",
       "sourceIds": ["outlook-weverse-latam"],
       "note": "2025년 YoY"
@@ -31,7 +31,7 @@
     {
       "id": "latam-weverse-user-growth-2025",
       "label": "중남미 Weverse 이용자 수 성장률",
-      "value": 22.0,
+      "value": 22,
       "unit": "%",
       "delta": null,
       "confidence": "unverified",
@@ -73,10 +73,12 @@
       "label": "판매량 집중도(Gini)",
       "value": 0.4007,
       "unit": "",
-      "delta": -0.0073,
-      "confidence": "unverified",
+      "delta": -0.0076,
+      "confidence": "verified",
       "sourceIds": ["circle-chart-top100"],
-      "note": "0=균등, 1=쏠림. 판매 집중도 화면 표기는 -0.0076으로 산출 기준 차이 확인 필요"
+      "asOf": "2026-10-10",
+      "method": "연간 Top100 판매량의 Gini 계수 (원자료 직접 집계)",
+      "note": "0=균등, 1=쏠림. 전년 대비 증감"
     },
     {
       "id": "top10-share-2025",
@@ -84,8 +86,10 @@
       "value": 29.77,
       "unit": "%",
       "delta": -1.58,
-      "confidence": "unverified",
+      "confidence": "verified",
       "sourceIds": ["circle-chart-top100"],
+      "asOf": "2026-10-10",
+      "method": "Top10 판매량 합 ÷ Top100 판매량 합",
       "note": "전년 대비 %p, 낮을수록 분산"
     },
     {
@@ -94,9 +98,10 @@
       "value": 64615322,
       "unit": "장",
       "delta": -6582805,
-      "confidence": "unverified",
+      "confidence": "verified",
       "sourceIds": ["circle-chart-top100"],
-      "note": "큐레이션 계열 기준. circlechart.kr 원자료 직접 집계(약 3,530만 장)와 차이 원인 미확인"
+      "asOf": "2026-10-10",
+      "note": "Circle Chart 연간 앨범 차트 Top100 판매량 합계, 전년 대비 증감"
     },
     {
       "id": "physical-album-sales-2025",
@@ -209,7 +214,7 @@
     {
       "id": "music-export-share-2025",
       "label": "음악산업 수출 비중(콘텐츠 대비)",
-      "value": 16.0,
+      "value": 16,
       "unit": "%",
       "delta": null,
       "confidence": "unverified",
@@ -248,7 +253,7 @@
     {
       "id": "production-cost-gap-2023",
       "label": "대기업·중소기업 연평균 음악 제작비 격차",
-      "value": 29.0,
+      "value": 29,
       "unit": "배",
       "delta": null,
       "confidence": "unverified",
@@ -308,7 +313,7 @@
     {
       "id": "weverse-mau-2025",
       "label": "Weverse 월간활성이용자(MAU)",
-      "value": 12.0,
+      "value": 12,
       "unit": "백만 명",
       "delta": null,
       "confidence": "unverified",
@@ -318,7 +323,7 @@
     {
       "id": "weverse-goods-growth-2025",
       "label": "Weverse 상품(굿즈) 매출 성장률",
-      "value": 70.0,
+      "value": 70,
       "unit": "%",
       "delta": null,
       "confidence": "unverified",

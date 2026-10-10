@@ -1,0 +1,606 @@
+{
+  "collectedAt": "2026-10-10",
+  "ResultStatus": "OK",
+  "List": {
+    "0": {
+      "SERVICE_RANKING": "1",
+      "ALBUM_NAME": "`The Boys` The 3rd Album",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "385348"
+    },
+    "1": {
+      "SERVICE_RANKING": "2",
+      "ALBUM_NAME": "`Mr. Simple` The 5th Album",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "343348"
+    },
+    "2": {
+      "SERVICE_RANKING": "3",
+      "ALBUM_NAME": "`왜(Keep Your Head Down)` New Album",
+      "ARTIST_NAME": "동방신기",
+      "Album_CNT": "263412"
+    },
+    "3": {
+      "SERVICE_RANKING": "4",
+      "ALBUM_NAME": "2집 In Heaven",
+      "ARTIST_NAME": "JYJ",
+      "Album_CNT": "220442"
+    },
+    "4": {
+      "SERVICE_RANKING": "5",
+      "ALBUM_NAME": "1집 Fiction And Fact",
+      "ARTIST_NAME": "비스트 (Beast)",
+      "Album_CNT": "142272"
+    },
+    "5": {
+      "SERVICE_RANKING": "6",
+      "ALBUM_NAME": "빅뱅 미니앨범 4집",
+      "ARTIST_NAME": "BIGBANG (빅뱅)",
+      "Album_CNT": "136594"
+    },
+    "6": {
+      "SERVICE_RANKING": "7",
+      "ALBUM_NAME": "`Mr. Simple` The 5th Album Repackage",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "129894"
+    },
+    "7": {
+      "SERVICE_RANKING": "8",
+      "ALBUM_NAME": "1집 First Step",
+      "ARTIST_NAME": "씨엔블루 (CNBLUE)",
+      "Album_CNT": "115467"
+    },
+    "8": {
+      "SERVICE_RANKING": "9",
+      "ALBUM_NAME": "Break Down (EP)",
+      "ARTIST_NAME": "김현중",
+      "Album_CNT": "114642"
+    },
+    "9": {
+      "SERVICE_RANKING": "10",
+      "ALBUM_NAME": "Lucky (2nd Mini Album)",
+      "ARTIST_NAME": "김현중",
+      "Album_CNT": "101705"
+    },
+    "10": {
+      "SERVICE_RANKING": "11",
+      "ALBUM_NAME": "3rd Album STEP",
+      "ARTIST_NAME": "카라 (KARA)",
+      "Album_CNT": "100662"
+    },
+    "11": {
+      "SERVICE_RANKING": "12",
+      "ALBUM_NAME": "Hands Up",
+      "ARTIST_NAME": "2PM",
+      "Album_CNT": "100379"
+    },
+    "12": {
+      "SERVICE_RANKING": "13",
+      "ALBUM_NAME": "빅뱅 스페셜에디션",
+      "ARTIST_NAME": "BIGBANG (빅뱅)",
+      "Album_CNT": "89371"
+    },
+    "13": {
+      "SERVICE_RANKING": "14",
+      "ALBUM_NAME": "2NE1 2nd Mini Album",
+      "ARTIST_NAME": "2NE1",
+      "Album_CNT": "85819"
+    },
+    "14": {
+      "SERVICE_RANKING": "15",
+      "ALBUM_NAME": "2집 Last Fantasy",
+      "ARTIST_NAME": "아이유 (IU)",
+      "Album_CNT": "71860"
+    },
+    "15": {
+      "SERVICE_RANKING": "16",
+      "ALBUM_NAME": "무한도전 서해안고속도로",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "71300"
+    },
+    "16": {
+      "SERVICE_RANKING": "17",
+      "ALBUM_NAME": "Take A Deeper Look",
+      "ARTIST_NAME": "박재범",
+      "Album_CNT": "66316"
+    },
+    "17": {
+      "SERVICE_RANKING": "18",
+      "ALBUM_NAME": "In Heaven (Special Edition)",
+      "ARTIST_NAME": "JYJ",
+      "Album_CNT": "62790"
+    },
+    "18": {
+      "SERVICE_RANKING": "19",
+      "ALBUM_NAME": "1집 `피노키오` f(x) The 1st Album",
+      "ARTIST_NAME": "f(x)",
+      "Album_CNT": "61637"
+    },
+    "19": {
+      "SERVICE_RANKING": "20",
+      "ALBUM_NAME": "왜 (Keep Your Head Down) Repackage `이것만은 알고 가`",
+      "ARTIST_NAME": "동방신기",
+      "Album_CNT": "60205"
+    },
+    "20": {
+      "SERVICE_RANKING": "21",
+      "ALBUM_NAME": "5집 Tonight",
+      "ARTIST_NAME": "이승기",
+      "Album_CNT": "60055"
+    },
+    "21": {
+      "SERVICE_RANKING": "22",
+      "ALBUM_NAME": "박칼린의 칼린 셀렉츠 (Kolleen Selects)",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "58734"
+    },
+    "22": {
+      "SERVICE_RANKING": "23",
+      "ALBUM_NAME": "정규1집 OVER THE TOP",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "57111"
+    },
+    "23": {
+      "SERVICE_RANKING": "24",
+      "ALBUM_NAME": "미남이시네요 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "56984"
+    },
+    "24": {
+      "SERVICE_RANKING": "25",
+      "ALBUM_NAME": "Paradise",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "56465"
+    },
+    "25": {
+      "SERVICE_RANKING": "26",
+      "ALBUM_NAME": "RETURN (EP)",
+      "ARTIST_NAME": "FTISLAND (FT 아일랜드)",
+      "Album_CNT": "52932"
+    },
+    "26": {
+      "SERVICE_RANKING": "27",
+      "ALBUM_NAME": "미남이시네요 OST Part 2",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "51556"
+    },
+    "27": {
+      "SERVICE_RANKING": "28",
+      "ALBUM_NAME": "Black Eyes",
+      "ARTIST_NAME": "티아라 (T-ara)",
+      "Album_CNT": "48205"
+    },
+    "28": {
+      "SERVICE_RANKING": "29",
+      "ALBUM_NAME": "시크릿 가든 OST Special",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "47823"
+    },
+    "29": {
+      "SERVICE_RANKING": "30",
+      "ALBUM_NAME": "The 1st Asia Tour Concert `Into The New World`",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "46568"
+    },
+    "30": {
+      "SERVICE_RANKING": "31",
+      "ALBUM_NAME": "`Hot Summer` f(x) 1st Album Repackage",
+      "ARTIST_NAME": "f(x)",
+      "Album_CNT": "46032"
+    },
+    "31": {
+      "SERVICE_RANKING": "32",
+      "ALBUM_NAME": "2011 SMTOWN Winter `The Warmest Gift`",
+      "ARTIST_NAME": "SMTOWN",
+      "Album_CNT": "44467"
+    },
+    "32": {
+      "SERVICE_RANKING": "33",
+      "ALBUM_NAME": "Real",
+      "ARTIST_NAME": "아이유 (IU)",
+      "Album_CNT": "42879"
+    },
+    "33": {
+      "SERVICE_RANKING": "34",
+      "ALBUM_NAME": "1st Mini Album V.V.I.P",
+      "ARTIST_NAME": "승리",
+      "Album_CNT": "41812"
+    },
+    "34": {
+      "SERVICE_RANKING": "35",
+      "ALBUM_NAME": "Mona Lisa",
+      "ARTIST_NAME": "엠블랙 (MBLAQ)",
+      "Album_CNT": "41025"
+    },
+    "35": {
+      "SERVICE_RANKING": "36",
+      "ALBUM_NAME": "7집 처음",
+      "ARTIST_NAME": "성시경",
+      "Album_CNT": "40742"
+    },
+    "36": {
+      "SERVICE_RANKING": "37",
+      "ALBUM_NAME": "나는 가수다 경연 1 (CD)",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "39297"
+    },
+    "37": {
+      "SERVICE_RANKING": "38",
+      "ALBUM_NAME": "SuperJunior-M 2nd Mini Album `太完美`",
+      "ARTIST_NAME": "슈퍼주니어-M (Super Junior-M)",
+      "Album_CNT": "37756"
+    },
+    "38": {
+      "SERVICE_RANKING": "39",
+      "ALBUM_NAME": "it B1A4",
+      "ARTIST_NAME": "비원에이포 (B1A4)",
+      "Album_CNT": "36342"
+    },
+    "39": {
+      "SERVICE_RANKING": "40",
+      "ALBUM_NAME": "Memory In FTIsland (ReMake Album)",
+      "ARTIST_NAME": "FTISLAND (FT 아일랜드)",
+      "Album_CNT": "36143"
+    },
+    "40": {
+      "SERVICE_RANKING": "41",
+      "ALBUM_NAME": "GD & TOP",
+      "ARTIST_NAME": "GD, TOP (빅뱅)",
+      "Album_CNT": "34703"
+    },
+    "41": {
+      "SERVICE_RANKING": "42",
+      "ALBUM_NAME": "2집 Wonder World",
+      "ARTIST_NAME": "원더걸스 (Wonder Girls)",
+      "Album_CNT": "34140"
+    },
+    "42": {
+      "SERVICE_RANKING": "43",
+      "ALBUM_NAME": "4Minutes Left",
+      "ARTIST_NAME": "4Minute (포미닛)",
+      "Album_CNT": "34004"
+    },
+    "43": {
+      "SERVICE_RANKING": "44",
+      "ALBUM_NAME": "`Run Devil Run` The 2nd Album (Repackage)",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "32147"
+    },
+    "44": {
+      "SERVICE_RANKING": "45",
+      "ALBUM_NAME": "Let It Go (EP)",
+      "ARTIST_NAME": "허영생",
+      "Album_CNT": "32078"
+    },
+    "45": {
+      "SERVICE_RANKING": "46",
+      "ALBUM_NAME": "1집 A Class",
+      "ARTIST_NAME": "miss A",
+      "Album_CNT": "31885"
+    },
+    "46": {
+      "SERVICE_RANKING": "47",
+      "ALBUM_NAME": "1집 BLAQ Style",
+      "ARTIST_NAME": "엠블랙 (MBLAQ)",
+      "Album_CNT": "31634"
+    },
+    "47": {
+      "SERVICE_RANKING": "48",
+      "ALBUM_NAME": "First Step ＋1 Thank You",
+      "ARTIST_NAME": "씨엔블루 (CNBLUE)",
+      "Album_CNT": "31447"
+    },
+    "48": {
+      "SERVICE_RANKING": "49",
+      "ALBUM_NAME": "1집 To Anyone",
+      "ARTIST_NAME": "2NE1",
+      "Album_CNT": "31362"
+    },
+    "49": {
+      "SERVICE_RANKING": "50",
+      "ALBUM_NAME": "The 3rd Asia Tour Concert Album `Super Show 3`",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "30951"
+    },
+    "50": {
+      "SERVICE_RANKING": "51",
+      "ALBUM_NAME": "Inspirit",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "30143"
+    },
+    "51": {
+      "SERVICE_RANKING": "52",
+      "ALBUM_NAME": "존트라볼타 워너비",
+      "ARTIST_NAME": "티아라 (T-ara)",
+      "Album_CNT": "30116"
+    },
+    "52": {
+      "SERVICE_RANKING": "53",
+      "ALBUM_NAME": "2nd Mini Album `Bluelove`",
+      "ARTIST_NAME": "씨엔블루 (CNBLUE)",
+      "Album_CNT": "29665"
+    },
+    "53": {
+      "SERVICE_RANKING": "54",
+      "ALBUM_NAME": "Trouble Maker",
+      "ARTIST_NAME": "트러블메이커",
+      "Album_CNT": "29383"
+    },
+    "54": {
+      "SERVICE_RANKING": "55",
+      "ALBUM_NAME": "Evolution",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "28143"
+    },
+    "55": {
+      "SERVICE_RANKING": "56",
+      "ALBUM_NAME": "AsuRa BalBalTa",
+      "ARTIST_NAME": "리쌍",
+      "Album_CNT": "27755"
+    },
+    "56": {
+      "SERVICE_RANKING": "57",
+      "ALBUM_NAME": "KimdongrYULE",
+      "ARTIST_NAME": "김동률",
+      "Album_CNT": "27724"
+    },
+    "57": {
+      "SERVICE_RANKING": "58",
+      "ALBUM_NAME": "성균관 스캔들 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "27224"
+    },
+    "58": {
+      "SERVICE_RANKING": "59",
+      "ALBUM_NAME": "1집 Virgin",
+      "ARTIST_NAME": "애프터스쿨 (After School)",
+      "Album_CNT": "26418"
+    },
+    "59": {
+      "SERVICE_RANKING": "60",
+      "ALBUM_NAME": "`Hello` SHINee The 2nd Album Repackage",
+      "ARTIST_NAME": "샤이니 (SHINee)",
+      "Album_CNT": "26300"
+    },
+    "60": {
+      "SERVICE_RANKING": "61",
+      "ALBUM_NAME": "넌 내게 반했어 OST Part 1",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "26160"
+    },
+    "61": {
+      "SERVICE_RANKING": "62",
+      "ALBUM_NAME": "2011 빅뱅 콘서트 라이브 앨범 `Big Show`",
+      "ARTIST_NAME": "BIGBANG (빅뱅)",
+      "Album_CNT": "25834"
+    },
+    "62": {
+      "SERVICE_RANKING": "63",
+      "ALBUM_NAME": "The Beginning (Worldwide Concert In Seoul Edition)",
+      "ARTIST_NAME": "JYJ",
+      "Album_CNT": "25713"
+    },
+    "63": {
+      "SERVICE_RANKING": "64",
+      "ALBUM_NAME": "드림하이 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "25347"
+    },
+    "64": {
+      "SERVICE_RANKING": "65",
+      "ALBUM_NAME": "4집 Sixth Sense",
+      "ARTIST_NAME": "브라운아이드걸스",
+      "Album_CNT": "25239"
+    },
+    "65": {
+      "SERVICE_RANKING": "66",
+      "ALBUM_NAME": "Mini Album 1집 `Bluetory`",
+      "ARTIST_NAME": "씨엔블루 (CNBLUE)",
+      "Album_CNT": "24889"
+    },
+    "66": {
+      "SERVICE_RANKING": "67",
+      "ALBUM_NAME": "Roly-Poly in 코파카바나 (미니 리패키지)",
+      "ARTIST_NAME": "티아라 (T-ara)",
+      "Album_CNT": "24179"
+    },
+    "67": {
+      "SERVICE_RANKING": "68",
+      "ALBUM_NAME": "보스를 지켜라 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "23955"
+    },
+    "68": {
+      "SERVICE_RANKING": "69",
+      "ALBUM_NAME": "3rd Mini Plus Album Real+",
+      "ARTIST_NAME": "아이유 (IU)",
+      "Album_CNT": "23508"
+    },
+    "69": {
+      "SERVICE_RANKING": "70",
+      "ALBUM_NAME": "서바이벌 나는 가수다 (경연 1, 2)",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "23084"
+    },
+    "70": {
+      "SERVICE_RANKING": "71",
+      "ALBUM_NAME": "Let`s Fly",
+      "ARTIST_NAME": "비원에이포 (B1A4)",
+      "Album_CNT": "22895"
+    },
+    "71": {
+      "SERVICE_RANKING": "72",
+      "ALBUM_NAME": "Super Junior-M 2nd Mini Album `太完美` (Repackage)",
+      "ARTIST_NAME": "슈퍼주니어-M (Super Junior-M)",
+      "Album_CNT": "22352"
+    },
+    "72": {
+      "SERVICE_RANKING": "73",
+      "ALBUM_NAME": "So 女",
+      "ARTIST_NAME": "레인보우 (Rainbow)",
+      "Album_CNT": "21900"
+    },
+    "73": {
+      "SERVICE_RANKING": "74",
+      "ALBUM_NAME": "Don't Touch My Girl (Single)",
+      "ARTIST_NAME": "보이프렌드 (Boyfriend)",
+      "Album_CNT": "21106"
+    },
+    "74": {
+      "SERVICE_RANKING": "75",
+      "ALBUM_NAME": "New Kids On The Block",
+      "ARTIST_NAME": "블락비 (Block B)",
+      "Album_CNT": "21091"
+    },
+    "75": {
+      "SERVICE_RANKING": "76",
+      "ALBUM_NAME": "`Oh!` The Second Album",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "20588"
+    },
+    "76": {
+      "SERVICE_RANKING": "77",
+      "ALBUM_NAME": "Bran New Kiss (EP)",
+      "ARTIST_NAME": "유키스 (U-Kiss)",
+      "Album_CNT": "20216"
+    },
+    "77": {
+      "SERVICE_RANKING": "78",
+      "ALBUM_NAME": "매리는 외박중 OST Part 1",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "19979"
+    },
+    "78": {
+      "SERVICE_RANKING": "79",
+      "ALBUM_NAME": "Lights Go On Again",
+      "ARTIST_NAME": "비스트 (Beast)",
+      "Album_CNT": "19894"
+    },
+    "79": {
+      "SERVICE_RANKING": "80",
+      "ALBUM_NAME": "Shock Of The New Era",
+      "ARTIST_NAME": "비스트 (Beast)",
+      "Album_CNT": "19487"
+    },
+    "80": {
+      "SERVICE_RANKING": "81",
+      "ALBUM_NAME": "미스 리플리 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "19248"
+    },
+    "81": {
+      "SERVICE_RANKING": "82",
+      "ALBUM_NAME": "Roman",
+      "ARTIST_NAME": "틴 탑 (Teen Top)",
+      "Album_CNT": "19231"
+    },
+    "82": {
+      "SERVICE_RANKING": "83",
+      "ALBUM_NAME": "Vol.2 Temptastic (EP)",
+      "ARTIST_NAME": "티아라 (T-ara)",
+      "Album_CNT": "18978"
+    },
+    "83": {
+      "SERVICE_RANKING": "84",
+      "ALBUM_NAME": "1집 So Cool",
+      "ARTIST_NAME": "씨스타 (Sistar)",
+      "Album_CNT": "18815"
+    },
+    "84": {
+      "SERVICE_RANKING": "85",
+      "ALBUM_NAME": "Turn Me On",
+      "ARTIST_NAME": "김규종",
+      "Album_CNT": "18735"
+    },
+    "85": {
+      "SERVICE_RANKING": "86",
+      "ALBUM_NAME": "BLAQ Style 3D Edition",
+      "ARTIST_NAME": "엠블랙 (MBLAQ)",
+      "Album_CNT": "18533"
+    },
+    "86": {
+      "SERVICE_RANKING": "87",
+      "ALBUM_NAME": "점핑",
+      "ARTIST_NAME": "카라 (KARA)",
+      "Album_CNT": "18475"
+    },
+    "87": {
+      "SERVICE_RANKING": "88",
+      "ALBUM_NAME": "`훗(Hoot)` The 3rd Mini Album",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "17759"
+    },
+    "88": {
+      "SERVICE_RANKING": "89",
+      "ALBUM_NAME": "매리는 외박중 OST Part 2",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "17610"
+    },
+    "89": {
+      "SERVICE_RANKING": "90",
+      "ALBUM_NAME": "Feel Brand New (EP)",
+      "ARTIST_NAME": "이루 (ERU)",
+      "Album_CNT": "17516"
+    },
+    "90": {
+      "SERVICE_RANKING": "91",
+      "ALBUM_NAME": "세시봉 친구들 (3CD)",
+      "ARTIST_NAME": "송창식, 윤형주, 김세환",
+      "Album_CNT": "17465"
+    },
+    "91": {
+      "SERVICE_RANKING": "92",
+      "ALBUM_NAME": "Not Alone (Single)",
+      "ARTIST_NAME": "박정민",
+      "Album_CNT": "17450"
+    },
+    "92": {
+      "SERVICE_RANKING": "93",
+      "ALBUM_NAME": "여인의 향기 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "17308"
+    },
+    "93": {
+      "SERVICE_RANKING": "94",
+      "ALBUM_NAME": "내가 갈게 (I'll be there)",
+      "ARTIST_NAME": "보이프렌드 (Boyfriend)",
+      "Album_CNT": "16999"
+    },
+    "94": {
+      "SERVICE_RANKING": "95",
+      "ALBUM_NAME": "Lights Go On Again (Deluxe Special Asian Edition)",
+      "ARTIST_NAME": "비스트 (Beast)",
+      "Album_CNT": "16891"
+    },
+    "95": {
+      "SERVICE_RANKING": "96",
+      "ALBUM_NAME": "1집 Moving In Secret",
+      "ARTIST_NAME": "시크릿 (Secret)",
+      "Album_CNT": "16619"
+    },
+    "96": {
+      "SERVICE_RANKING": "97",
+      "ALBUM_NAME": "2011 마커스 라이브 워십",
+      "ARTIST_NAME": "마커스",
+      "Album_CNT": "16520"
+    },
+    "97": {
+      "SERVICE_RANKING": "98",
+      "ALBUM_NAME": "3집 O -正.反.合. (정반합)",
+      "ARTIST_NAME": "동방신기",
+      "Album_CNT": "15827"
+    },
+    "98": {
+      "SERVICE_RANKING": "99",
+      "ALBUM_NAME": "2집 Revolution",
+      "ARTIST_NAME": "카라 (KARA)",
+      "Album_CNT": "15759"
+    },
+    "99": {
+      "SERVICE_RANKING": "100",
+      "ALBUM_NAME": "시크릿 가든 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "15747"
+    }
+  }
+}

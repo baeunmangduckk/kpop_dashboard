@@ -17,7 +17,7 @@
     "id": "auto-sales-gini",
     "kind": "auto",
     "tone": "positive",
-    "text": "판매량 집중도(Gini) 지표가 직전 시점 대비 감소했다 (-0.0073, 개선).",
+    "text": "판매량 집중도(Gini) 지표가 직전 시점 대비 감소했다 (-0.0076, 개선).",
     "metricIds": ["sales-gini-2025"]
   },
   {

@@ -1,0 +1,606 @@
+{
+  "collectedAt": "2026-10-10",
+  "ResultStatus": "OK",
+  "List": {
+    "0": {
+      "SERVICE_RANKING": "1",
+      "ALBUM_NAME": "Proof",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "3482598"
+    },
+    "1": {
+      "SERVICE_RANKING": "2",
+      "ALBUM_NAME": "MAXIDENT",
+      "ARTIST_NAME": "Stray Kids (스트레이 키즈)",
+      "Album_CNT": "3176233"
+    },
+    "2": {
+      "SERVICE_RANKING": "3",
+      "ALBUM_NAME": "4th Album `Face the Sun`",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "2867353"
+    },
+    "3": {
+      "SERVICE_RANKING": "4",
+      "ALBUM_NAME": "BORN PINK",
+      "ARTIST_NAME": "BLACKPINK",
+      "Album_CNT": "2522941"
+    },
+    "4": {
+      "SERVICE_RANKING": "5",
+      "ALBUM_NAME": "Glitch Mode - The 2nd Album",
+      "ARTIST_NAME": "NCT DREAM",
+      "Album_CNT": "2095544"
+    },
+    "5": {
+      "SERVICE_RANKING": "6",
+      "ALBUM_NAME": "질주 (2 Baddies) - The 4th Album",
+      "ARTIST_NAME": "NCT 127",
+      "Album_CNT": "1825170"
+    },
+    "6": {
+      "SERVICE_RANKING": "7",
+      "ALBUM_NAME": "minisode 2: Thursday`s Child",
+      "ARTIST_NAME": "투모로우바이투게더",
+      "Album_CNT": "1806679"
+    },
+    "7": {
+      "SERVICE_RANKING": "8",
+      "ALBUM_NAME": "Girls - The 2nd Mini Album",
+      "ARTIST_NAME": "aespa",
+      "Album_CNT": "1803050"
+    },
+    "8": {
+      "SERVICE_RANKING": "9",
+      "ALBUM_NAME": "ODDINARY",
+      "ARTIST_NAME": "Stray Kids (스트레이 키즈)",
+      "Album_CNT": "1762168"
+    },
+    "9": {
+      "SERVICE_RANKING": "10",
+      "ALBUM_NAME": "After LIKE",
+      "ARTIST_NAME": "IVE (아이브)",
+      "Album_CNT": "1652402"
+    },
+    "10": {
+      "SERVICE_RANKING": "11",
+      "ALBUM_NAME": "Beatbox - The 2nd Album Repackage",
+      "ARTIST_NAME": "NCT DREAM",
+      "Album_CNT": "1517211"
+    },
+    "11": {
+      "SERVICE_RANKING": "12",
+      "ALBUM_NAME": "4th Album Repackage `SECTOR 17`",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "1470928"
+    },
+    "12": {
+      "SERVICE_RANKING": "13",
+      "ALBUM_NAME": "Candy - Winter Special Mini Album",
+      "ARTIST_NAME": "NCT DREAM",
+      "Album_CNT": "1395187"
+    },
+    "13": {
+      "SERVICE_RANKING": "14",
+      "ALBUM_NAME": "MANIFESTO : DAY 1",
+      "ARTIST_NAME": "ENHYPEN",
+      "Album_CNT": "1387150"
+    },
+    "14": {
+      "SERVICE_RANKING": "15",
+      "ALBUM_NAME": "IM HERO",
+      "ARTIST_NAME": "임영웅",
+      "Album_CNT": "1149643"
+    },
+    "15": {
+      "SERVICE_RANKING": "16",
+      "ALBUM_NAME": "BETWEEN 1&2",
+      "ARTIST_NAME": "TWICE",
+      "Album_CNT": "1121912"
+    },
+    "16": {
+      "SERVICE_RANKING": "17",
+      "ALBUM_NAME": "The Astronaut",
+      "ARTIST_NAME": "진 (JIN)",
+      "Album_CNT": "1040155"
+    },
+    "17": {
+      "SERVICE_RANKING": "18",
+      "ALBUM_NAME": "CHECKMATE",
+      "ARTIST_NAME": "ITZY (있지)",
+      "Album_CNT": "1032930"
+    },
+    "18": {
+      "SERVICE_RANKING": "19",
+      "ALBUM_NAME": "THE WORLD EP.1 : MOVEMENT",
+      "ARTIST_NAME": "ATEEZ (에이티즈)",
+      "Album_CNT": "1007575"
+    },
+    "19": {
+      "SERVICE_RANKING": "20",
+      "ALBUM_NAME": "CHESHIRE",
+      "ARTIST_NAME": "ITZY (있지)",
+      "Album_CNT": "1003533"
+    },
+    "20": {
+      "SERVICE_RANKING": "21",
+      "ALBUM_NAME": "LOVE DIVE",
+      "ARTIST_NAME": "IVE (아이브)",
+      "Album_CNT": "861185"
+    },
+    "21": {
+      "SERVICE_RANKING": "22",
+      "ALBUM_NAME": "I love",
+      "ARTIST_NAME": "i-dle (아이들)",
+      "Album_CNT": "824113"
+    },
+    "22": {
+      "SERVICE_RANKING": "23",
+      "ALBUM_NAME": "`The ReVe Festival 2022 - Birthday`",
+      "ARTIST_NAME": "레드벨벳(Red Velvet)",
+      "Album_CNT": "803108"
+    },
+    "23": {
+      "SERVICE_RANKING": "24",
+      "ALBUM_NAME": "THE SECOND STEP : CHAPTER ONE",
+      "ARTIST_NAME": "TREASURE (트레저)",
+      "Album_CNT": "797717"
+    },
+    "24": {
+      "SERVICE_RANKING": "25",
+      "ALBUM_NAME": "DIMENSION : ANSWER",
+      "ARTIST_NAME": "ENHYPEN",
+      "Album_CNT": "782590"
+    },
+    "25": {
+      "SERVICE_RANKING": "26",
+      "ALBUM_NAME": "ANTIFRAGILE",
+      "ARTIST_NAME": "LE SSERAFIM (르세라핌)",
+      "Album_CNT": "754657"
+    },
+    "26": {
+      "SERVICE_RANKING": "27",
+      "ALBUM_NAME": "`The ReVe Festival 2022 - Feel My Rhythm`",
+      "ARTIST_NAME": "레드벨벳(Red Velvet)",
+      "Album_CNT": "694304"
+    },
+    "27": {
+      "SERVICE_RANKING": "28",
+      "ALBUM_NAME": "PANORAMA",
+      "ARTIST_NAME": "김호중",
+      "Album_CNT": "686586"
+    },
+    "28": {
+      "SERVICE_RANKING": "29",
+      "ALBUM_NAME": "2021 Winter SMTOWN : SMCU EXPRESS",
+      "ARTIST_NAME": "SMTOWN",
+      "Album_CNT": "564410"
+    },
+    "29": {
+      "SERVICE_RANKING": "30",
+      "ALBUM_NAME": "ENTWURF",
+      "ARTIST_NAME": "NMIXX",
+      "Album_CNT": "562596"
+    },
+    "30": {
+      "SERVICE_RANKING": "31",
+      "ALBUM_NAME": "Indigo",
+      "ARTIST_NAME": "RM",
+      "Album_CNT": "544294"
+    },
+    "31": {
+      "SERVICE_RANKING": "32",
+      "ALBUM_NAME": "IM NAYEON",
+      "ARTIST_NAME": "나연 (TWICE)",
+      "Album_CNT": "544265"
+    },
+    "32": {
+      "SERVICE_RANKING": "33",
+      "ALBUM_NAME": "MMM",
+      "ARTIST_NAME": "영탁",
+      "Album_CNT": "534147"
+    },
+    "33": {
+      "SERVICE_RANKING": "34",
+      "ALBUM_NAME": "1st EP `New Jeans`",
+      "ARTIST_NAME": "NewJeans",
+      "Album_CNT": "530766"
+    },
+    "34": {
+      "SERVICE_RANKING": "35",
+      "ALBUM_NAME": "AD MARE",
+      "ARTIST_NAME": "NMIXX",
+      "Album_CNT": "498432"
+    },
+    "35": {
+      "SERVICE_RANKING": "36",
+      "ALBUM_NAME": "THE SECOND STEP : CHAPTER TWO",
+      "ARTIST_NAME": "TREASURE (트레저)",
+      "Album_CNT": "483423"
+    },
+    "36": {
+      "SERVICE_RANKING": "37",
+      "ALBUM_NAME": "Jack In The Box (Weverse)",
+      "ARTIST_NAME": "j-hope",
+      "Album_CNT": "476770"
+    },
+    "37": {
+      "SERVICE_RANKING": "38",
+      "ALBUM_NAME": "GOT7",
+      "ARTIST_NAME": "GOT7",
+      "Album_CNT": "459254"
+    },
+    "38": {
+      "SERVICE_RANKING": "39",
+      "ALBUM_NAME": "FEARLESS",
+      "ARTIST_NAME": "LE SSERAFIM (르세라핌)",
+      "Album_CNT": "453215"
+    },
+    "39": {
+      "SERVICE_RANKING": "40",
+      "ALBUM_NAME": "7TH MINI ALBUM [BE AWARE]",
+      "ARTIST_NAME": "더보이즈(THE BOYZ)",
+      "Album_CNT": "439502"
+    },
+    "40": {
+      "SERVICE_RANKING": "41",
+      "ALBUM_NAME": "SHAPE of LOVE",
+      "ARTIST_NAME": "몬스타엑스",
+      "Album_CNT": "435754"
+    },
+    "41": {
+      "SERVICE_RANKING": "42",
+      "ALBUM_NAME": "FIRST IMPACT",
+      "ARTIST_NAME": "Kep1er (케플러)",
+      "Album_CNT": "396102"
+    },
+    "42": {
+      "SERVICE_RANKING": "43",
+      "ALBUM_NAME": "DOUBLAST",
+      "ARTIST_NAME": "Kep1er (케플러)",
+      "Album_CNT": "353401"
+    },
+    "43": {
+      "SERVICE_RANKING": "44",
+      "ALBUM_NAME": "MAP OF THE SOUL : PERSONA",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "333361"
+    },
+    "44": {
+      "SERVICE_RANKING": "45",
+      "ALBUM_NAME": "혼돈의 장: FIGHT OR ESCAPE",
+      "ARTIST_NAME": "투모로우바이투게더",
+      "Album_CNT": "332076"
+    },
+    "45": {
+      "SERVICE_RANKING": "46",
+      "ALBUM_NAME": "FOREVER 1 - The 7th Album",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "294948"
+    },
+    "46": {
+      "SERVICE_RANKING": "47",
+      "ALBUM_NAME": "MAP OF THE SOUL : 7",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "292721"
+    },
+    "47": {
+      "SERVICE_RANKING": "48",
+      "ALBUM_NAME": "LOVE YOURSELF 轉 `Tear`",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "292131"
+    },
+    "48": {
+      "SERVICE_RANKING": "49",
+      "ALBUM_NAME": "I NEVER DIE",
+      "ARTIST_NAME": "i-dle (아이들)",
+      "Album_CNT": "274958"
+    },
+    "49": {
+      "SERVICE_RANKING": "50",
+      "ALBUM_NAME": "TROUBLESHOOTER",
+      "ARTIST_NAME": "Kep1er (케플러)",
+      "Album_CNT": "267476"
+    },
+    "50": {
+      "SERVICE_RANKING": "51",
+      "ALBUM_NAME": "LOVE YOURSELF 承 `Her`",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "263067"
+    },
+    "51": {
+      "SERVICE_RANKING": "52",
+      "ALBUM_NAME": "WE NEED LOVE",
+      "ARTIST_NAME": "STAYC(스테이씨)",
+      "Album_CNT": "261827"
+    },
+    "52": {
+      "SERVICE_RANKING": "53",
+      "ALBUM_NAME": "YOUNG-LUV.COM",
+      "ARTIST_NAME": "STAYC(스테이씨)",
+      "Album_CNT": "258572"
+    },
+    "53": {
+      "SERVICE_RANKING": "54",
+      "ALBUM_NAME": "Drive to the Starry Road",
+      "ARTIST_NAME": "아스트로(ASTRO)",
+      "Album_CNT": "253427"
+    },
+    "54": {
+      "SERVICE_RANKING": "55",
+      "ALBUM_NAME": "SPIN OFF : FROM THE WITNESS",
+      "ARTIST_NAME": "ATEEZ (에이티즈)",
+      "Album_CNT": "252291"
+    },
+    "55": {
+      "SERVICE_RANKING": "56",
+      "ALBUM_NAME": "NOEASY",
+      "ARTIST_NAME": "Stray Kids (스트레이 키즈)",
+      "Album_CNT": "246937"
+    },
+    "56": {
+      "SERVICE_RANKING": "57",
+      "ALBUM_NAME": "TRICKSTER",
+      "ARTIST_NAME": "원어스(ONEUS)",
+      "Album_CNT": "243263"
+    },
+    "57": {
+      "SERVICE_RANKING": "58",
+      "ALBUM_NAME": "28 Reasons - The 1st Mini Album",
+      "ARTIST_NAME": "슬기 (SEULGI)",
+      "Album_CNT": "241364"
+    },
+    "58": {
+      "SERVICE_RANKING": "59",
+      "ALBUM_NAME": "minisode1 : Blue Hour",
+      "ARTIST_NAME": "투모로우바이투게더",
+      "Album_CNT": "241261"
+    },
+    "59": {
+      "SERVICE_RANKING": "60",
+      "ALBUM_NAME": "1st EP `New Jeans` (Weverse)",
+      "ARTIST_NAME": "NewJeans",
+      "Album_CNT": "230960"
+    },
+    "60": {
+      "SERVICE_RANKING": "61",
+      "ALBUM_NAME": "4th Album Repackage `SECTOR 17` (Weverse)",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "228380"
+    },
+    "61": {
+      "SERVICE_RANKING": "62",
+      "ALBUM_NAME": "3RD ALBUM ‘An Ode’",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "226071"
+    },
+    "62": {
+      "SERVICE_RANKING": "63",
+      "ALBUM_NAME": "4th Album `Face the Sun` (Weverse)",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "223341"
+    },
+    "63": {
+      "SERVICE_RANKING": "64",
+      "ALBUM_NAME": "NEW WAVE",
+      "ARTIST_NAME": "CRAVITY",
+      "Album_CNT": "221418"
+    },
+    "64": {
+      "SERVICE_RANKING": "65",
+      "ALBUM_NAME": "LOVE YOURSELF 結 `Answer`",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "215404"
+    },
+    "65": {
+      "SERVICE_RANKING": "66",
+      "ALBUM_NAME": "Grey Suit - The 2nd Mini Album",
+      "ARTIST_NAME": "수호 (SUHO)",
+      "Album_CNT": "211013"
+    },
+    "66": {
+      "SERVICE_RANKING": "67",
+      "ALBUM_NAME": "6th Single Album `CHASE EPISODE 2. MAUM`",
+      "ARTIST_NAME": "DKZ",
+      "Album_CNT": "208671"
+    },
+    "67": {
+      "SERVICE_RANKING": "68",
+      "ALBUM_NAME": "Universe - The 3rd Album",
+      "ARTIST_NAME": "NCT",
+      "Album_CNT": "207921"
+    },
+    "68": {
+      "SERVICE_RANKING": "69",
+      "ALBUM_NAME": "9th Mini Album `Attacca`",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "206821"
+    },
+    "69": {
+      "SERVICE_RANKING": "70",
+      "ALBUM_NAME": "`The ReVe Festival` Finale",
+      "ARTIST_NAME": "레드벨벳(Red Velvet)",
+      "Album_CNT": "204965"
+    },
+    "70": {
+      "SERVICE_RANKING": "71",
+      "ALBUM_NAME": "MALUS",
+      "ARTIST_NAME": "원어스(ONEUS)",
+      "Album_CNT": "199237"
+    },
+    "71": {
+      "SERVICE_RANKING": "72",
+      "ALBUM_NAME": "Sequence",
+      "ARTIST_NAME": "우주소녀",
+      "Album_CNT": "196468"
+    },
+    "72": {
+      "SERVICE_RANKING": "73",
+      "ALBUM_NAME": "HOLIDAY",
+      "ARTIST_NAME": "위너(WINNER)",
+      "Album_CNT": "196179"
+    },
+    "73": {
+      "SERVICE_RANKING": "74",
+      "ALBUM_NAME": "Indigo (Weverse)",
+      "ARTIST_NAME": "RM",
+      "Album_CNT": "195069"
+    },
+    "74": {
+      "SERVICE_RANKING": "75",
+      "ALBUM_NAME": "VOYAGER",
+      "ARTIST_NAME": "기현 (몬스타엑스)",
+      "Album_CNT": "194166"
+    },
+    "75": {
+      "SERVICE_RANKING": "76",
+      "ALBUM_NAME": "INVU - The 3rd Album",
+      "ARTIST_NAME": "태연 (TAEYEON)",
+      "Album_CNT": "193154"
+    },
+    "76": {
+      "SERVICE_RANKING": "77",
+      "ALBUM_NAME": "The Road : Winter for Spring",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "190869"
+    },
+    "77": {
+      "SERVICE_RANKING": "78",
+      "ALBUM_NAME": "SPIN OFF : FROM THE WITNESS (POCA)",
+      "ARTIST_NAME": "ATEEZ (에이티즈)",
+      "Album_CNT": "189734"
+    },
+    "78": {
+      "SERVICE_RANKING": "79",
+      "ALBUM_NAME": "THE WAVE OF9",
+      "ARTIST_NAME": "SF9 (에스에프나인)",
+      "Album_CNT": "182841"
+    },
+    "79": {
+      "SERVICE_RANKING": "80",
+      "ALBUM_NAME": "Savage - The 1st Mini Album",
+      "ARTIST_NAME": "aespa",
+      "Album_CNT": "181506"
+    },
+    "80": {
+      "SERVICE_RANKING": "81",
+      "ALBUM_NAME": "The Road : Keep on Going - The 11th Album Vol.1",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "178561"
+    },
+    "81": {
+      "SERVICE_RANKING": "82",
+      "ALBUM_NAME": "Brand New - The 1st Mini Album",
+      "ARTIST_NAME": "시우민 (XIUMIN)",
+      "Album_CNT": "177439"
+    },
+    "82": {
+      "SERVICE_RANKING": "83",
+      "ALBUM_NAME": "ELEVEN",
+      "ARTIST_NAME": "IVE (아이브)",
+      "Album_CNT": "175911"
+    },
+    "83": {
+      "SERVICE_RANKING": "84",
+      "ALBUM_NAME": "MANIFESTO : DAY 1 (Weverse)",
+      "ARTIST_NAME": "ENHYPEN",
+      "Album_CNT": "169798"
+    },
+    "84": {
+      "SERVICE_RANKING": "85",
+      "ALBUM_NAME": "Candy - Winter Special Mini Album (SMC)",
+      "ARTIST_NAME": "NCT DREAM",
+      "Album_CNT": "169270"
+    },
+    "85": {
+      "SERVICE_RANKING": "86",
+      "ALBUM_NAME": "7th Mini Album `헹가래`",
+      "ARTIST_NAME": "세븐틴",
+      "Album_CNT": "168593"
+    },
+    "86": {
+      "SERVICE_RANKING": "87",
+      "ALBUM_NAME": "Butter",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "166988"
+    },
+    "87": {
+      "SERVICE_RANKING": "88",
+      "ALBUM_NAME": "The Road : Celebration - The 11th Album Vol.2",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "164426"
+    },
+    "88": {
+      "SERVICE_RANKING": "89",
+      "ALBUM_NAME": "2022 Winter SMTOWN : SMCU PALACE",
+      "ARTIST_NAME": "SMTOWN",
+      "Album_CNT": "161469"
+    },
+    "89": {
+      "SERVICE_RANKING": "90",
+      "ALBUM_NAME": "YOUTH",
+      "ARTIST_NAME": "기현 (몬스타엑스)",
+      "Album_CNT": "161066"
+    },
+    "90": {
+      "SERVICE_RANKING": "91",
+      "ALBUM_NAME": "7th Single Album `CHASE EPISODE 3. BEUM`",
+      "ARTIST_NAME": "DKZ",
+      "Album_CNT": "158704"
+    },
+    "91": {
+      "SERVICE_RANKING": "92",
+      "ALBUM_NAME": "from our Memento Box",
+      "ARTIST_NAME": "프로미스나인 (fromis_9)",
+      "Album_CNT": "158682"
+    },
+    "92": {
+      "SERVICE_RANKING": "93",
+      "ALBUM_NAME": "The Story",
+      "ARTIST_NAME": "강다니엘",
+      "Album_CNT": "157019"
+    },
+    "93": {
+      "SERVICE_RANKING": "94",
+      "ALBUM_NAME": "Summer Special [Flip That]",
+      "ARTIST_NAME": "이달의 소녀",
+      "Album_CNT": "156907"
+    },
+    "94": {
+      "SERVICE_RANKING": "95",
+      "ALBUM_NAME": "1ST ALBUM PART 2 [LIBERTY : IN OUR COSMOS]",
+      "ARTIST_NAME": "CRAVITY",
+      "Album_CNT": "156719"
+    },
+    "95": {
+      "SERVICE_RANKING": "96",
+      "ALBUM_NAME": "혼돈의 장: FREEZE",
+      "ARTIST_NAME": "투모로우바이투게더",
+      "Album_CNT": "152900"
+    },
+    "96": {
+      "SERVICE_RANKING": "97",
+      "ALBUM_NAME": "The Story (META)",
+      "ARTIST_NAME": "강다니엘",
+      "Album_CNT": "149807"
+    },
+    "97": {
+      "SERVICE_RANKING": "98",
+      "ALBUM_NAME": "REFUGE",
+      "ARTIST_NAME": "문빈&산하",
+      "Album_CNT": "147056"
+    },
+    "98": {
+      "SERVICE_RANKING": "99",
+      "ALBUM_NAME": "Love Pt.2 : Passion",
+      "ARTIST_NAME": "위아이 (WEi)",
+      "Album_CNT": "146044"
+    },
+    "99": {
+      "SERVICE_RANKING": "100",
+      "ALBUM_NAME": "7TH MINI ALBUM [BE AWARE] (META)",
+      "ARTIST_NAME": "더보이즈(THE BOYZ)",
+      "Album_CNT": "144734"
+    }
+  }
+}

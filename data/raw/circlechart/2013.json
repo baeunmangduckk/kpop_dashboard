@@ -1,0 +1,606 @@
+{
+  "collectedAt": "2026-10-10",
+  "ResultStatus": "OK",
+  "List": {
+    "0": {
+      "SERVICE_RANKING": "1",
+      "ALBUM_NAME": "정규1집 리패키지 XOXO (Kiss Ver.)",
+      "ARTIST_NAME": "EXO",
+      "Album_CNT": "335823"
+    },
+    "1": {
+      "SERVICE_RANKING": "2",
+      "ALBUM_NAME": "I Got A Boy",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "293302"
+    },
+    "2": {
+      "SERVICE_RANKING": "3",
+      "ALBUM_NAME": "XOXO (Kiss Ver.)",
+      "ARTIST_NAME": "EXO",
+      "Album_CNT": "269597"
+    },
+    "3": {
+      "SERVICE_RANKING": "4",
+      "ALBUM_NAME": "12월의 기적 (Miracles in December) (Korean Ver.)",
+      "ARTIST_NAME": "EXO",
+      "Album_CNT": "262825"
+    },
+    "4": {
+      "SERVICE_RANKING": "5",
+      "ALBUM_NAME": "Hello",
+      "ARTIST_NAME": "조용필",
+      "Album_CNT": "250046"
+    },
+    "5": {
+      "SERVICE_RANKING": "6",
+      "ALBUM_NAME": "XOXO (Hug Ver.) (Chinese)",
+      "ARTIST_NAME": "EXO",
+      "Album_CNT": "200870"
+    },
+    "6": {
+      "SERVICE_RANKING": "7",
+      "ALBUM_NAME": "정규1집 리패키지 XOXO (Hug Ver.)",
+      "ARTIST_NAME": "EXO",
+      "Album_CNT": "200183"
+    },
+    "7": {
+      "SERVICE_RANKING": "8",
+      "ALBUM_NAME": "쿠데타 (COUP D'ETAT)",
+      "ARTIST_NAME": "G-Dragon",
+      "Album_CNT": "195603"
+    },
+    "8": {
+      "SERVICE_RANKING": "9",
+      "ALBUM_NAME": "SHINee The 3rd Album Chapter 1. `Dream Girl-The Misconceptions Of You`",
+      "ARTIST_NAME": "샤이니 (SHINee)",
+      "Album_CNT": "185357"
+    },
+    "9": {
+      "SERVICE_RANKING": "10",
+      "ALBUM_NAME": "十二月的奇迹 (Miracles in December) (Chinese Ver.)",
+      "ARTIST_NAME": "EXO",
+      "Album_CNT": "171546"
+    },
+    "10": {
+      "SERVICE_RANKING": "11",
+      "ALBUM_NAME": "Destiny",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "163379"
+    },
+    "11": {
+      "SERVICE_RANKING": "12",
+      "ALBUM_NAME": "New Challenge",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "162797"
+    },
+    "12": {
+      "SERVICE_RANKING": "13",
+      "ALBUM_NAME": "I",
+      "ARTIST_NAME": "김재중 (JYJ)",
+      "Album_CNT": "148074"
+    },
+    "13": {
+      "SERVICE_RANKING": "14",
+      "ALBUM_NAME": "WWW",
+      "ARTIST_NAME": "김재중 (JYJ)",
+      "Album_CNT": "132940"
+    },
+    "14": {
+      "SERVICE_RANKING": "15",
+      "ALBUM_NAME": "Chapter 2 'Why So Serious?-The Misconceptions Of Me'",
+      "ARTIST_NAME": "샤이니 (SHINee)",
+      "Album_CNT": "131438"
+    },
+    "15": {
+      "SERVICE_RANKING": "16",
+      "ALBUM_NAME": "The 5th Mini Album `Everybody`",
+      "ARTIST_NAME": "샤이니 (SHINee)",
+      "Album_CNT": "129003"
+    },
+    "16": {
+      "SERVICE_RANKING": "17",
+      "ALBUM_NAME": "Re:Blue",
+      "ARTIST_NAME": "씨엔블루 (CNBLUE)",
+      "Album_CNT": "128026"
+    },
+    "17": {
+      "SERVICE_RANKING": "18",
+      "ALBUM_NAME": "3집 Grown",
+      "ARTIST_NAME": "2PM",
+      "Album_CNT": "116278"
+    },
+    "18": {
+      "SERVICE_RANKING": "19",
+      "ALBUM_NAME": "Jekyll",
+      "ARTIST_NAME": "빅스 (VIXX)",
+      "Album_CNT": "112259"
+    },
+    "19": {
+      "SERVICE_RANKING": "20",
+      "ALBUM_NAME": "Round 3",
+      "ARTIST_NAME": "김현중",
+      "Album_CNT": "111776"
+    },
+    "20": {
+      "SERVICE_RANKING": "21",
+      "ALBUM_NAME": "이게 무슨 일이야",
+      "ARTIST_NAME": "비원에이포 (B1A4)",
+      "Album_CNT": "101988"
+    },
+    "21": {
+      "SERVICE_RANKING": "22",
+      "ALBUM_NAME": "2집 Hard To Love, How To Love",
+      "ARTIST_NAME": "비스트 (Beast)",
+      "Album_CNT": "101928"
+    },
+    "22": {
+      "SERVICE_RANKING": "23",
+      "ALBUM_NAME": "Fly High",
+      "ARTIST_NAME": "인피니트H",
+      "Album_CNT": "93884"
+    },
+    "23": {
+      "SERVICE_RANKING": "24",
+      "ALBUM_NAME": "Incredible",
+      "ARTIST_NAME": "XIA(준수)",
+      "Album_CNT": "90787"
+    },
+    "24": {
+      "SERVICE_RANKING": "25",
+      "ALBUM_NAME": "Badman",
+      "ARTIST_NAME": "B.A.P",
+      "Album_CNT": "88989"
+    },
+    "25": {
+      "SERVICE_RANKING": "26",
+      "ALBUM_NAME": "One Shot",
+      "ARTIST_NAME": "B.A.P",
+      "Album_CNT": "86386"
+    },
+    "26": {
+      "SERVICE_RANKING": "27",
+      "ALBUM_NAME": "1집 No.1",
+      "ARTIST_NAME": "틴 탑 (Teen Top)",
+      "Album_CNT": "81956"
+    },
+    "27": {
+      "SERVICE_RANKING": "28",
+      "ALBUM_NAME": "Pink Tape",
+      "ARTIST_NAME": "f(x)",
+      "Album_CNT": "81825"
+    },
+    "28": {
+      "SERVICE_RANKING": "29",
+      "ALBUM_NAME": "11집 The Classic",
+      "ARTIST_NAME": "신화",
+      "Album_CNT": "78727"
+    },
+    "29": {
+      "SERVICE_RANKING": "30",
+      "ALBUM_NAME": "Let's Talk About Love",
+      "ARTIST_NAME": "승리",
+      "Album_CNT": "77532"
+    },
+    "30": {
+      "SERVICE_RANKING": "31",
+      "ALBUM_NAME": "틴탑 클래스",
+      "ARTIST_NAME": "틴 탑 (Teen Top)",
+      "Album_CNT": "73365"
+    },
+    "31": {
+      "SERVICE_RANKING": "32",
+      "ALBUM_NAME": "`MAMA` EXO-K The 1st Mini Album",
+      "ARTIST_NAME": "EXO-K",
+      "Album_CNT": "72415"
+    },
+    "32": {
+      "SERVICE_RANKING": "33",
+      "ALBUM_NAME": "버스커 버스커 2집",
+      "ARTIST_NAME": "버스커 버스커 (Busker Busker)",
+      "Album_CNT": "70148"
+    },
+    "33": {
+      "SERVICE_RANKING": "34",
+      "ALBUM_NAME": "Voodoo",
+      "ARTIST_NAME": "빅스 (VIXX)",
+      "Album_CNT": "62960"
+    },
+    "34": {
+      "SERVICE_RANKING": "35",
+      "ALBUM_NAME": "Y",
+      "ARTIST_NAME": "김재중",
+      "Album_CNT": "62000"
+    },
+    "35": {
+      "SERVICE_RANKING": "36",
+      "ALBUM_NAME": "Very Good",
+      "ARTIST_NAME": "블락비 (Block B)",
+      "Album_CNT": "61396"
+    },
+    "36": {
+      "SERVICE_RANKING": "37",
+      "ALBUM_NAME": "2집 Break Down",
+      "ARTIST_NAME": "슈퍼주니어-M (Super Junior-M)",
+      "Album_CNT": "54095"
+    },
+    "37": {
+      "SERVICE_RANKING": "38",
+      "ALBUM_NAME": "hyde",
+      "ARTIST_NAME": "빅스 (VIXX)",
+      "Album_CNT": "52649"
+    },
+    "38": {
+      "SERVICE_RANKING": "39",
+      "ALBUM_NAME": "`MAMA` EXO-M The 1st Mini Album",
+      "ARTIST_NAME": "EXO-M",
+      "Album_CNT": "52409"
+    },
+    "39": {
+      "SERVICE_RANKING": "40",
+      "ALBUM_NAME": "4th Album `Full Bloom`",
+      "ARTIST_NAME": "카라 (KARA)",
+      "Album_CNT": "46830"
+    },
+    "40": {
+      "SERVICE_RANKING": "41",
+      "ALBUM_NAME": "Secret Garden",
+      "ARTIST_NAME": "에이핑크 (Apink)",
+      "Album_CNT": "46026"
+    },
+    "41": {
+      "SERVICE_RANKING": "42",
+      "ALBUM_NAME": "The Misconceptions Of Us",
+      "ARTIST_NAME": "샤이니 (SHINee)",
+      "Album_CNT": "45657"
+    },
+    "42": {
+      "SERVICE_RANKING": "43",
+      "ALBUM_NAME": "One Of A Kind",
+      "ARTIST_NAME": "G-Dragon",
+      "Album_CNT": "45332"
+    },
+    "43": {
+      "SERVICE_RANKING": "44",
+      "ALBUM_NAME": "Illusion",
+      "ARTIST_NAME": "제국의아이들 (ZE:A)",
+      "Album_CNT": "41221"
+    },
+    "44": {
+      "SERVICE_RANKING": "45",
+      "ALBUM_NAME": "3집 Modern Times",
+      "ARTIST_NAME": "아이유 (IU)",
+      "Album_CNT": "40360"
+    },
+    "45": {
+      "SERVICE_RANKING": "46",
+      "ALBUM_NAME": "11집 My Love",
+      "ARTIST_NAME": "이승철",
+      "Album_CNT": "39124"
+    },
+    "46": {
+      "SERVICE_RANKING": "47",
+      "ALBUM_NAME": "The 1st Mini Album `Trap`",
+      "ARTIST_NAME": "헨리 (Henry)",
+      "Album_CNT": "38388"
+    },
+    "47": {
+      "SERVICE_RANKING": "48",
+      "ALBUM_NAME": "김광석 Best",
+      "ARTIST_NAME": "김광석",
+      "Album_CNT": "38108"
+    },
+    "48": {
+      "SERVICE_RANKING": "49",
+      "ALBUM_NAME": "The Mood",
+      "ARTIST_NAME": "FTISLAND (FT 아일랜드)",
+      "Album_CNT": "36393"
+    },
+    "49": {
+      "SERVICE_RANKING": "50",
+      "ALBUM_NAME": "Love Beat",
+      "ARTIST_NAME": "엠블랙 (MBLAQ)",
+      "Album_CNT": "36205"
+    },
+    "50": {
+      "SERVICE_RANKING": "51",
+      "ALBUM_NAME": "다칠 준비가 돼 있어",
+      "ARTIST_NAME": "빅스 (VIXX)",
+      "Album_CNT": "35906"
+    },
+    "51": {
+      "SERVICE_RANKING": "52",
+      "ALBUM_NAME": "Present",
+      "ARTIST_NAME": "씨엔블루 (CNBLUE)",
+      "Album_CNT": "35657"
+    },
+    "52": {
+      "SERVICE_RANKING": "53",
+      "ALBUM_NAME": "1st Mini Album",
+      "ARTIST_NAME": "마이네임 (My Name)",
+      "Album_CNT": "35490"
+    },
+    "53": {
+      "SERVICE_RANKING": "54",
+      "ALBUM_NAME": "Thanks To",
+      "ARTIST_NAME": "FTISLAND (FT 아일랜드)",
+      "Album_CNT": "34249"
+    },
+    "54": {
+      "SERVICE_RANKING": "55",
+      "ALBUM_NAME": "O!RUL8,2?",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "34030"
+    },
+    "55": {
+      "SERVICE_RANKING": "56",
+      "ALBUM_NAME": "Sexy Beat",
+      "ARTIST_NAME": "엠블랙 (MBLAQ)",
+      "Album_CNT": "33736"
+    },
+    "56": {
+      "SERVICE_RANKING": "57",
+      "ALBUM_NAME": "무한도전 자유로 가요제",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "30000"
+    },
+    "57": {
+      "SERVICE_RANKING": "58",
+      "ALBUM_NAME": "Chemistry",
+      "ARTIST_NAME": "트러블메이커",
+      "Album_CNT": "29970"
+    },
+    "58": {
+      "SERVICE_RANKING": "59",
+      "ALBUM_NAME": "전원일기",
+      "ARTIST_NAME": "티아라 N4",
+      "Album_CNT": "28360"
+    },
+    "59": {
+      "SERVICE_RANKING": "60",
+      "ALBUM_NAME": "Flower",
+      "ARTIST_NAME": "용준형",
+      "Album_CNT": "27703"
+    },
+    "60": {
+      "SERVICE_RANKING": "61",
+      "ALBUM_NAME": "틴탑 클래스 어디션",
+      "ARTIST_NAME": "틴 탑 (Teen Top)",
+      "Album_CNT": "27225"
+    },
+    "61": {
+      "SERVICE_RANKING": "62",
+      "ALBUM_NAME": "버스커 버스커 1집",
+      "ARTIST_NAME": "버스커 버스커 (Busker Busker)",
+      "Album_CNT": "25161"
+    },
+    "62": {
+      "SERVICE_RANKING": "63",
+      "ALBUM_NAME": "I yah (Repackage)",
+      "ARTIST_NAME": "보이프렌드 (Boyfriend)",
+      "Album_CNT": "24675"
+    },
+    "63": {
+      "SERVICE_RANKING": "64",
+      "ALBUM_NAME": "Again",
+      "ARTIST_NAME": "티아라 (T-ara)",
+      "Album_CNT": "24652"
+    },
+    "64": {
+      "SERVICE_RANKING": "65",
+      "ALBUM_NAME": "2 Cool 4 Skool",
+      "ARTIST_NAME": "방탄소년단",
+      "Album_CNT": "24441"
+    },
+    "65": {
+      "SERVICE_RANKING": "66",
+      "ALBUM_NAME": "스릴러",
+      "ARTIST_NAME": "비투비 (BTOB)",
+      "Album_CNT": "23949"
+    },
+    "66": {
+      "SERVICE_RANKING": "67",
+      "ALBUM_NAME": "Les Miserables OST (Movie)",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "23535"
+    },
+    "67": {
+      "SERVICE_RANKING": "68",
+      "ALBUM_NAME": "Grown (Grand Edition)",
+      "ARTIST_NAME": "2PM",
+      "Album_CNT": "23336"
+    },
+    "68": {
+      "SERVICE_RANKING": "69",
+      "ALBUM_NAME": "Give It To Me",
+      "ARTIST_NAME": "씨스타 (Sistar)",
+      "Album_CNT": "22365"
+    },
+    "69": {
+      "SERVICE_RANKING": "70",
+      "ALBUM_NAME": "6집 싸이6甲 Part 1",
+      "ARTIST_NAME": "싸이 (Psy)",
+      "Album_CNT": "22094"
+    },
+    "70": {
+      "SERVICE_RANKING": "71",
+      "ALBUM_NAME": "어느 봄날",
+      "ARTIST_NAME": "2am",
+      "Album_CNT": "21737"
+    },
+    "71": {
+      "SERVICE_RANKING": "72",
+      "ALBUM_NAME": "Paradise",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "20843"
+    },
+    "72": {
+      "SERVICE_RANKING": "73",
+      "ALBUM_NAME": "Super Junior World Tour Super Show 4",
+      "ARTIST_NAME": "슈퍼주니어 (Super Junior)",
+      "Album_CNT": "20263"
+    },
+    "73": {
+      "SERVICE_RANKING": "74",
+      "ALBUM_NAME": "One Of A Kind In Seoul (2013 G-Dragon World Tour Live)",
+      "ARTIST_NAME": "G-Dragon",
+      "Album_CNT": "20031"
+    },
+    "74": {
+      "SERVICE_RANKING": "75",
+      "ALBUM_NAME": "Musical DECEMBER 2013 with KIMJUNSU",
+      "ARTIST_NAME": "김준수",
+      "Album_CNT": "20000"
+    },
+    "75": {
+      "SERVICE_RANKING": "76",
+      "ALBUM_NAME": "2011 Girls` Generation Tour",
+      "ARTIST_NAME": "소녀시대",
+      "Album_CNT": "19836"
+    },
+    "76": {
+      "SERVICE_RANKING": "77",
+      "ALBUM_NAME": "3집 : COLLAGE",
+      "ARTIST_NAME": "유키스 (U-Kiss)",
+      "Album_CNT": "19440"
+    },
+    "77": {
+      "SERVICE_RANKING": "78",
+      "ALBUM_NAME": "BigBang Alive Tour : 2012 BigBang Live Concert In Seoul",
+      "ARTIST_NAME": "BIGBANG (빅뱅)",
+      "Album_CNT": "19390"
+    },
+    "78": {
+      "SERVICE_RANKING": "79",
+      "ALBUM_NAME": "Moments",
+      "ARTIST_NAME": "유키스 (U-Kiss)",
+      "Album_CNT": "18956"
+    },
+    "79": {
+      "SERVICE_RANKING": "80",
+      "ALBUM_NAME": "1집 First Love",
+      "ARTIST_NAME": "이하이",
+      "Album_CNT": "18924"
+    },
+    "80": {
+      "SERVICE_RANKING": "81",
+      "ALBUM_NAME": "2013 Bigbang Alive Galaxy Tour : The Final In Seoul Live",
+      "ARTIST_NAME": "BIGBANG (빅뱅)",
+      "Album_CNT": "18466"
+    },
+    "81": {
+      "SERVICE_RANKING": "82",
+      "ALBUM_NAME": "1집 Love Love Love",
+      "ARTIST_NAME": "로이킴",
+      "Album_CNT": "17364"
+    },
+    "82": {
+      "SERVICE_RANKING": "83",
+      "ALBUM_NAME": "Great Wave",
+      "ARTIST_NAME": "신승훈",
+      "Album_CNT": "17257"
+    },
+    "83": {
+      "SERVICE_RANKING": "84",
+      "ALBUM_NAME": "2집 Mystic Ballad",
+      "ARTIST_NAME": "다비치",
+      "Album_CNT": "17046"
+    },
+    "84": {
+      "SERVICE_RANKING": "85",
+      "ALBUM_NAME": "Monochrome",
+      "ARTIST_NAME": "이효리",
+      "Album_CNT": "16868"
+    },
+    "85": {
+      "SERVICE_RANKING": "86",
+      "ALBUM_NAME": "Infinitize",
+      "ARTIST_NAME": "인피니트 (Infinite)",
+      "Album_CNT": "16753"
+    },
+    "86": {
+      "SERVICE_RANKING": "87",
+      "ALBUM_NAME": "Doom Dada (Special Edition)",
+      "ARTIST_NAME": "탑 (T.O.P)",
+      "Album_CNT": "16704"
+    },
+    "87": {
+      "SERVICE_RANKING": "88",
+      "ALBUM_NAME": "In The Wind",
+      "ARTIST_NAME": "비원에이포 (B1A4)",
+      "Album_CNT": "16267"
+    },
+    "88": {
+      "SERVICE_RANKING": "89",
+      "ALBUM_NAME": "Name Is 4Minute",
+      "ARTIST_NAME": "4Minute (포미닛)",
+      "Album_CNT": "15620"
+    },
+    "89": {
+      "SERVICE_RANKING": "90",
+      "ALBUM_NAME": "Again 1977",
+      "ARTIST_NAME": "티아라 (T-ara)",
+      "Album_CNT": "15611"
+    },
+    "90": {
+      "SERVICE_RANKING": "91",
+      "ALBUM_NAME": "SPECIAL EDITION `STILL ALIVE`",
+      "ARTIST_NAME": "BIGBANG (빅뱅)",
+      "Album_CNT": "15610"
+    },
+    "91": {
+      "SERVICE_RANKING": "92",
+      "ALBUM_NAME": "응답하라 1994 OST",
+      "ARTIST_NAME": "Various Artists",
+      "Album_CNT": "15287"
+    },
+    "92": {
+      "SERVICE_RANKING": "93",
+      "ALBUM_NAME": "9집 Goodbye, Grief.",
+      "ARTIST_NAME": "자우림",
+      "Album_CNT": "15075"
+    },
+    "93": {
+      "SERVICE_RANKING": "94",
+      "ALBUM_NAME": "The 2nd Single",
+      "ARTIST_NAME": "마이네임 (My Name)",
+      "Album_CNT": "14576"
+    },
+    "94": {
+      "SERVICE_RANKING": "95",
+      "ALBUM_NAME": "`Sherlock` SHINee The 4th Mini Album",
+      "ARTIST_NAME": "샤이니 (SHINee)",
+      "Album_CNT": "14301"
+    },
+    "95": {
+      "SERVICE_RANKING": "96",
+      "ALBUM_NAME": "여보세요",
+      "ARTIST_NAME": "뉴이스트 (NU`EST)",
+      "Album_CNT": "14249"
+    },
+    "96": {
+      "SERVICE_RANKING": "97",
+      "ALBUM_NAME": "Humanoids (Repackage)",
+      "ARTIST_NAME": "동방신기",
+      "Album_CNT": "14196"
+    },
+    "97": {
+      "SERVICE_RANKING": "98",
+      "ALBUM_NAME": "`No.1` 리패키지 스페셜 에디션",
+      "ARTIST_NAME": "틴 탑 (Teen Top)",
+      "Album_CNT": "14175"
+    },
+    "98": {
+      "SERVICE_RANKING": "99",
+      "ALBUM_NAME": "OST Best (Flash Back)",
+      "ARTIST_NAME": "백지영",
+      "Album_CNT": "14026"
+    },
+    "99": {
+      "SERVICE_RANKING": "100",
+      "ALBUM_NAME": "있다 없으니까",
+      "ARTIST_NAME": "씨스타 19",
+      "Album_CNT": "13964"
+    }
+  }
+}

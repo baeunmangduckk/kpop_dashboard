@@ -3,7 +3,7 @@
 숫자의 출처와 신뢰도를 먼저 보여주고, 그 숫자들이 만드는 K-pop 산업의 이야기를 읽을 수 있는 대시보드
 
 **📅 최종 업데이트**: 2026-10-08
-**📊 진행 상황**: Phase 4 진행 중 (13/16 Tasks 완료)
+**📊 진행 상황**: Phase 4 완료 (14/16 Tasks 완료, Google Trends 실데이터는 CSV 대기)
 
 ## 개요
 
@@ -139,12 +139,13 @@ K-POP 산업 인사이트 대시보드는 산업 분석가·기획사/투자 관
   - ✅ 화면: 재무 필터에 중소사 칩(기본 숨김), 팬 반응 영상 표·채널 조회수 순위
   - ✅ Playwright MCP: 재무 중소사 칩 토글, 팬 반응 6개 블록 라벨, 360px 가로 스크롤 없음, 콘솔 에러 0건
 
-- **Task 014: Circle Chart·Google Trends 데이터 적재와 트렌드 화면**
-  - Circle Chart: 약관 확인 → Playwright 수동 수집(저빈도) → 원본 스냅샷 보존 → Zod 검증 → 큐레이션 값과 대조
-  - Google Trends: 키워드 목록 확정, CSV 수동 다운로드 → JSON 적재 (공식 API 알파 신청 병행)
-  - 트렌드 전망 페이지: 키워드 시계열, 급상승 쿼리, 국가별 관심도 지도, 상대지수 안내
-  - 글로벌 확장 페이지 국가별 관심도 연결
-  - Playwright MCP: 키워드 필터·지도 렌더링 테스트
+- **Task 014: Circle Chart·Google Trends 데이터 적재와 트렌드 화면** ✅ - 완료 (Google Trends 실데이터는 CSV 대기)
+  - ✅ Circle Chart: robots.txt 없음 확인 → 연간 앨범 차트 Top100(2011~2025) 15건 저빈도 수집 → 원본 `data/raw/circlechart` 보존 → `album-sales.json` 1,500행
+  - ✅ 집중도 4개 시계열을 원자료 집계(15개 연도)로 교체, 지표 3개 verified 승격 — 큐레이션 값과 전부 일치
+  - ✅ 불일치 목록 갱신: Gini 증감 -0.0076 채택, 총판매량 3,530만 장은 미재현
+  - ✅ Google Trends: 키워드·조건 확정(`data/raw/google-trends/README.md`), CSV 임포트 스크립트(`npm run import:trends`) — 표본 CSV로 동작 확인
+  - ⏳ Google Trends CSV를 받으면 임포트 실행 → 트렌드 전망·국가별 관심도 더미 해제 (그때까지 더미 배지 유지)
+  - ✅ Playwright MCP: 집중도 차트 4종 verified·15행, 출처 페이지 불일치 문구, 360px 가로 스크롤 없음
 
 ### Phase 5: 품질·검증
 

@@ -1,38 +1,20 @@
 [
   {
     "metricId": "hybe-operating-profit-2025",
-    "adopted": {
-      "value": 493.18,
-      "sourceId": "opendart"
-    },
-    "alternative": {
-      "value": 499,
-      "sourceId": "straightnews-hybe"
-    },
+    "adopted": { "value": 493.18, "sourceId": "opendart" },
+    "alternative": { "value": 499, "sourceId": "straightnews-hybe" },
     "note": "DART 연결 손익계산서 직접 집계(493.2억원, YoY -73.2%)와 보도·최초 기획 문서(499억원, YoY -72.9%)가 다르다. 산출 기준 차이는 확인되지 않았으며 DART 원자료를 1차 출처로 채택했다."
   },
   {
     "metricId": "sales-gini-2025",
-    "adopted": {
-      "value": -0.0073,
-      "sourceId": "circle-chart-top100"
-    },
-    "alternative": {
-      "value": -0.0076,
-      "sourceId": "circle-chart-top100"
-    },
-    "note": "판매량 집중도(Gini) 전년 대비 증감이 홈 KPI(-0.0073)와 판매 집중도 화면(-0.0076)에서 다르게 집계됐다. 반올림·산출 시점 차이로 추정되나 원인은 미확인이다."
+    "adopted": { "value": -0.0076, "sourceId": "circle-chart-top100" },
+    "alternative": { "value": -0.0073, "sourceId": "circle-chart-top100" },
+    "note": "판매량 집중도(Gini) 전년 대비 증감이 보고서의 홈 KPI(-0.0073)와 판매 집중도 화면(-0.0076)에서 다르게 집계돼 있었다. Circle Chart 연간 Top100 원자료를 직접 집계한 결과 2024년 0.4083, 2025년 0.4007로 -0.0076이 재현돼 이를 채택했다. -0.0073의 산출 근거는 확인되지 않았다."
   },
   {
     "metricId": "top100-total-sales-2025",
-    "adopted": {
-      "value": 64615322,
-      "sourceId": "circle-chart-top100"
-    },
-    "alternative": {
-      "value": 35300000,
-      "sourceId": "circle-chart-top100"
-    },
-    "note": "큐레이션 계열 값(6,462만 장)과 circlechart.kr 원자료를 직접 집계한 값(약 3,530만 장)이 크게 다르다. 원인은 미확인이며 큐레이션 계열을 채택했다."
+    "adopted": { "value": 64615322, "sourceId": "circle-chart-top100" },
+    "alternative": { "value": 35300000, "sourceId": "circle-chart-top100" },
+    "note": "보고서에는 큐레이션 계열 값(6,462만 장)과 원자료 직접 집계 값(약 3,530만 장)이 함께 적혀 있었다. Circle Chart 연간 앨범 차트 Top100을 다시 수집해 합산한 결과 64,615,322장으로 큐레이션 계열과 일치해 이를 채택했다. 약 3,530만 장은 재현되지 않았으며 집계 범위(기간·국내 한정 등)가 달랐을 것으로 추정한다."
   }
 ]

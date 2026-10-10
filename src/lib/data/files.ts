@@ -1,5 +1,6 @@
 import {
   aiVirtualDataSchema,
+  albumSalesDataSchema,
   concentrationDataSchema,
   discrepanciesSchema,
   fansDataSchema,
@@ -30,4 +31,5 @@ export const DATA_FILES = {
   global: { file: 'global.json', schema: globalDataSchema },
   trends: { file: 'trends.json', schema: trendsDataSchema },
   aiVirtual: { file: 'ai-virtual.json', schema: aiVirtualDataSchema },
+  albumSales: { file: 'album-sales.json', schema: albumSalesDataSchema },
 } as const

@@ -1,11 +1,7 @@
 import { z } from 'zod'
+import { CONFIDENCE_LEVELS } from '../confidence-levels'
 
-// 신뢰도 라벨 (F010): 모든 지표는 셋 중 하나를 반드시 가진다
-export const CONFIDENCE_LEVELS = [
-  'verified',
-  'estimated',
-  'unverified',
-] as const
+export { CONFIDENCE_LEVELS }
 export const confidenceSchema = z.enum(CONFIDENCE_LEVELS)
 
 export const idSchema = z.string().trim().min(1)

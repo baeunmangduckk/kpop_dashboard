@@ -7,7 +7,8 @@ import { ConfidenceBadge } from '@/components/confidence'
 import { FilterGroup, ToggleChip } from '@/components/filters/toggle-chip'
 import { Input } from '@/components/ui/input'
 import { CONFIDENCE_META } from '@/lib/confidence'
-import { CONFIDENCE_LEVELS, type Confidence } from '@/lib/schemas'
+import { CONFIDENCE_LEVELS } from '@/lib/confidence-levels'
+import type { Confidence } from '@/lib/schemas'
 
 export interface SourceRow {
   id: string

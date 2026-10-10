@@ -42,8 +42,17 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex min-h-screen flex-col">
+            {/* 키보드 사용자가 헤더 메뉴를 건너뛰도록 초점을 받을 때만 보이는 링크 */}
+            <a
+              href="#main"
+              className="bg-background text-foreground sr-only z-50 rounded-md border px-3 py-2 text-sm focus:not-sr-only focus:fixed focus:top-2 focus:left-2"
+            >
+              본문으로 건너뛰기
+            </a>
             <Header />
-            <main className="flex-1">{children}</main>
+            <main id="main" tabIndex={-1} className="flex-1 outline-none">
+              {children}
+            </main>
             <Footer />
           </div>
           <Toaster />

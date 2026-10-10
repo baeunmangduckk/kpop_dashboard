@@ -69,6 +69,8 @@ export function BarChart({
       )}
     >
       <RechartsBarChart
+        // 차트 영역은 aria-hidden(표가 대체 수단)이므로 키보드 초점도 받지 않게 함
+        accessibilityLayer={false}
         data={data}
         layout={isRow ? 'vertical' : 'horizontal'}
         barGap={2}

@@ -58,6 +58,8 @@ export function DistributionChart({
       style={{ height: Math.max(96, percentData.length * 48 + 48) }}
     >
       <RechartsBarChart
+        // 차트 영역은 aria-hidden(표가 대체 수단)이므로 키보드 초점도 받지 않게 함
+        accessibilityLayer={false}
         data={percentData}
         layout="vertical"
         stackOffset="expand"

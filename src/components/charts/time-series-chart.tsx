@@ -47,6 +47,8 @@ export function TimeSeriesChart({
         className={cn('aspect-auto h-60 w-full sm:h-72', className)}
       >
         <LineChart
+          // 차트 영역은 aria-hidden(표가 대체 수단)이므로 키보드 초점도 받지 않게 함
+          accessibilityLayer={false}
           data={data}
           margin={{ top: 8, right: 12, left: 0, bottom: 0 }}
         >

@@ -1,0 +1,6 @@
+# 댓글 감성 분석용 (CPU 전용 torch)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+transformers
+sentencepiece
+protobuf

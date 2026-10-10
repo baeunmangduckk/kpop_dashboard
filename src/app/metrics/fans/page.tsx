@@ -77,7 +77,7 @@ export default async function FansPage() {
       <Container className="space-y-12 pb-16">
         <PageSection
           title="영상 반응과 댓글 감성"
-          description="영상 반응은 기준 영상과 구독자 상위 채널의 최신 뮤직비디오, 댓글 감성은 기준 영상 1개의 댓글 500개 표본으로 산업 전체 여론을 대표하지 않습니다."
+          description="영상 반응은 기준 영상과 구독자 상위 채널의 최신 뮤직비디오, 댓글 감성은 같은 영상들의 인기 댓글을 다국어 모델로 분류한 추정치로 산업 전체 여론을 대표하지 않습니다."
         >
           <div className="space-y-4">
             <VideoReaction />

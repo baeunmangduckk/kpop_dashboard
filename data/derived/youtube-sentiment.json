@@ -1,0 +1,88 @@
+{
+  "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
+  "analyzedAt": "2026-10-10",
+  "collectedAt": "2026-10-10",
+  "sampleSize": 1063,
+  "positive": 840,
+  "neutral": 109,
+  "negative": 114,
+  "videos": [
+    {
+      "videoId": "2GJfWMYCWY0",
+      "sampleSize": 100,
+      "positive": 88,
+      "neutral": 6,
+      "negative": 6
+    },
+    {
+      "videoId": "bDvtb6Pywes",
+      "sampleSize": 100,
+      "positive": 86,
+      "neutral": 8,
+      "negative": 6
+    },
+    {
+      "videoId": "BWfKkqo1Mk8",
+      "sampleSize": 100,
+      "positive": 89,
+      "neutral": 8,
+      "negative": 3
+    },
+    {
+      "videoId": "BZ4UzthYTss",
+      "sampleSize": 100,
+      "positive": 84,
+      "neutral": 15,
+      "negative": 1
+    },
+    {
+      "videoId": "GEk4jHwfFTA",
+      "sampleSize": 100,
+      "positive": 73,
+      "neutral": 13,
+      "negative": 14
+    },
+    {
+      "videoId": "haEIraiKaEM",
+      "sampleSize": 100,
+      "positive": 87,
+      "neutral": 4,
+      "negative": 9
+    },
+    {
+      "videoId": "L8ZnXgbyUuc",
+      "sampleSize": 100,
+      "positive": 85,
+      "neutral": 7,
+      "negative": 8
+    },
+    {
+      "videoId": "tXqBtavqC2Y",
+      "sampleSize": 63,
+      "positive": 49,
+      "neutral": 5,
+      "negative": 9
+    },
+    {
+      "videoId": "Xp7bggY8mpI",
+      "sampleSize": 100,
+      "positive": 16,
+      "neutral": 31,
+      "negative": 53
+    },
+    {
+      "videoId": "xXZwZ0DolJc",
+      "sampleSize": 100,
+      "positive": 94,
+      "neutral": 4,
+      "negative": 2
+    },
+    {
+      "videoId": "zqorlX_5oHQ",
+      "sampleSize": 100,
+      "positive": 89,
+      "neutral": 8,
+      "negative": 3
+    }
+  ]
+}

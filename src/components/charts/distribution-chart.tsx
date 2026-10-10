@@ -71,7 +71,8 @@ export function DistributionChart({
           type="category"
           tickLine={false}
           axisLine={false}
-          width={data.length > 1 ? 72 : 0}
+          width={data.length > 1 ? 96 : 0}
+          interval={0}
           hide={data.length <= 1}
         />
         <ChartTooltip

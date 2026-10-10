@@ -120,12 +120,94 @@
   "sentiment": {
     "confidence": "estimated",
     "sourceIds": ["youtube-data-api"],
-    "note": "기준 영상(What K-pop Is Really Selling) 1개의 댓글 표본으로, 산업 전체 여론을 대표하지 않음",
-    "sampleSize": 500,
-    "collectedAt": "2026-09-28",
-    "positive": 82,
-    "neutral": 387,
-    "negative": 31
+    "asOf": "2026-10-10",
+    "note": "영상 11개에서 관련성순 상위 댓글을 최대 100개씩 모은 표본으로, 인기 댓글에 치우쳐 있고 산업 전체 여론을 대표하지 않음",
+    "sampleSize": 1063,
+    "collectedAt": "2026-10-10",
+    "positive": 840,
+    "neutral": 109,
+    "negative": 114,
+    "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
+    "method": "다국어 감성 분류 모델(cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual)이 댓글마다 긍정·중립·부정 중 확률이 가장 높은 라벨을 부여. 직접 읽고 매긴 60개와 비교해 47개(78.3%) 일치. 스트리밍 독려·기록 나열 같은 중립 댓글을 긍정으로 읽는 경향이 있어 긍정은 다소 높게, 중립은 낮게 잡힘",
+    "byVideo": [
+      {
+        "videoId": "2GJfWMYCWY0",
+        "sampleSize": 100,
+        "positive": 88,
+        "neutral": 6,
+        "negative": 6
+      },
+      {
+        "videoId": "bDvtb6Pywes",
+        "sampleSize": 100,
+        "positive": 86,
+        "neutral": 8,
+        "negative": 6
+      },
+      {
+        "videoId": "BWfKkqo1Mk8",
+        "sampleSize": 100,
+        "positive": 89,
+        "neutral": 8,
+        "negative": 3
+      },
+      {
+        "videoId": "BZ4UzthYTss",
+        "sampleSize": 100,
+        "positive": 84,
+        "neutral": 15,
+        "negative": 1
+      },
+      {
+        "videoId": "GEk4jHwfFTA",
+        "sampleSize": 100,
+        "positive": 73,
+        "neutral": 13,
+        "negative": 14
+      },
+      {
+        "videoId": "haEIraiKaEM",
+        "sampleSize": 100,
+        "positive": 87,
+        "neutral": 4,
+        "negative": 9
+      },
+      {
+        "videoId": "L8ZnXgbyUuc",
+        "sampleSize": 100,
+        "positive": 85,
+        "neutral": 7,
+        "negative": 8
+      },
+      {
+        "videoId": "tXqBtavqC2Y",
+        "sampleSize": 63,
+        "positive": 49,
+        "neutral": 5,
+        "negative": 9
+      },
+      {
+        "videoId": "Xp7bggY8mpI",
+        "sampleSize": 100,
+        "positive": 16,
+        "neutral": 31,
+        "negative": 53
+      },
+      {
+        "videoId": "xXZwZ0DolJc",
+        "sampleSize": 100,
+        "positive": 94,
+        "neutral": 4,
+        "negative": 2
+      },
+      {
+        "videoId": "zqorlX_5oHQ",
+        "sampleSize": 100,
+        "positive": 89,
+        "neutral": 8,
+        "negative": 3
+      }
+    ]
   },
   "channels": {
     "confidence": "verified",
@@ -202,38 +284,14 @@
       "title": "소셜 팔로워 합산 Top 8",
       "unit": "백만 명",
       "rows": [
-        {
-          "artist": "BTS",
-          "value": 352
-        },
-        {
-          "artist": "BLACKPINK",
-          "value": 269
-        },
-        {
-          "artist": "TWICE",
-          "value": 105
-        },
-        {
-          "artist": "Stray Kids",
-          "value": 86
-        },
-        {
-          "artist": "TXT",
-          "value": 75
-        },
-        {
-          "artist": "EXO",
-          "value": 61
-        },
-        {
-          "artist": "ENHYPEN",
-          "value": 60
-        },
-        {
-          "artist": "SEVENTEEN",
-          "value": 59
-        }
+        { "artist": "BTS", "value": 352 },
+        { "artist": "BLACKPINK", "value": 269 },
+        { "artist": "TWICE", "value": 105 },
+        { "artist": "Stray Kids", "value": 86 },
+        { "artist": "TXT", "value": 75 },
+        { "artist": "EXO", "value": 61 },
+        { "artist": "ENHYPEN", "value": 60 },
+        { "artist": "SEVENTEEN", "value": 59 }
       ]
     },
     {
@@ -244,34 +302,13 @@
       "title": "Spotify 월간 청취자 Top 7",
       "unit": "백만 명",
       "rows": [
-        {
-          "artist": "JENNIE",
-          "value": 49
-        },
-        {
-          "artist": "BTS",
-          "value": 34
-        },
-        {
-          "artist": "ROSÉ",
-          "value": 26
-        },
-        {
-          "artist": "ILLIT",
-          "value": 21
-        },
-        {
-          "artist": "LE SSERAFIM",
-          "value": 20
-        },
-        {
-          "artist": "BLACKPINK",
-          "value": 20
-        },
-        {
-          "artist": "Jung Kook",
-          "value": 15
-        }
+        { "artist": "JENNIE", "value": 49 },
+        { "artist": "BTS", "value": 34 },
+        { "artist": "ROSÉ", "value": 26 },
+        { "artist": "ILLIT", "value": 21 },
+        { "artist": "LE SSERAFIM", "value": 20 },
+        { "artist": "BLACKPINK", "value": 20 },
+        { "artist": "Jung Kook", "value": 15 }
       ]
     }
   ]

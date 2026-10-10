@@ -27,6 +27,14 @@ export const videoStatSchema = z.object({
   comments: z.number().int().nonnegative().nullable(),
 })
 
+const sentimentCountSchema = z.object({
+  videoId: z.string().min(1),
+  sampleSize: z.number().int().positive(),
+  positive: z.number().int().nonnegative(),
+  neutral: z.number().int().nonnegative(),
+  negative: z.number().int().nonnegative(),
+})
+
 export const fansDataSchema = z.object({
   videos: sourcedSchema.extend({
     collectedAt: isoDateSchema,
@@ -39,6 +47,11 @@ export const fansDataSchema = z.object({
     positive: z.number().int().nonnegative(),
     neutral: z.number().int().nonnegative(),
     negative: z.number().int().nonnegative(),
+    // 분류 모델과 산출 방식 (검수 일치율 포함)
+    model: z.string().min(1),
+    method: z.string().min(1),
+    // 영상별 분포 - videoId는 videos.items의 id
+    byVideo: z.array(sentimentCountSchema).min(1),
   }),
   channels: sourcedSchema.extend({
     snapshots: z.array(channelSnapshotSchema).min(1),

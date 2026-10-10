@@ -44,3 +44,4 @@ next-env.d.ts
 
 # 수집 원본 스냅샷 (API 응답 그대로 보존)
 data/raw/
+.venv/

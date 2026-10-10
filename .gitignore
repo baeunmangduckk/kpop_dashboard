@@ -45,3 +45,8 @@ next-env.d.ts
 
 # 유튜브 댓글 원본은 로컬에만 보관 (타인 작성 글이라 저장소에 올리지 않음)
 data/raw/youtube/*/comments/
+
+# 파이썬 분석 환경과 로컬 전용 분석 산출물
+.venv/
+__pycache__/
+data/raw/youtube/*/sentiment/

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import {
+  conclusionLink,
   getNarrativeHref,
   getNarrativeMark,
   narratives,
@@ -8,14 +9,38 @@ import {
 import type { NarrativeSlug } from '@/lib/schemas'
 
 interface NarrativePagerProps {
-  current: NarrativeSlug
+  current: NarrativeSlug | 'conclusion'
 }
 
-// 이전/다음 서사 이동 (서사 ①~③ 순서)
+interface Step {
+  key: string
+  href: string
+  // 이동 링크 위에 붙는 짧은 이름 (서사 ①, 결론)
+  kicker: string
+  title: string
+}
+
+// 읽는 순서: 서사 ① → ② → ③ → 종합 결론
+const STEPS: Step[] = [
+  ...narratives.map(item => ({
+    key: item.slug,
+    href: getNarrativeHref(item.slug),
+    kicker: `서사 ${getNarrativeMark(item.order)}`,
+    title: item.title,
+  })),
+  {
+    key: 'conclusion',
+    href: conclusionLink.href,
+    kicker: '마무리',
+    title: conclusionLink.title,
+  },
+]
+
+// 이전/다음 이동 (서사 ①~③과 종합 결론)
 export function NarrativePager({ current }: NarrativePagerProps) {
-  const index = narratives.findIndex(item => item.slug === current)
-  const prev = narratives[index - 1]
-  const next = narratives[index + 1]
+  const index = STEPS.findIndex(item => item.key === current)
+  const prev = STEPS[index - 1]
+  const next = STEPS[index + 1]
 
   return (
     <nav
@@ -24,13 +49,13 @@ export function NarrativePager({ current }: NarrativePagerProps) {
     >
       {prev ? (
         <Link
-          href={getNarrativeHref(prev.slug)}
+          href={prev.href}
           rel="prev"
           className="hover:border-ring/60 rounded-lg border p-4 transition-colors"
         >
           <span className="text-muted-foreground inline-flex items-center gap-1 text-xs">
             <ArrowLeft className="size-3" aria-hidden />
-            이전 서사 {getNarrativeMark(prev.order)}
+            이전 {prev.kicker}
           </span>
           <span className="mt-1 block font-medium break-keep">
             {prev.title}
@@ -41,12 +66,12 @@ export function NarrativePager({ current }: NarrativePagerProps) {
       )}
       {next && (
         <Link
-          href={getNarrativeHref(next.slug)}
+          href={next.href}
           rel="next"
           className="hover:border-ring/60 rounded-lg border p-4 text-right transition-colors"
         >
           <span className="text-muted-foreground inline-flex items-center gap-1 text-xs">
-            다음 서사 {getNarrativeMark(next.order)}
+            다음 {next.kicker}
             <ArrowRight className="size-3" aria-hidden />
           </span>
           <span className="mt-1 block font-medium break-keep">

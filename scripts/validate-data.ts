@@ -10,6 +10,7 @@ import type { z } from 'zod'
 import { DATA_FILES } from '@/lib/data/files'
 import { DataLoadError, loadJson } from '@/lib/data/loader'
 import {
+  conclusionLink,
   getNarrativeHref,
   homeLink,
   metricPages,
@@ -114,11 +115,13 @@ async function main(): Promise<void> {
   const sources = await tryLoad(DATA_FILES.sources)
   const insights = await tryLoad(DATA_FILES.insights)
   const narratives = await tryLoad(DATA_FILES.narratives)
+  const conclusion = await tryLoad(DATA_FILES.conclusion)
   const loaded: { file: string; data: unknown }[] = [
     { file: DATA_FILES.metrics.file, data: metrics },
     { file: DATA_FILES.sources.file, data: sources },
     { file: DATA_FILES.insights.file, data: insights },
     { file: DATA_FILES.narratives.file, data: narratives },
+    { file: DATA_FILES.conclusion.file, data: conclusion },
   ]
   const rest: { file: string; schema: z.ZodType }[] = Object.values(
     DATA_FILES
@@ -238,10 +241,15 @@ async function main(): Promise<void> {
     }
   }
 
+  for (const point of conclusion?.points ?? []) {
+    markMetricsUsed(point.metricIds, conclusionLink.href)
+  }
+
   // 출처 레지스트리의 사용 페이지가 실제 라우트·실제 사용과 일치하는지
   const routes = new Set([
     homeLink.href,
     ...narrativePages.map(page => getNarrativeHref(page.slug)),
+    conclusionLink.href,
     ...metricPages.map(page => page.href),
     sourcesLink.href,
   ])

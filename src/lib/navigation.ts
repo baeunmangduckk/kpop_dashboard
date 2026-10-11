@@ -102,6 +102,13 @@ export const homeLink: NavLink = {
   description: '3대 서사와 핵심 KPI 요약',
 }
 
+// 세 서사를 묶는 종합 결론 (서사 ③ 다음에 읽는 화면)
+export const conclusionLink: NavLink = {
+  title: '종합 결론',
+  href: '/conclusion',
+  description: '세 서사가 함께 가리키는 것과 이 데이터의 한계',
+}
+
 export const sourcesLink: NavLink = {
   title: '출처·신뢰도',
   href: '/sources',
@@ -112,11 +119,14 @@ export const mainNavigation: NavEntry[] = [
   homeLink,
   {
     title: '서사',
-    items: narratives.map(narrative => ({
-      title: `${narrative.order}. ${narrative.title}`,
-      href: getNarrativeHref(narrative.slug),
-      description: narrative.description,
-    })),
+    items: [
+      ...narratives.map(narrative => ({
+        title: `${narrative.order}. ${narrative.title}`,
+        href: getNarrativeHref(narrative.slug),
+        description: narrative.description,
+      })),
+      conclusionLink,
+    ],
   },
   { title: '지표', items: metricPages },
   sourcesLink,
@@ -134,6 +144,7 @@ export function getMetricPage(href: string): NavLink {
 export function getRouteTitle(href: string): string {
   if (href === homeLink.href) return homeLink.title
   if (href === sourcesLink.href) return sourcesLink.title
+  if (href === conclusionLink.href) return conclusionLink.title
   const narrative = narratives.find(
     item => getNarrativeHref(item.slug) === href
   )

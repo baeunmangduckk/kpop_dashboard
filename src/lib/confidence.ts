@@ -1,3 +1,4 @@
+import { CONFIDENCE_LEVELS } from '@/lib/confidence-levels'
 import type { Confidence } from '@/lib/schemas'
 
 interface ConfidenceMeta {
@@ -22,4 +23,15 @@ export const CONFIDENCE_META: Record<Confidence, ConfidenceMeta> = {
     description:
       '보고서의 값을 옮겼지만 원문에서 다시 확인하지 못한 값입니다. 의사결정에 쓰기 전 원문 확인을 권장합니다.',
   },
+}
+
+// 라벨별 개수 (지표 묶음의 신뢰도 구성 표기용)
+export function countByConfidence(
+  items: { confidence: Confidence }[]
+): Record<Confidence, number> {
+  const counts = Object.fromEntries(
+    CONFIDENCE_LEVELS.map(level => [level, 0])
+  ) as Record<Confidence, number>
+  for (const item of items) counts[item.confidence] += 1
+  return counts
 }

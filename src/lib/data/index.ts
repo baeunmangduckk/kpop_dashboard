@@ -12,6 +12,7 @@ const load = <T extends z.ZodType>(entry: { file: string; schema: T }) =>
 export const getMetricRegistry = load(DATA_FILES.metrics)
 export const getInsights = load(DATA_FILES.insights)
 export const getNarratives = load(DATA_FILES.narratives)
+export const getConclusion = load(DATA_FILES.conclusion)
 export const getSources = load(DATA_FILES.sources)
 export const getDiscrepancies = load(DATA_FILES.discrepancies)
 export const getMarketData = load(DATA_FILES.market)

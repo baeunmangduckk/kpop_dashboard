@@ -4,7 +4,13 @@
     "publisher": "금융감독원 OpenDART",
     "title": "상장 엔터사 사업보고서 주요계정",
     "year": 2026,
-    "pages": ["/", "/metrics/finance", "/narratives/slowdown", "/sources"],
+    "pages": [
+      "/",
+      "/metrics/finance",
+      "/narratives/slowdown",
+      "/conclusion",
+      "/sources"
+    ],
     "url": "https://opendart.fss.or.kr"
   },
   {
@@ -27,7 +33,7 @@
     "publisher": "IFPI",
     "title": "Global Music Report 2026",
     "year": 2026,
-    "pages": ["/", "/metrics/market", "/narratives/slowdown"],
+    "pages": ["/", "/metrics/market", "/narratives/slowdown", "/conclusion"],
     "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/"
   },
   {
@@ -62,7 +68,8 @@
       "/",
       "/metrics/concentration",
       "/metrics/global",
-      "/narratives/realignment"
+      "/narratives/realignment",
+      "/conclusion"
     ]
   },
   {
@@ -120,7 +127,12 @@
     "publisher": "Outlook Respawn",
     "title": "그룹 해체율 연구 (김정섭 성신여대)",
     "year": 2025,
-    "pages": ["/", "/metrics/concentration", "/narratives/polarization"],
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/narratives/polarization",
+      "/conclusion"
+    ],
     "url": "https://respawn.outlookindia.com/pop-culture/pop-culture-news/k-pop-groups-disband-within-3-years-study"
   },
   {
@@ -128,7 +140,7 @@
     "publisher": "Outlook Respawn",
     "title": "Weverse 중남미 성장 (+22% MAU / +715% 리테일)",
     "year": 2025,
-    "pages": ["/", "/metrics/global", "/narratives/realignment"],
+    "pages": ["/", "/metrics/global", "/narratives/realignment", "/conclusion"],
     "url": "https://respawn.outlookindia.com/pop-culture/pop-culture-news/bts-return-lifts-weverses-active-users-to-12m"
   },
   {
@@ -158,7 +170,12 @@
     "publisher": "뉴스엔",
     "title": "제작비 격차 29배 기사",
     "year": 2026,
-    "pages": ["/", "/metrics/concentration", "/narratives/polarization"]
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/narratives/polarization",
+      "/conclusion"
+    ]
   },
   {
     "id": "thefact-polarization",
@@ -193,7 +210,12 @@
     "publisher": "Asia Business Daily",
     "title": "실물앨범 1억 장 버블 붕괴 기사",
     "year": 2026,
-    "pages": ["/", "/metrics/concentration", "/narratives/slowdown"]
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/narratives/slowdown",
+      "/conclusion"
+    ]
   },
   {
     "id": "keia-sustainability",
@@ -223,6 +245,7 @@
       "/",
       "/metrics/concentration",
       "/narratives/polarization",
+      "/conclusion",
       "/sources"
     ],
     "url": "https://circlechart.kr/page_chart/album.circle?termGbn=year"
@@ -247,7 +270,12 @@
     "publisher": "SNS Insider",
     "title": "글로벌 버추얼 아이돌 시장 전망",
     "year": 2026,
-    "pages": ["/", "/metrics/ai-virtual", "/narratives/realignment"],
+    "pages": [
+      "/",
+      "/metrics/ai-virtual",
+      "/narratives/realignment",
+      "/conclusion"
+    ],
     "url": "https://www.snsinsider.com/press-release/global-virtual-idol-and-vtubers-market"
   },
   {
@@ -295,7 +323,12 @@
     "title": "콘텐츠 자금공백 기사 (음악 제작비 격차 29배)",
     "year": 2026,
     "url": "https://view.asiae.co.kr/article/2026081812490859852",
-    "pages": ["/", "/metrics/concentration", "/narratives/polarization"]
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/narratives/polarization",
+      "/conclusion"
+    ]
   },
   {
     "id": "newsis-group-survival",
@@ -311,6 +344,11 @@
     "title": "Circle Chart 연간 Top400 음반 판매량 (2023~2025)",
     "year": 2026,
     "url": "https://news.mtn.co.kr/news-detail/2026031613404718358",
-    "pages": ["/", "/metrics/concentration", "/narratives/slowdown"]
+    "pages": [
+      "/",
+      "/metrics/concentration",
+      "/narratives/slowdown",
+      "/conclusion"
+    ]
   }
 ]

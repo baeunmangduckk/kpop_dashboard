@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 import { KpiCard } from '@/components/confidence'
 import { ConfidenceSummary } from '@/components/home/confidence-summary'
 import { NarrativeCard } from '@/components/home/narrative-card'
@@ -5,21 +7,14 @@ import { InsightList } from '@/components/insights/insight-list'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { countByConfidence } from '@/lib/confidence'
 import { getInsights, getMetricRegistry, getNarratives } from '@/lib/data'
 import { getMetricContext } from '@/lib/data/metric-context'
 import {
+  conclusionLink,
   getNarrativeHref,
   narratives as narrativePages,
 } from '@/lib/navigation'
-import { CONFIDENCE_LEVELS, type Confidence, type Metric } from '@/lib/schemas'
-
-function countByConfidence(metrics: Metric[]): Record<Confidence, number> {
-  const counts = Object.fromEntries(
-    CONFIDENCE_LEVELS.map(level => [level, 0])
-  ) as Record<Confidence, number>
-  for (const metric of metrics) counts[metric.confidence] += 1
-  return counts
-}
 
 // 홈(스토리) - 핵심 KPI, 3대 서사, 인사이트, 신뢰도 분포
 export default async function Home() {
@@ -87,6 +82,13 @@ export default async function Home() {
               )
             })}
           </div>
+          <Link
+            href={conclusionLink.href}
+            className="text-primary mt-4 inline-flex items-center gap-1 text-sm font-medium hover:underline"
+          >
+            세 서사의 종합 결론 보기
+            <ArrowRight className="size-3.5" aria-hidden />
+          </Link>
         </PageSection>
 
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">

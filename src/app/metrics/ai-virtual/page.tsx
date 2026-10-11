@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { RelatedNarratives } from '@/components/narratives/related-narratives'
 import { MetricGrid } from '@/components/metric-charts/metric-grid'
 import { VirtualCaseCards } from '@/components/metric-charts/virtual-case-cards'
 import { VirtualMarketPathChart } from '@/components/metric-charts/virtual-market-path-chart'
@@ -43,6 +44,7 @@ export default async function AiVirtualPage() {
         <PageSection title="버추얼·AI 그룹 사례">
           <VirtualCaseCards />
         </PageSection>
+        <RelatedNarratives href={page.href} />
       </Container>
     </>
   )

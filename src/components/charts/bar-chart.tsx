@@ -14,7 +14,7 @@ import {
   ChartLegendContent,
   ChartTooltip,
 } from '@/components/ui/chart'
-import { formatCompact } from '@/lib/format'
+import { formatAxisTick } from '@/lib/format'
 import { cn } from '@/lib/utils'
 import { ValueTooltip } from './chart-tooltip'
 import { toChartConfig, type ChartDatum, type ChartSeries } from './types'
@@ -56,7 +56,7 @@ export function BarChart({
     type: 'number' as const,
     tickLine: false,
     axisLine: false,
-    tickFormatter: formatCompact,
+    tickFormatter: (value: number) => formatAxisTick(value, unit),
   }
 
   return (
@@ -85,13 +85,13 @@ export function BarChart({
         {isRow ? (
           <>
             <XAxis {...valueAxis} />
-            <YAxis {...categoryAxis} width={88} />
+            <YAxis {...categoryAxis} width={104} />
           </>
         ) : (
           <>
             {/* 범주(회사 등)는 생략하지 않고 모두 표시 */}
             <XAxis {...categoryAxis} interval={0} />
-            <YAxis {...valueAxis} width={44} />
+            <YAxis {...valueAxis} width={56} />
           </>
         )}
         {hasNegative &&

@@ -7,8 +7,8 @@ import { cn } from '@/lib/utils'
 import { ToneLabel } from './tone-label'
 
 const KIND_LABEL: Record<Insight['kind'], string> = {
-  auto: '자동',
-  manual: '수동',
+  auto: '지표 변화',
+  manual: '해석',
 }
 
 interface InsightListProps {

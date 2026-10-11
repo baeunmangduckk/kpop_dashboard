@@ -7,6 +7,8 @@ import { InsightList } from '@/components/insights/insight-list'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { Big4RevenueChart } from '@/components/metric-charts/big4-revenue-chart'
+import { TotalSalesChart } from '@/components/metric-charts/total-sales-chart'
 import { countByConfidence } from '@/lib/confidence'
 import { getInsights, getMetricRegistry, getNarratives } from '@/lib/data'
 import { getMetricContext } from '@/lib/data/metric-context'
@@ -16,7 +18,7 @@ import {
   narratives as narrativePages,
 } from '@/lib/navigation'
 
-// 홈(스토리) - 핵심 KPI, 3대 서사, 인사이트, 신뢰도 분포
+// 홈(스토리) - 핵심 KPI, 대표 차트, 3대 서사, 인사이트, 신뢰도 분포
 export default async function Home() {
   const [registry, insights, narratives, ctx] = await Promise.all([
     getMetricRegistry(),
@@ -60,6 +62,16 @@ export default async function Home() {
         </PageSection>
 
         <PageSection
+          title="한눈에 보기"
+          description="매출은 늘었지만 이익과 판매량은 같은 방향으로 움직이지 않습니다."
+        >
+          <div className="grid gap-4 lg:grid-cols-2">
+            <Big4RevenueChart />
+            <TotalSalesChart />
+          </div>
+        </PageSection>
+
+        <PageSection
           title="3대 서사"
           description="숫자들이 함께 가리키는 K-pop 산업의 흐름입니다."
         >
@@ -94,27 +106,37 @@ export default async function Home() {
         <div className="grid gap-12 lg:grid-cols-3 lg:gap-8">
           <PageSection
             title="인사이트"
-            description="수동은 분석가가 작성한 해석, 자동은 지표 변화로 생성한 문장입니다."
+            description="지표를 함께 읽고 정리한 해석입니다. 지표 변화만 옮긴 문장은 아래에 접어 두었습니다."
             className="lg:col-span-2"
           >
             {insights.length === 0 ? (
               <InsightList insights={[]} hrefs={insightHrefs} />
             ) : (
-              // 수동(해석) → 자동(지표 변화) 순서, 비어 있는 묶음은 생략
+              // 해석을 먼저 보여 주고, 핵심 지표 카드와 겹치는 지표 변화 문장은 접어 둔다
               <div className="bg-card divide-y rounded-xl border px-5 [&>*]:py-5">
-                {[manual, auto]
-                  .filter(group => group.length > 0)
-                  .map(group => (
+                {manual.length > 0 && (
+                  <InsightList insights={manual} hrefs={insightHrefs} />
+                )}
+                {auto.length > 0 && (
+                  <details>
+                    <summary className="text-muted-foreground hover:text-foreground w-fit cursor-pointer text-sm">
+                      지표 변화 {auto.length}건 보기
+                    </summary>
                     <InsightList
-                      key={group[0].kind}
-                      insights={group}
+                      insights={auto}
                       hrefs={insightHrefs}
+                      className="mt-4"
                     />
-                  ))}
+                  </details>
+                )}
               </div>
             )}
           </PageSection>
-          <PageSection title="신뢰도 분포" description="전체 지표의 검증 상태">
+          <PageSection
+            title="신뢰도 분포"
+            description="전체 지표의 검증 상태"
+            className="lg:sticky lg:top-24 lg:self-start"
+          >
             <div className="bg-card rounded-xl border p-5">
               <ConfidenceSummary counts={countByConfidence(registry.items)} />
             </div>

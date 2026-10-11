@@ -14,14 +14,33 @@ const numberFormat = new Intl.NumberFormat('ko-KR', {
 
 function withUnit(text: string, unit: string): string {
   if (!unit) return text
-  // 기호 단위는 붙여 쓰고, 그 외(억원·장·위 등)는 띄어 쓴다
-  return unit === '%' || unit === '%p' ? `${text}${unit}` : `${text} ${unit}`
+  // 한글 단위·기호는 붙여 쓰고(317억 달러, 29배, 1.86%), 영문 단위만 띄어 쓴다
+  return /^[A-Za-z]/.test(unit) ? `${text} ${unit}` : `${text}${unit}`
+}
+
+const EOK_PER_JO = 10000
+
+// 억원 단위 값이 1조 이상이면 조·억으로 풀어 쓴다 (51,920.6 → 5조 1,921억원, 억 미만 반올림)
+function formatEokWon(value: number): string | null {
+  const rounded = Math.round(Math.abs(value))
+  if (rounded < EOK_PER_JO) return null
+  const jo = Math.floor(rounded / EOK_PER_JO)
+  const eok = rounded % EOK_PER_JO
+  const sign = value < 0 ? '-' : ''
+  return eok === 0
+    ? `${sign}${numberFormat.format(jo)}조원`
+    : `${sign}${numberFormat.format(jo)}조 ${numberFormat.format(eok)}억원`
+}
+
+function formatWithUnit(value: number, unit: string): string {
+  const large = unit === '억원' ? formatEokWon(value) : null
+  return large ?? withUnit(numberFormat.format(value), unit)
 }
 
 // 결측(null)은 0과 구분해 '결측'으로 표시
 export function formatMetricValue(value: number | null, unit: string): string {
   if (value === null) return MISSING_LABEL
-  return withUnit(numberFormat.format(value), unit)
+  return formatWithUnit(value, unit)
 }
 
 // 차트 축 눈금용 축약 표기 (360px 화면에서 겹치지 않도록 억·만 단위로 줄임)
@@ -36,6 +55,19 @@ export function formatCompact(value: number): string {
   return compactFormat.format(value)
 }
 
+// 값 축 눈금 - 억원 단위는 '6만' 대신 '6조'로 읽히게 한다
+export function formatAxisTick(value: number, unit: string): string {
+  if (unit === '억원' && Math.abs(value) >= EOK_PER_JO) {
+    return `${compactFormat.format(value / EOK_PER_JO)}조`
+  }
+  // 천만 단위 눈금(7,500만)은 축 폭을 넘어 잘리므로 '7.5천만'으로 줄인다
+  const abs = Math.abs(value)
+  if (abs >= 1e7 && abs < 1e8) {
+    return `${compactFormat.format(value / 1e7)}천만`
+  }
+  return formatCompact(value)
+}
+
 export function formatDelta(
   delta: number | null,
   unit: string
@@ -45,7 +77,7 @@ export function formatDelta(
     delta > 0 ? 'up' : delta < 0 ? 'down' : 'flat'
   const sign = delta > 0 ? '+' : ''
   return {
-    text: withUnit(`${sign}${numberFormat.format(delta)}`, unit),
+    text: `${sign}${formatWithUnit(delta, unit)}`,
     direction,
   }
 }

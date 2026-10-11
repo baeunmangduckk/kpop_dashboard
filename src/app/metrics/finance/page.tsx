@@ -4,6 +4,7 @@ import { FinanceExplorer } from '@/components/finance/finance-explorer'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { RelatedNarratives } from '@/components/narratives/related-narratives'
 import { Big4RevenueChart } from '@/components/metric-charts/big4-revenue-chart'
 import { MetricGrid } from '@/components/metric-charts/metric-grid'
 import { QuarterlyRevenueChart } from '@/components/metric-charts/quarterly-revenue-chart'
@@ -82,6 +83,7 @@ export default async function FinancePage() {
             <QuarterlyRevenueChart />
           </div>
         </PageSection>
+        <RelatedNarratives href={page.href} />
       </Container>
     </>
   )

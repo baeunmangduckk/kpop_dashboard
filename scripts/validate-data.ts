@@ -154,6 +154,15 @@ async function main(): Promise<void> {
         errors.push(`narratives.json에 서사 '${page.slug}' 데이터 없음`)
       }
     }
+    // 메뉴·이전/다음 링크와 서사 화면 제목이 같은 이름을 쓰는지
+    for (const narrative of narratives) {
+      const page = narrativePages.find(item => item.slug === narrative.id)
+      if (page && page.title !== narrative.title) {
+        errors.push(
+          `서사 '${narrative.id}' 제목 불일치: 내비게이션 '${page.title}' / narratives.json '${narrative.title}'`
+        )
+      }
+    }
   }
 
   // 출처 인용 항목·지표 참조 수집 (출처 레지스트리 자체는 제외)

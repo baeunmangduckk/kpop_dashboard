@@ -3,6 +3,7 @@ import { SignalList } from '@/components/insights/signal-list'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { RelatedNarratives } from '@/components/narratives/related-narratives'
 import { CapitalGapTable } from '@/components/metric-charts/capital-gap-table'
 import { GiniTrendChart } from '@/components/metric-charts/gini-trend-chart'
 import { MetricGrid } from '@/components/metric-charts/metric-grid'
@@ -66,6 +67,7 @@ export default async function ConcentrationPage() {
         <PageSection title="지속가능성 리스크·기회 신호">
           <SignalList signals={concentration.signals} sources={sources} />
         </PageSection>
+        <RelatedNarratives href={page.href} />
       </Container>
     </>
   )

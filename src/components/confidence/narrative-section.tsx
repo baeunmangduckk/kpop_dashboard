@@ -13,26 +13,39 @@ export interface NarrativeEvidence {
 }
 
 interface NarrativeSectionProps {
+  // 제목 위 짧은 표시 (예: 서사 ①)
+  kicker?: string
   heading?: string
   body: string
   evidence: NarrativeEvidence[]
-  // 인라인 차트 슬롯 (Task 007 차트 래퍼)
+  // 인라인 차트 슬롯
   children?: ReactNode
+  // 근거 지표 아래 슬롯 (이어 읽기 링크 등)
+  footer?: ReactNode
   className?: string
 }
 
 // 서사 문단 + 인라인 차트 + 근거 지표 묶음 (F001)
 export function NarrativeSection({
+  kicker,
   heading,
   body,
   evidence,
   children,
+  footer,
   className,
 }: NarrativeSectionProps) {
   return (
     <section className={cn('space-y-4', className)}>
-      {heading && (
-        <h2 className="text-xl font-semibold tracking-tight">{heading}</h2>
+      {(kicker || heading) && (
+        <div className="space-y-1">
+          {kicker && (
+            <p className="text-primary text-sm font-medium">{kicker}</p>
+          )}
+          {heading && (
+            <h2 className="text-xl font-semibold tracking-tight">{heading}</h2>
+          )}
+        </div>
       )}
       <p className="leading-relaxed break-keep">{body}</p>
       {children}
@@ -45,11 +58,25 @@ export function NarrativeSection({
             {evidence.map(({ metric, href }) => (
               <li
                 key={metric.id}
-                className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1"
+                className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm"
               >
-                <span className="flex flex-wrap items-center gap-2 text-sm">
+                {/* 지표명이 곧 지표 화면 링크 */}
+                {href ? (
+                  <Link
+                    href={href}
+                    className="inline-flex items-center gap-1 font-medium underline-offset-4 hover:underline"
+                  >
+                    {metric.label}
+                    <ArrowRight
+                      className="text-muted-foreground size-3"
+                      aria-hidden
+                    />
+                  </Link>
+                ) : (
                   <span className="font-medium">{metric.label}</span>
-                  <span className="text-muted-foreground">
+                )}
+                <span className="ml-auto flex items-center gap-2">
+                  <span className="tabular-nums">
                     {formatMetricValue(metric.value, metric.unit)}
                   </span>
                   <ConfidenceBadge
@@ -57,20 +84,12 @@ export function NarrativeSection({
                     method={metric.method}
                   />
                 </span>
-                {href && (
-                  <Link
-                    href={href}
-                    className="text-primary inline-flex items-center gap-1 text-xs font-medium underline-offset-4 hover:underline"
-                  >
-                    근거 지표 보기
-                    <ArrowRight className="size-3" aria-hidden />
-                  </Link>
-                )}
               </li>
             ))}
           </ul>
         </div>
       )}
+      {footer}
     </section>
   )
 }

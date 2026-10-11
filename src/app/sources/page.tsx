@@ -92,7 +92,7 @@ export default async function SourcesPage() {
 
         <PageSection
           title="출처 레지스트리"
-          description="발행처·제목·연도와 이 출처를 사용하는 화면·지표입니다. 원문 링크는 원문 재확인(ROADMAP Task 015) 때 보강합니다."
+          description="발행처·제목·연도와 이 출처를 사용하는 화면·지표입니다. 원문 위치를 확인한 출처에는 링크를 함께 제공합니다."
         >
           <SourcesExplorer rows={rows} />
         </PageSection>

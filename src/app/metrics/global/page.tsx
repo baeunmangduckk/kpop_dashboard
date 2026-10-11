@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { RelatedNarratives } from '@/components/narratives/related-narratives'
 import { MetricGrid } from '@/components/metric-charts/metric-grid'
 import { PromisingRegions } from '@/components/metric-charts/promising-regions'
 import { RegionExportsChart } from '@/components/metric-charts/region-exports-chart'
@@ -39,6 +40,7 @@ export default async function GlobalPage() {
             <PromisingRegions />
           </div>
         </PageSection>
+        <RelatedNarratives href={page.href} />
       </Container>
     </>
   )

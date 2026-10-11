@@ -34,20 +34,31 @@ interface KpiCardProps {
 
 // 핵심 지표 카드 - 값·전기 대비·신뢰도 배지·출처를 한 단위로 표시
 export function KpiCard({ metric, sources, href, className }: KpiCardProps) {
-  const delta = formatDelta(metric.delta, metric.unit)
+  const valueText = formatMetricValue(metric.value, metric.unit)
+  const formatted = formatDelta(metric.delta, metric.unit)
+  // 증감이 값과 같으면(성장률 지표: 715% / +715%) 같은 숫자를 두 번 보여 주지 않는다
+  const delta =
+    formatted && formatted.text.replace(/^\+/, '') !== valueText
+      ? formatted
+      : null
   const DeltaIcon = delta ? DELTA_ICON[delta.direction] : null
 
   return (
     <Card
       data-metric-id={metric.id}
-      className={cn('gap-3 py-5', href && 'hover:border-ring/60', className)}
+      className={cn(
+        'gap-3 py-5',
+        href && 'hover:border-ring/60 relative transition-colors',
+        className
+      )}
     >
       <CardHeader className="flex items-start justify-between gap-2 px-5">
         <h3 className="text-muted-foreground text-sm leading-snug font-medium">
           {href ? (
+            // 카드 전체가 지표 화면으로 이동 (배지·출처 링크는 위 층에서 따로 눌림)
             <Link
               href={href}
-              className="hover:text-foreground underline-offset-4 hover:underline"
+              className="hover:text-foreground underline-offset-4 after:absolute after:inset-0 after:content-[''] hover:underline"
             >
               {metric.label}
             </Link>
@@ -58,11 +69,12 @@ export function KpiCard({ metric, sources, href, className }: KpiCardProps) {
         <ConfidenceBadge
           confidence={metric.confidence}
           method={metric.method}
+          className={href && 'relative z-10'}
         />
       </CardHeader>
       <CardContent className="space-y-1 px-5">
         <p className="text-2xl font-bold tracking-tight break-keep">
-          {formatMetricValue(metric.value, metric.unit)}
+          {valueText}
         </p>
         {metric.value === null && <NoticeBadge kind="missing" />}
         {delta && DeltaIcon && (
@@ -78,7 +90,7 @@ export function KpiCard({ metric, sources, href, className }: KpiCardProps) {
           <p className="text-muted-foreground text-xs">{metric.note}</p>
         )}
       </CardContent>
-      <CardFooter className="px-5">
+      <CardFooter className={cn('px-5', href && 'relative z-10 w-fit')}>
         <SourceCitation sources={sources} asOf={metric.asOf} />
       </CardFooter>
     </Card>

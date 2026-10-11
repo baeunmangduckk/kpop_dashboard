@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { RelatedNarratives } from '@/components/narratives/related-narratives'
 import { AlbumExportGrowthChart } from '@/components/metric-charts/album-export-growth-chart'
 import { AlbumExportsChart } from '@/components/metric-charts/album-exports-chart'
 import { EventForecastTable } from '@/components/metric-charts/event-forecast-table'
@@ -49,6 +50,7 @@ export default async function MarketPage() {
         >
           <EventForecastTable />
         </PageSection>
+        <RelatedNarratives href={page.href} />
       </Container>
     </>
   )

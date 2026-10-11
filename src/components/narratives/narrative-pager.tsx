@@ -10,14 +10,19 @@ import type { NarrativeSlug } from '@/lib/schemas'
 
 interface NarrativePagerProps {
   current: NarrativeSlug | 'conclusion'
+  // 읽는 순서의 마지막 화면에서 오른쪽 자리에 둘 다음 행동
+  fallbackNext?: PagerLink
 }
 
-interface Step {
-  key: string
+export interface PagerLink {
   href: string
   // 이동 링크 위에 붙는 짧은 이름 (서사 ①, 결론)
   kicker: string
   title: string
+}
+
+interface Step extends PagerLink {
+  key: string
 }
 
 // 읽는 순서: 서사 ① → ② → ③ → 종합 결론
@@ -37,10 +42,10 @@ const STEPS: Step[] = [
 ]
 
 // 이전/다음 이동 (서사 ①~③과 종합 결론)
-export function NarrativePager({ current }: NarrativePagerProps) {
+export function NarrativePager({ current, fallbackNext }: NarrativePagerProps) {
   const index = STEPS.findIndex(item => item.key === current)
   const prev = STEPS[index - 1]
-  const next = STEPS[index + 1]
+  const next: PagerLink | undefined = STEPS[index + 1] ?? fallbackNext
 
   return (
     <nav

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Container } from '@/components/layout/container'
 import { PageHeader } from '@/components/layout/page-header'
 import { PageSection } from '@/components/layout/page-section'
+import { RelatedNarratives } from '@/components/narratives/related-narratives'
 import { RankingChart } from '@/components/metric-charts/ranking-chart'
 import { SentimentChart } from '@/components/metric-charts/sentiment-chart'
 import { VideoReaction } from '@/components/metric-charts/video-reaction'
@@ -98,6 +99,7 @@ export default async function FansPage() {
             ))}
           </div>
         </PageSection>
+        <RelatedNarratives href={page.href} />
       </Container>
     </>
   )

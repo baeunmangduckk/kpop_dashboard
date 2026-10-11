@@ -3,14 +3,14 @@
     "id": "auto-global-music-revenue",
     "kind": "auto",
     "tone": "positive",
-    "text": "글로벌 음반산업 매출 지표가 직전 시점 대비 증가했다 (+19.1 억 달러).",
+    "text": "글로벌 음반산업 매출 지표가 직전 시점 대비 증가했다 (+19.1억 달러).",
     "metricIds": ["global-music-revenue-2025"]
   },
   {
     "id": "auto-latam-weverse-retail",
     "kind": "auto",
     "tone": "positive",
-    "text": "중남미 Weverse 디지털 상품 판매 성장률 지표가 직전 시점 대비 증가했다 (+715.0 %).",
+    "text": "중남미 Weverse 디지털 상품 판매 성장률 지표가 직전 시점 대비 증가했다 (+715%).",
     "metricIds": ["latam-weverse-retail-growth-2025"]
   },
   {
@@ -24,14 +24,14 @@
     "id": "auto-big4-revenue",
     "kind": "auto",
     "tone": "positive",
-    "text": "상장 4사 합산 매출액(2025) 지표가 직전 시점 대비 증가했다 (+9,799.5 억원).",
+    "text": "상장 4사 합산 매출액(2025) 지표가 직전 시점 대비 증가했다 (+9,799.5억원).",
     "metricIds": ["big4-revenue-2025"]
   },
   {
     "id": "auto-big4-operating-profit",
     "kind": "auto",
     "tone": "positive",
-    "text": "상장 4사 합산 영업이익(2025) 지표가 직전 시점 대비 증가했다 (+798.9 억원).",
+    "text": "상장 4사 합산 영업이익(2025) 지표가 직전 시점 대비 증가했다 (+798.9억원).",
     "metricIds": ["big4-operating-profit-2025"]
   },
   {

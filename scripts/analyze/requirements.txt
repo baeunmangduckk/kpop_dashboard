@@ -4,3 +4,5 @@ torch
 transformers
 sentencepiece
 protobuf
+# 워드 클라우드용 한국어 형태소 분석
+kiwipiepy

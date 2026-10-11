@@ -121,14 +121,14 @@
     "confidence": "estimated",
     "sourceIds": ["youtube-data-api"],
     "asOf": "2026-10-10",
-    "note": "영상 11개에서 관련성순 상위 댓글을 최대 100개씩 모은 표본으로, 인기 댓글에 치우쳐 있고 산업 전체 여론을 대표하지 않음",
+    "note": "글자가 클수록 많은 댓글에 나온 단어이고, 색은 단어 자체의 뜻이 아니라 그 단어가 들어간 댓글의 감성. 영상 11개에서 관련성순 상위 댓글을 최대 100개씩 모은 표본이라 인기 댓글에 치우쳐 있고 산업 전체 여론을 대표하지 않음",
     "sampleSize": 1063,
     "collectedAt": "2026-10-10",
     "positive": 840,
     "neutral": 109,
     "negative": 114,
     "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual",
-    "method": "다국어 감성 분류 모델(cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual)이 댓글마다 긍정·중립·부정 중 확률이 가장 높은 라벨을 부여. 직접 읽고 매긴 60개와 비교해 47개(78.3%) 일치. 스트리밍 독려·기록 나열 같은 중립 댓글을 긍정으로 읽는 경향이 있어 긍정은 다소 높게, 중립은 낮게 잡힘",
+    "method": "다국어 감성 분류 모델(cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual)이 댓글마다 긍정·중립·부정 중 확률이 가장 높은 라벨을 부여. 직접 읽고 매긴 60개와 비교해 47개(78.3%) 일치. 스트리밍 독려·기록 나열 같은 중립 댓글을 긍정으로 읽는 경향이 있어 긍정은 다소 높게, 중립은 낮게 잡힘. 단어의 색은 중립 또는 부정 댓글 비중이 전체 평균의 1.5배 이상이면 그 감성, 아니면 긍정(긍정 댓글이 절반 이하면 중립·부정 중 더 두드러진 쪽). 아티스트·곡 이름, 영상 3개 미만에서만 나온 단어(기준 영상 범위는 예외), 댓글 5개 미만에만 나온 단어는 제외. 로마자와 한국어 단어만 집계해 일본어 등 40개 댓글은 단어 집계에서 빠짐",
     "byVideo": [
       {
         "videoId": "2GJfWMYCWY0",
@@ -207,7 +207,1311 @@
         "neutral": 8,
         "negative": 3
       }
-    ]
+    ],
+    "words": {
+      "all": [
+        {
+          "word": "love",
+          "count": 115,
+          "positive": 107,
+          "neutral": 5,
+          "negative": 3,
+          "lean": "positive"
+        },
+        {
+          "word": "fans",
+          "count": 44,
+          "positive": 13,
+          "neutral": 13,
+          "negative": 18,
+          "lean": "negative"
+        },
+        {
+          "word": "best",
+          "count": 42,
+          "positive": 39,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "million",
+          "count": 41,
+          "positive": 34,
+          "neutral": 4,
+          "negative": 3,
+          "lean": "positive"
+        },
+        {
+          "word": "group",
+          "count": 38,
+          "positive": 34,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "industry",
+          "count": 37,
+          "positive": 14,
+          "neutral": 12,
+          "negative": 11,
+          "lean": "neutral"
+        },
+        {
+          "word": "idols",
+          "count": 36,
+          "positive": 8,
+          "neutral": 12,
+          "negative": 16,
+          "lean": "negative"
+        },
+        {
+          "word": "support",
+          "count": 33,
+          "positive": 29,
+          "neutral": 1,
+          "negative": 3,
+          "lean": "positive"
+        },
+        {
+          "word": "comeback",
+          "count": 32,
+          "positive": 31,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "truly",
+          "count": 30,
+          "positive": 23,
+          "neutral": 2,
+          "negative": 5,
+          "lean": "positive"
+        },
+        {
+          "word": "album",
+          "count": 29,
+          "positive": 25,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "proud",
+          "count": 29,
+          "positive": 29,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "amazing",
+          "count": 28,
+          "positive": 28,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "concept",
+          "count": 27,
+          "positive": 25,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "hard",
+          "count": 27,
+          "positive": 20,
+          "neutral": 1,
+          "negative": 6,
+          "lean": "negative"
+        },
+        {
+          "word": "likes",
+          "count": 25,
+          "positive": 23,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "members",
+          "count": 25,
+          "positive": 15,
+          "neutral": 7,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "first",
+          "count": 24,
+          "positive": 16,
+          "neutral": 4,
+          "negative": 4,
+          "lean": "neutral"
+        },
+        {
+          "word": "life",
+          "count": 24,
+          "positive": 13,
+          "neutral": 8,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "beautiful",
+          "count": 23,
+          "positive": 22,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "show",
+          "count": 23,
+          "positive": 14,
+          "neutral": 4,
+          "negative": 5,
+          "lean": "negative"
+        },
+        {
+          "word": "stay",
+          "count": 23,
+          "positive": 19,
+          "neutral": 3,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "visuals",
+          "count": 23,
+          "positive": 22,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "era",
+          "count": 22,
+          "positive": 20,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "masterpiece",
+          "count": 22,
+          "positive": 22,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "world",
+          "count": 22,
+          "positive": 15,
+          "neutral": 3,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "fan",
+          "count": 20,
+          "positive": 12,
+          "neutral": 4,
+          "negative": 4,
+          "lean": "neutral"
+        },
+        {
+          "word": "heart",
+          "count": 20,
+          "positive": 15,
+          "neutral": 2,
+          "negative": 3,
+          "lean": "positive"
+        },
+        {
+          "word": "vocals",
+          "count": 20,
+          "positive": 19,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "different",
+          "count": 19,
+          "positive": 16,
+          "neutral": 2,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "idol",
+          "count": 19,
+          "positive": 4,
+          "neutral": 6,
+          "negative": 9,
+          "lean": "negative"
+        },
+        {
+          "word": "forever",
+          "count": 17,
+          "positive": 17,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "happy",
+          "count": 17,
+          "positive": 15,
+          "neutral": 2,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "incredible",
+          "count": 17,
+          "positive": 17,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "views",
+          "count": 17,
+          "positive": 12,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "좋다",
+          "count": 17,
+          "positive": 16,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "believe",
+          "count": 16,
+          "positive": 14,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "hours",
+          "count": 16,
+          "positive": 12,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "listen",
+          "count": 16,
+          "positive": 12,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "stop",
+          "count": 16,
+          "positive": 13,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "streaming",
+          "count": 16,
+          "positive": 14,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "together",
+          "count": 16,
+          "positive": 15,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "dance",
+          "count": 15,
+          "positive": 8,
+          "neutral": 6,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "end",
+          "count": 15,
+          "positive": 9,
+          "neutral": 2,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "groups",
+          "count": 15,
+          "positive": 10,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "insane",
+          "count": 15,
+          "positive": 7,
+          "neutral": 0,
+          "negative": 8,
+          "lean": "negative"
+        },
+        {
+          "word": "peak",
+          "count": 15,
+          "positive": 15,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "stays",
+          "count": 15,
+          "positive": 13,
+          "neutral": 2,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "absolutely",
+          "count": 14,
+          "positive": 12,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "boys",
+          "count": 14,
+          "positive": 11,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "hope",
+          "count": 14,
+          "positive": 11,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "listening",
+          "count": 14,
+          "positive": 12,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "lives",
+          "count": 14,
+          "positive": 7,
+          "neutral": 4,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "performance",
+          "count": 14,
+          "positive": 10,
+          "neutral": 3,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "real",
+          "count": 14,
+          "positive": 6,
+          "neutral": 5,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "understand",
+          "count": 14,
+          "positive": 6,
+          "neutral": 1,
+          "negative": 7,
+          "lean": "negative"
+        },
+        {
+          "word": "days",
+          "count": 13,
+          "positive": 10,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "far",
+          "count": 13,
+          "positive": 11,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "girls",
+          "count": 13,
+          "positive": 13,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "hit",
+          "count": 13,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        }
+      ],
+      "mv": [
+        {
+          "word": "love",
+          "count": 109,
+          "positive": 105,
+          "neutral": 3,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "best",
+          "count": 39,
+          "positive": 38,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "million",
+          "count": 39,
+          "positive": 34,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "group",
+          "count": 33,
+          "positive": 31,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "comeback",
+          "count": 32,
+          "positive": 31,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "support",
+          "count": 30,
+          "positive": 28,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "proud",
+          "count": 29,
+          "positive": 29,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "amazing",
+          "count": 28,
+          "positive": 28,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "album",
+          "count": 27,
+          "positive": 25,
+          "neutral": 2,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "concept",
+          "count": 25,
+          "positive": 25,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "likes",
+          "count": 25,
+          "positive": 23,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "truly",
+          "count": 25,
+          "positive": 23,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "visuals",
+          "count": 23,
+          "positive": 22,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "era",
+          "count": 22,
+          "positive": 20,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "masterpiece",
+          "count": 22,
+          "positive": 22,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "stay",
+          "count": 22,
+          "positive": 19,
+          "neutral": 2,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "beautiful",
+          "count": 21,
+          "positive": 21,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "first",
+          "count": 21,
+          "positive": 16,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "hard",
+          "count": 21,
+          "positive": 20,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "life",
+          "count": 20,
+          "positive": 13,
+          "neutral": 5,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "vocals",
+          "count": 20,
+          "positive": 19,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "world",
+          "count": 20,
+          "positive": 14,
+          "neutral": 3,
+          "negative": 3,
+          "lean": "positive"
+        },
+        {
+          "word": "heart",
+          "count": 19,
+          "positive": 15,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "members",
+          "count": 19,
+          "positive": 14,
+          "neutral": 4,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "show",
+          "count": 19,
+          "positive": 14,
+          "neutral": 2,
+          "negative": 3,
+          "lean": "positive"
+        },
+        {
+          "word": "forever",
+          "count": 17,
+          "positive": 17,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "좋다",
+          "count": 17,
+          "positive": 16,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "different",
+          "count": 16,
+          "positive": 15,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "fans",
+          "count": 16,
+          "positive": 11,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "happy",
+          "count": 16,
+          "positive": 15,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "incredible",
+          "count": 16,
+          "positive": 16,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "streaming",
+          "count": 16,
+          "positive": 14,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "views",
+          "count": 16,
+          "positive": 12,
+          "neutral": 3,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "peak",
+          "count": 15,
+          "positive": 15,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "together",
+          "count": 15,
+          "positive": 15,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "believe",
+          "count": 14,
+          "positive": 13,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "hours",
+          "count": 14,
+          "positive": 12,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "absolutely",
+          "count": 13,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "boys",
+          "count": 13,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "girls",
+          "count": 13,
+          "positive": 13,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "hit",
+          "count": 13,
+          "positive": 11,
+          "neutral": 0,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "iconic",
+          "count": 13,
+          "positive": 12,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "lets",
+          "count": 13,
+          "positive": 13,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "listen",
+          "count": 13,
+          "positive": 10,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "listening",
+          "count": 13,
+          "positive": 11,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "reach",
+          "count": 13,
+          "positive": 12,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "special",
+          "count": 13,
+          "positive": 10,
+          "neutral": 3,
+          "negative": 0,
+          "lean": "neutral"
+        },
+        {
+          "word": "spotify",
+          "count": 13,
+          "positive": 10,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "positive"
+        },
+        {
+          "word": "scene",
+          "count": 12,
+          "positive": 8,
+          "neutral": 1,
+          "negative": 3,
+          "lean": "negative"
+        },
+        {
+          "word": "sound",
+          "count": 12,
+          "positive": 12,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "stop",
+          "count": 12,
+          "positive": 12,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "vibe",
+          "count": 12,
+          "positive": 12,
+          "neutral": 0,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "waiting",
+          "count": 12,
+          "positive": 10,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "dance",
+          "count": 11,
+          "positive": 8,
+          "neutral": 2,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "days",
+          "count": 11,
+          "positive": 10,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "fan",
+          "count": 11,
+          "positive": 10,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "groups",
+          "count": 11,
+          "positive": 10,
+          "neutral": 1,
+          "negative": 0,
+          "lean": "positive"
+        },
+        {
+          "word": "performance",
+          "count": 11,
+          "positive": 10,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "rewatch",
+          "count": 11,
+          "positive": 10,
+          "neutral": 0,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "supporting",
+          "count": 11,
+          "positive": 9,
+          "neutral": 2,
+          "negative": 0,
+          "lean": "positive"
+        }
+      ],
+      "reference": [
+        {
+          "word": "fans",
+          "count": 28,
+          "positive": 2,
+          "neutral": 10,
+          "negative": 16,
+          "lean": "negative"
+        },
+        {
+          "word": "idols",
+          "count": 28,
+          "positive": 2,
+          "neutral": 12,
+          "negative": 14,
+          "lean": "negative"
+        },
+        {
+          "word": "industry",
+          "count": 28,
+          "positive": 6,
+          "neutral": 12,
+          "negative": 10,
+          "lean": "neutral"
+        },
+        {
+          "word": "idol",
+          "count": 16,
+          "positive": 2,
+          "neutral": 5,
+          "negative": 9,
+          "lean": "negative"
+        },
+        {
+          "word": "fan",
+          "count": 9,
+          "positive": 2,
+          "neutral": 4,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "children",
+          "count": 8,
+          "positive": 1,
+          "neutral": 0,
+          "negative": 7,
+          "lean": "negative"
+        },
+        {
+          "word": "especially",
+          "count": 8,
+          "positive": 1,
+          "neutral": 3,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "korea",
+          "count": 8,
+          "positive": 0,
+          "neutral": 4,
+          "negative": 4,
+          "lean": "neutral"
+        },
+        {
+          "word": "relationship",
+          "count": 8,
+          "positive": 1,
+          "neutral": 4,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "selling",
+          "count": 8,
+          "positive": 1,
+          "neutral": 3,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "korean",
+          "count": 7,
+          "positive": 3,
+          "neutral": 3,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "lives",
+          "count": 7,
+          "positive": 1,
+          "neutral": 4,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "money",
+          "count": 7,
+          "positive": 1,
+          "neutral": 2,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "artists",
+          "count": 6,
+          "positive": 1,
+          "neutral": 1,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "company",
+          "count": 6,
+          "positive": 0,
+          "neutral": 4,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "end",
+          "count": 6,
+          "positive": 0,
+          "neutral": 2,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "entertainment",
+          "count": 6,
+          "positive": 0,
+          "neutral": 2,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "hard",
+          "count": 6,
+          "positive": 0,
+          "neutral": 1,
+          "negative": 5,
+          "lean": "negative"
+        },
+        {
+          "word": "love",
+          "count": 6,
+          "positive": 2,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "members",
+          "count": 6,
+          "positive": 1,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "parasocial",
+          "count": 6,
+          "positive": 0,
+          "neutral": 4,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "plastic",
+          "count": 6,
+          "positive": 0,
+          "neutral": 3,
+          "negative": 3,
+          "lean": "neutral"
+        },
+        {
+          "word": "product",
+          "count": 6,
+          "positive": 1,
+          "neutral": 2,
+          "negative": 3,
+          "lean": "negative"
+        },
+        {
+          "word": "big",
+          "count": 5,
+          "positive": 2,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "negative"
+        },
+        {
+          "word": "companies",
+          "count": 5,
+          "positive": 1,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "fact",
+          "count": 5,
+          "positive": 0,
+          "neutral": 1,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "genuinely",
+          "count": 5,
+          "positive": 1,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "group",
+          "count": 5,
+          "positive": 3,
+          "neutral": 1,
+          "negative": 1,
+          "lean": "positive"
+        },
+        {
+          "word": "hope",
+          "count": 5,
+          "positive": 2,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "negative"
+        },
+        {
+          "word": "human",
+          "count": 5,
+          "positive": 2,
+          "neutral": 1,
+          "negative": 2,
+          "lean": "negative"
+        },
+        {
+          "word": "insane",
+          "count": 5,
+          "positive": 0,
+          "neutral": 0,
+          "negative": 5,
+          "lean": "negative"
+        },
+        {
+          "word": "perfect",
+          "count": 5,
+          "positive": 0,
+          "neutral": 4,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "popular",
+          "count": 5,
+          "positive": 0,
+          "neutral": 2,
+          "negative": 3,
+          "lean": "negative"
+        },
+        {
+          "word": "real",
+          "count": 5,
+          "positive": 0,
+          "neutral": 3,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "sense",
+          "count": 5,
+          "positive": 1,
+          "neutral": 3,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "south",
+          "count": 5,
+          "positive": 0,
+          "neutral": 0,
+          "negative": 5,
+          "lean": "negative"
+        },
+        {
+          "word": "true",
+          "count": 5,
+          "positive": 0,
+          "neutral": 4,
+          "negative": 1,
+          "lean": "neutral"
+        },
+        {
+          "word": "truly",
+          "count": 5,
+          "positive": 0,
+          "neutral": 1,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "understand",
+          "count": 5,
+          "positive": 0,
+          "neutral": 0,
+          "negative": 5,
+          "lean": "negative"
+        },
+        {
+          "word": "western",
+          "count": 5,
+          "positive": 0,
+          "neutral": 1,
+          "negative": 4,
+          "lean": "negative"
+        },
+        {
+          "word": "work",
+          "count": 5,
+          "positive": 1,
+          "neutral": 2,
+          "negative": 2,
+          "lean": "neutral"
+        },
+        {
+          "word": "young",
+          "count": 5,
+          "positive": 2,
+          "neutral": 0,
+          "negative": 3,
+          "lean": "negative"
+        }
+      ]
+    }
   },
   "channels": {
     "confidence": "verified",

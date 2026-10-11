@@ -46,3 +46,11 @@ export const DistributionChart = dynamic(
     loading: () => <ChartPlaceholder style={{ height: 96 }} />,
   }
 )
+
+export const WordCloud = dynamic(
+  () => import('./word-cloud').then(mod => mod.WordCloud),
+  {
+    ssr: false,
+    loading: () => <ChartPlaceholder className="h-[300px] sm:h-[340px]" />,
+  }
+)

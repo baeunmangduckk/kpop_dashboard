@@ -35,6 +35,16 @@ const sentimentCountSchema = z.object({
   negative: z.number().int().nonnegative(),
 })
 
+// 댓글에 많이 나온 단어 - count는 그 단어가 들어간 댓글 수, lean은 워드 클라우드 색
+export const sentimentWordSchema = z.object({
+  word: z.string().min(1),
+  count: z.number().int().positive(),
+  positive: z.number().int().nonnegative(),
+  neutral: z.number().int().nonnegative(),
+  negative: z.number().int().nonnegative(),
+  lean: z.enum(['positive', 'neutral', 'negative']),
+})
+
 export const fansDataSchema = z.object({
   videos: sourcedSchema.extend({
     collectedAt: isoDateSchema,
@@ -52,6 +62,12 @@ export const fansDataSchema = z.object({
     method: z.string().min(1),
     // 영상별 분포 - videoId는 videos.items의 id
     byVideo: z.array(sentimentCountSchema).min(1),
+    // 범위별 단어 (전체 / 뮤직비디오 / 기준 영상), 댓글 본문은 싣지 않음
+    words: z.object({
+      all: z.array(sentimentWordSchema).min(1),
+      mv: z.array(sentimentWordSchema).min(1),
+      reference: z.array(sentimentWordSchema).min(1),
+    }),
   }),
   channels: sourcedSchema.extend({
     snapshots: z.array(channelSnapshotSchema).min(1),
@@ -60,5 +76,6 @@ export const fansDataSchema = z.object({
 })
 
 export type VideoStat = z.infer<typeof videoStatSchema>
+export type SentimentWord = z.infer<typeof sentimentWordSchema>
 export type Ranking = z.infer<typeof rankingSchema>
 export type FansData = z.infer<typeof fansDataSchema>

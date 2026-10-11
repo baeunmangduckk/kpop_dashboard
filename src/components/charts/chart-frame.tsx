@@ -13,6 +13,8 @@ interface ChartFrameProps {
   description?: string
   // NoticeBadge 등 해석 주의 안내
   notices?: ReactNode
+  // 차트 위에 두는 조작부·범례 (스크린리더에도 노출)
+  controls?: ReactNode
   confidence: Confidence
   method?: string
   sources: Source[]
@@ -29,6 +31,7 @@ export function ChartFrame({
   title,
   description,
   notices,
+  controls,
   confidence,
   method,
   sources,
@@ -52,6 +55,7 @@ export function ChartFrame({
         )}
       </figcaption>
       {notices && <div className="flex flex-wrap gap-2">{notices}</div>}
+      {controls}
       {children ? (
         <>
           <div aria-hidden>{children}</div>
@@ -83,7 +87,13 @@ function DataTable({
   className?: string
 }) {
   return (
-    <div className={cn('overflow-x-auto', className)}>
+    // 좁은 화면에서 가로로 넘치면 키보드로도 스크롤할 수 있게 초점을 받음
+    <div
+      tabIndex={0}
+      role="region"
+      aria-label={`${title} 표`}
+      className={cn('overflow-x-auto', className)}
+    >
       {/* <caption>은 dev 하이드레이션 불일치를 일으켜(2026-10-09 확인) aria-label로 표 이름 제공 */}
       <table
         aria-label={title}

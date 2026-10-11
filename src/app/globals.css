@@ -73,6 +73,10 @@
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   /* 차트 범주형 8색 (dataviz 기준 팔레트, 고정 순서) — 라이트 검증: 전 항목 PASS, 3·4·5번은 흰 배경 대비 3:1 미만이라 표 보기·직접 라벨로 보완 */
+  /* 감성 글자색 (워드 클라우드) — 흰 배경 대비 4.5:1 이상: 긍정 5.8, 중립 5.0, 부정 5.4 */
+  --sentiment-positive: #1a63c2;
+  --sentiment-neutral: #707070;
+  --sentiment-negative: #b8460f;
   --chart-1: #2a78d6;
   --chart-2: #eb6834;
   --chart-3: #1baf7a;
@@ -124,6 +128,10 @@
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
   /* 차트 범주형 8색 — 다크 단계 (카드 #171717 기준 전 항목 PASS) */
+  /* 감성 글자색 — 카드 #171717 대비: 긍정 6.2, 중립 6.3, 부정 6.6 */
+  --sentiment-positive: #4c97f5;
+  --sentiment-neutral: #999999;
+  --sentiment-negative: #f47b3b;
   --chart-1: #3987e5;
   --chart-2: #d95926;
   --chart-3: #199e70;

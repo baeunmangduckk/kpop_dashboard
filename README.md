@@ -46,7 +46,7 @@ API 키는 `.env.local`(`DART_API_KEY`, `YOUTUBE_API_KEY`)에 두며 수집 스�
 - 응답 원본은 `data/raw/{출처}/{수집일}/`에 보존합니다.
 - 수집 후 `npm run validate:data`로 검증하고 다시 빌드해야 화면에 반영됩니다.
 
-### 댓글 감성 분석 (파이썬)
+### 댓글 감성 분석과 워드 클라우드 (파이썬)
 
 댓글 원본은 저장소에 없으므로 먼저 `npm run collect:youtube`로 로컬에 받아야 합니다.
 
@@ -54,10 +54,12 @@ API 키는 `.env.local`(`DART_API_KEY`, `YOUTUBE_API_KEY`)에 두며 수집 스�
 python -m venv .venv
 .venv/Scripts/python -m pip install -r scripts/analyze/requirements.txt   # 최초 1회 (모델 약 1.1GB 별도 다운로드)
 .venv/Scripts/python scripts/analyze/sentiment.py                          # 분류 → data/derived/youtube-sentiment.json (개수만)
+.venv/Scripts/python scripts/analyze/wordcloud.py                          # 단어 집계 → data/derived/youtube-words.json (단어·개수만)
 npm run apply:sentiment                                                    # fans.json 반영
 ```
 
 - 모델: `cardiffnlp/twitter-xlm-roberta-base-sentiment-multilingual` (다국어 긍정·중립·부정 3분류)
+- 워드 클라우드: 글자 크기는 그 단어가 들어간 댓글 수, 색은 그 댓글들의 감성입니다. 중립·부정 댓글 비중이 전체 평균의 1.5배 이상이면 그 감성으로, 아니면 긍정으로 칠합니다. 아티스트·곡 이름, 영상 3개 미만에서만 나온 단어, 댓글 5개 미만에만 나온 단어는 뺍니다(불용어: `scripts/analyze/stopwords_en.txt`, 한국어는 kiwipiepy 형태소 분석).
 - 사람이 직접 읽고 매긴 라벨과의 비교 결과는 `data/derived/youtube-sentiment-review.json`에 기록합니다.
 
 ## 배포 (GitHub Pages)
